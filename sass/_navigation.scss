@@ -1,0 +1,69 @@
+@import 'colors';
+
+.sticky-arrow-up {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: min-content;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1vh;
+    opacity: 0.3;
+
+    a {
+        color: white;
+        cursor: pointer;
+    }
+
+    .fa-arrow-up {
+        padding: 0.5vh 1vh 1vh;
+    }
+}
+
+.nav-menu-holder {
+    padding-right: 3vw;
+    background-color: rgba(134, 129, 129, 0.2);
+    top:0;
+    bottom: 0;
+    transition: 1.5s;
+    margin-left: -240px;
+    vertical-align: baseline;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .nav-menu-open {
+    margin-left: -20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: right;
+    font-size: calc(24px + 1vw);
+    font-weight: 800;
+    line-height: 2;
+    background-color: $base-beige;
+    padding: 5vh 1vw;
+    top: 10%;
+    bottom: 10%;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1.5vh;
+  }
+  
+  nav a:hover {
+    opacity: .5;
+  }
+  
+  .nav-menu-button {
+    border: none; 
+    outline: none;
+  }
+  
+  .nav-menu-button:hover {
+    cursor: pointer;
+  }
+  

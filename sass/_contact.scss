@@ -1,0 +1,51 @@
+#contact {
+    background-color: tomato;
+  }
+  
+.contact-container {
+    position: relative;
+    height: 756px;
+  }
+  
+  .contact-main {
+    position: absolute;
+    top: 12vh;
+    right: 3.5vw;
+    left: 17vw;
+    columns: 2;
+    column-width: 250px;
+  
+    p:first-child {
+      padding-top: 2vh;
+    }
+    
+    p:last-child {
+      padding-bottom: 2vh;
+    }
+  
+    p {
+      background-color: rgba($base-beige,0.8);
+      margin: 0;
+      padding: 1vw 1.5vw;
+    }
+  }
+
+  address {
+      background-color: rgba($base-beige,0.8);
+  }
+
+  .social-media a {
+    font-size: calc(8px + 1vw);
+    color: white;
+    display: inline-block;
+    margin-right: 1.2vw;
+    margin-bottom: 2vh;;
+    transition: 3s;
+  }
+  
+  .social-media a :hover {
+    opacity: .6;
+    transform: scale(1.1);
+  }
+
+  

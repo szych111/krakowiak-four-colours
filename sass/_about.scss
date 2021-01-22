@@ -1,0 +1,60 @@
+.about-container {
+  position: relative;
+  height: 756px;
+}
+
+.about-about {
+  position: absolute;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
+  columns: 2;
+  column-width: 250px;
+
+  p:first-child {
+    padding-top: 1.5vh;
+  }
+  
+  p:last-child {
+    padding-bottom: 1.5vh;
+  }
+
+  p {
+    background-color: rgba($base-beige,0.8);
+    margin: 0;
+    padding: .5vw 1.5vw;
+  }
+}
+
+.main-about {
+  margin: 0
+}
+
+.about-partners {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(white,1);
+  opacity: .8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5vw;
+  
+  img {
+    opacity: .9;
+      width: calc(50% + 2.7vw);
+      vertical-align: middle;
+      padding: 1vw;
+  }
+  }
+
+#about {
+    background-color: tomato;
+ 
+  }
+  
+  .open {
+    display: inline;
+  }
+  
+  

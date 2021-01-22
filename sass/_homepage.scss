@@ -1,0 +1,59 @@
+#home {
+  background-color:tomato;
+}
+
+.audio-modal {
+  display: none;
+}
+.audio {
+    font-size: calc(12px + 1vw);
+    margin-top: 18px;
+    margin: 1.8vh 2.5vw;
+  }
+
+  .volume-on {
+    width: 3%;
+    display: none
+  }
+
+  .volume-off {
+    width: 2.5%;
+    
+  }
+  
+  #home span {
+    font-size: calc(12px + 1vw);
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  
+  .container-main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .main-page {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 150px auto;
+  }
+  
+  .main-page-child {
+    width: 150%;
+    flex: 1;
+  }
+  
+  .main-page-child.title {
+    display: flex;
+    
+  }
+  
+  #home .section-bg {
+    position: relative;
+    text-align: center;
+  }

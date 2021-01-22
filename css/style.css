@@ -1,0 +1,662 @@
+.sticky-arrow-up {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: min-content;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 1vh;
+  opacity: 0.3;
+}
+
+.sticky-arrow-up a {
+  color: white;
+  cursor: pointer;
+}
+
+.sticky-arrow-up .fa-arrow-up {
+  padding: 0.5vh 1vh 1vh;
+}
+
+.nav-menu-holder {
+  padding-right: 3vw;
+  background-color: rgba(134, 129, 129, 0.2);
+  top: 0;
+  bottom: 0;
+  transition: 1.5s;
+  margin-left: -240px;
+  vertical-align: baseline;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-menu-open {
+  margin-left: -20px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  font-size: calc(24px + 1vw);
+  font-weight: 800;
+  line-height: 2;
+  background-color: #c0b598;
+  padding: 5vh 1vw;
+  top: 10%;
+  bottom: 10%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1.5vh;
+}
+
+nav a:hover {
+  opacity: .5;
+}
+
+.nav-menu-button {
+  border: none;
+  outline: none;
+}
+
+.nav-menu-button:hover {
+  cursor: pointer;
+}
+
+.photogal-header {
+  text-align: left;
+  padding: 2vh;
+}
+
+.photogal-menu-k {
+  width: 10vw;
+  margin: 1vw;
+}
+
+.photogal-title {
+  text-align: left;
+  margin: 2vh;
+  float: right;
+}
+
+.photogal-container {
+  display: flex;
+}
+
+.photogal-about {
+  width: fit-content;
+  height: fit-content;
+  line-height: 1.5;
+  flex: 1;
+  padding: 2vw 3vw;
+  margin-left: 2vw;
+  background-color: rgba(201, 219, 120, 0.8);
+}
+
+.photogal-photos {
+  flex: 2;
+  margin: -2vh 1vw;
+  padding: 1vh 0;
+  background-color: rgba(77, 74, 74, 0.8);
+}
+
+.photogal-photo {
+  width: 15vw;
+  margin: 1%;
+}
+
+/* photogallery main page */
+#photogallery {
+  background-color: tomato;
+}
+
+#photogallery .photogal-main-container {
+  position: relative;
+  height: 756px;
+}
+
+#photogallery .photogal-main-main {
+  position: absolute;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
+}
+
+#photogallery a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-stretch: extra-expanded;
+  margin-bottom: calc(10px + 0.2vw);
+  margin-left: calc(10px + 0.1vw);
+  margin-right: calc(10px + 0.1vw);
+  display: inline-block;
+  transition-property: color, transform;
+  transition-duration: .5s, 1.0s;
+  transition-delay: 0, 1s;
+}
+
+#photogallery a:hover {
+  transform: rotateX(360deg);
+}
+
+.galfontS {
+  font-size: calc(10px + 1.8vw);
+}
+
+.galfontM {
+  font-size: calc(15px + 2.4vw);
+}
+
+.galfontL {
+  font-size: calc(20px + 3.0vw);
+}
+
+.galfontXL {
+  font-size: calc(25px + 4.0vw);
+}
+
+.gal-grupa {
+  font-size: calc(10px + 2.2vw);
+  font-weight: calc(100 * 0.2vw);
+  padding: 0;
+  margin-bottom: -1.4vw;
+}
+
+.about-container {
+  position: relative;
+  height: 756px;
+}
+
+.about-about {
+  position: absolute;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
+  columns: 2;
+  column-width: 250px;
+}
+
+.about-about p:first-child {
+  padding-top: 1.5vh;
+}
+
+.about-about p:last-child {
+  padding-bottom: 1.5vh;
+}
+
+.about-about p {
+  background-color: rgba(192, 181, 152, 0.8);
+  margin: 0;
+  padding: .5vw 1.5vw;
+}
+
+.main-about {
+  margin: 0;
+}
+
+.about-partners {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  opacity: .8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5vw;
+}
+
+.about-partners img {
+  opacity: .9;
+  width: calc(50% + 2.7vw);
+  vertical-align: middle;
+  padding: 1vw;
+}
+
+#about {
+  background-color: tomato;
+}
+
+.open {
+  display: inline;
+}
+
+#contact {
+  background-color: tomato;
+}
+
+.contact-container {
+  position: relative;
+  height: 756px;
+}
+
+.contact-main {
+  position: absolute;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
+  columns: 2;
+  column-width: 250px;
+}
+
+.contact-main p:first-child {
+  padding-top: 2vh;
+}
+
+.contact-main p:last-child {
+  padding-bottom: 2vh;
+}
+
+.contact-main p {
+  background-color: rgba(192, 181, 152, 0.8);
+  margin: 0;
+  padding: 1vw 1.5vw;
+}
+
+address {
+  background-color: rgba(192, 181, 152, 0.8);
+}
+
+.social-media a {
+  font-size: calc(8px + 1vw);
+  color: white;
+  display: inline-block;
+  margin-right: 1.2vw;
+  margin-bottom: 2vh;
+  transition: 3s;
+}
+
+.social-media a :hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
+
+#home {
+  background-color: tomato;
+}
+
+.audio-modal {
+  display: none;
+}
+
+.audio {
+  font-size: calc(12px + 1vw);
+  margin-top: 18px;
+  margin: 1.8vh 2.5vw;
+}
+
+.volume-on {
+  width: 3%;
+  display: none;
+}
+
+.volume-off {
+  width: 2.5%;
+}
+
+#home span {
+  font-size: calc(12px + 1vw);
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.container-main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-page {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 150px auto;
+}
+
+.main-page-child {
+  width: 150%;
+  flex: 1;
+}
+
+.main-page-child.title {
+  display: flex;
+}
+
+#home .section-bg {
+  position: relative;
+  text-align: center;
+}
+
+.team-main {
+  position: absolute;
+  top: 12vh;
+  right: 3.5vw;
+  left: 17vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.team-main hr {
+  margin: 20px 0;
+  border: dotted 3px white;
+}
+
+.team-member-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.team-member {
+  background-color: rgba(134, 129, 129, 0.5);
+  padding: 5px 15px 15px 1px;
+}
+
+.team-memb-img {
+  background-color: #c9bf8f;
+  padding: 8px;
+  float: left;
+  transform: scale(0.8);
+}
+
+.team-memb-story {
+  text-align: right;
+}
+
+#history {
+  background-color: tomato;
+}
+
+body {
+  margin: 0;
+}
+
+.gal-temp-text {
+  padding: 2vh;
+  text-align: right;
+  font-size: calc(15px + 3vh);
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(77, 74, 74, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#photogal-krakowiak {
+  background-image: url(../img/peacock-feather.svg);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+#photogal-goralskie {
+  background-image: url(../galeria/dances-special-features/ciupaga.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+#photogal-rzeszowskie {
+  background-image: url(../galeria/dances-special-features/rzeszowskie-haft.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.color-square {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 2vh;
+}
+
+.red {
+  background-color: #ee2c1d;
+  left: 47vw;
+}
+
+.blue {
+  background-color: #3eccdd;
+  left: 49vw;
+}
+
+.yellow {
+  background-color: #d9d731;
+  left: 51vw;
+}
+
+.green {
+  background-color: #4e7d25;
+  left: 45vw;
+}
+
+@font-face {
+  font-family: 'Museo Slab';
+  src: url(../fonts/Museo_Slab_500.otf);
+}
+
+body {
+  margin: -2px -1px;
+  text-align: center;
+  color: green;
+  background-color: #4d4a4a;
+  font-family: 'Museo Slab';
+  font-size: clamp(10px, calc(10px + .5vw), 20px);
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.main {
+  margin-top: 2vh;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: 100%;
+  align-items: flex-start;
+  padding: 0 1.5vw 0 1.5vw;
+}
+
+.header-child {
+  display: flex;
+  flex: 1;
+}
+
+.img-responsive {
+  width: calc(30px + 10vw);
+  height: auto;
+}
+
+.header-child1 {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.header-child2 {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+h2 {
+  font-size: calc(30px + 2.2vw);
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: -0.8em;
+}
+
+.section-bg {
+  max-width: 100vw;
+  height: 756px;
+  background-position: center;
+  background-size: cover;
+  margin: 0px auto 5vh;
+  display: block;
+}
+
+.subsection {
+  width: 100vw;
+  height: 756px;
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.quotation-container {
+  margin: 10vh 30vw;
+  width: 30vw;
+}
+
+blockquote {
+  text-align: left;
+  font-size: clamp(20px, calc(20px + .5vw), 40px);
+  text-indent: 2vw;
+  line-height: 1.5;
+}
+
+.quotation-author {
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */

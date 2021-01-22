@@ -1,0 +1,107 @@
+@import 'navigation';
+@import 'photogal';
+@import 'colors';
+@import 'about';
+@import 'contact';
+@import 'homepage';
+@import 'team';
+@import 'history';
+@import 'photogal-modal';
+@import 'photogal-sub-bcg';
+@import 'color-squares';
+
+@font-face {
+  font-family: 'Museo Slab';
+  src: url(../fonts/Museo_Slab_500.otf);
+}
+
+body {
+  margin: -2px -1px;
+  text-align: center;
+  color: green;
+  background-color: $base-grey;
+  font-family: 'Museo Slab';
+  font-size: clamp(10px, calc(10px + .5vw), 20px);
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.main {
+  margin-top: 2vh;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: 100%;
+  align-items: flex-start;
+  padding: 0 1.5vw 0 1.5vw;
+}
+
+.header-child {
+  display: flex;
+  flex: 1;
+}
+
+.img-responsive {
+  width: calc(30px + 10vw);
+  height: auto;
+}
+
+.header-child1 {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.header-child2 {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+h2 {
+  font-size: calc(30px + 2.2vw);
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: -0.8em;
+}
+
+.section-bg {
+  max-width: 100vw;
+  height: 756px;
+  background-position: center;
+  background-size: cover;
+  margin: 0px auto 5vh;
+  display: block;
+}
+
+.subsection {
+  width: 100vw;
+  height: 756px;
+  background-color: tomato;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.quotation-container {
+  margin: 10vh 30vw;
+  width: 30vw;
+}
+
+blockquote {
+  text-align: left;
+  font-size: clamp(20px, calc(20px + .5vw), 40px);
+  text-indent: 2vw;
+  line-height: 1.5;
+}
+
+.quotation-author {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+

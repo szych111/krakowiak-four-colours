@@ -1,0 +1,23 @@
+section {
+    background-color: yellow;
+    height: 600px;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.square {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+
+    position: absolute;
+    bottom: -10%;
+    left: 10%;
+    margin-bottom: 15px;
+    transition: all 1s;
+}
+
+.square:nth-of-type(2) {
+    left: 20%;
+}

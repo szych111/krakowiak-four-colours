@@ -1,0 +1,100 @@
+.photogal-header {
+    text-align: left;
+    padding: 2vh;
+}
+
+.photogal-menu-k {
+    width: 10vw;
+    margin: 1vw;
+}
+
+.photogal-title {
+    text-align: left;
+    margin: 2vh;
+    float: right;
+}
+
+.photogal-container {
+    display: flex;
+}
+
+.photogal-about {
+    width: fit-content;
+    height: fit-content;
+    line-height: 1.5;
+    flex: 1;
+    padding: 2vw 3vw;
+    margin-left: 2vw;
+    background-color: rgba($color: #c9db78, $alpha: .8);
+}
+
+.photogal-photos {
+    flex: 2;
+    margin: -2vh 1vw;
+    padding: 1vh 0;
+    background-color: rgba($base-grey,.8);
+}
+
+.photogal-photo {
+    width: 15vw;
+    margin: 1%;
+}
+
+/* photogallery main page */
+
+#photogallery {
+    background-color: tomato;
+
+.photogal-main-container {
+    position: relative;
+    height: 756px;
+}
+
+.photogal-main-main {
+    position: absolute;
+    top: 12vh;
+    right: 3.5vw;
+    left: 17vw;
+}
+
+ a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-stretch: extra-expanded;
+    margin-bottom: calc(10px + 0.2vw); 
+    margin-left: calc(10px + 0.1vw);
+    margin-right: calc(10px + 0.1vw);
+    display: inline-block;
+    transition-property: color, transform;
+    transition-duration: .5s, 1.0s;
+    transition-delay: 0, 1s;
+  }
+  
+  a:hover {
+    transform: rotateX(360deg);
+  }
+}
+   
+  .galfontS {
+    font-size: calc(10px + 1.8vw);
+  }
+  
+  .galfontM {
+    font-size: calc(15px + 2.4vw);
+  }
+  
+  .galfontL {
+    font-size: calc(20px + 3.0vw);
+  }
+  
+  .galfontXL {
+    font-size: calc(25px + 4.0vw);
+  }
+  
+  .gal-grupa {
+    font-size: calc(10px + 2.2vw);
+    font-weight: calc(100 * 0.2vw);
+    padding: 0;
+    margin-bottom: -1.4vw;
+  }
