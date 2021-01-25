@@ -61,6 +61,22 @@
     font-weight: calc(600 * 1.5vw);
     margin-bottom: -2.2vw;
   }
+
+  .k1, .o,  {
+    color: $base-green;
+  }
+
+  .r, .i,  {
+    color: $base-red;
+  }
+
+  .a1, .w, .k3, {
+    color: $base-yellow;
+  }
+
+  .k2, .a2, {
+    color: $base-blue;
+  }
   
   #home .section-bg {
     position: relative;
