@@ -1,14 +1,4 @@
-@import 'navigation';
-@import 'photogal';
-@import 'colors';
-@import 'about';
-@import 'contact';
-@import 'homepage';
-@import 'team';
-@import 'history';
-@import 'photogal-modal';
-@import 'photogal-sub-bcg';
-@import 'color-squares';
+@import 'imports';
 
 @font-face {
   font-family: 'Museo Slab';
@@ -38,6 +28,7 @@ body {
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 0 1.5vw 0 1.5vw;
 }
 
@@ -46,17 +37,13 @@ body {
   flex: 1;
 }
 
-.img-responsive {
-  width: calc(30px + 10vw);
-  height: auto;
-}
-
 .header-child1 {
   align-items: flex-start;
   justify-content: flex-start;
 }
 
 .header-child2 {
+  display: flex;
   align-items: flex-start;
   justify-content: flex-end;
 }
@@ -66,6 +53,11 @@ h2 {
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: -0.8em;
+}
+
+.img-responsive {
+  width: calc(30px + 10vw);
+  height: auto;
 }
 
 .section-bg {
@@ -80,15 +72,21 @@ h2 {
 .subsection {
   width: 100vw;
   height: 756px;
-  background-color: tomato;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .quotation-container {
-  margin: 10vh 30vw;
-  width: 30vw;
+  margin: 10vh 20vw;
+  width: 40vw;
+}
+
+@media screen and (max-width: 800px) {
+  .quotation-container {
+    margin: 10vh 10vw;
+    width: 80vw;
+  }
 }
 
 blockquote {
@@ -103,5 +101,3 @@ blockquote {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-

@@ -12,6 +12,7 @@
     text-align: left;
     margin: 2vh;
     float: right;
+    font-size: calc(30px + 2.2vw);
 }
 
 .photogal-container {
@@ -25,7 +26,7 @@
     flex: 1;
     padding: 2vw 3vw;
     margin-left: 2vw;
-    background-color: rgba($color: #c9db78, $alpha: .8);
+    background-color: rgba($color: #b37b32, $alpha: .8);
 }
 
 .photogal-photos {
@@ -43,7 +44,7 @@
 /* photogallery main page */
 
 #photogallery {
-    background-color: tomato;
+    background-image: url(../img/kubraktylem.jpg);
 
 .photogal-main-container {
     position: relative;

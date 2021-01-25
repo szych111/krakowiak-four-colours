@@ -1,30 +1,35 @@
 #home {
-  background-color:tomato;
+  background-image: url(../img/main-yellow.jpg);
 }
-
-.audio-modal {
-  display: none;
-}
-.audio {
-    font-size: calc(12px + 1vw);
-    margin-top: 18px;
-    margin: 1.8vh 2.5vw;
-  }
-
-  .volume-on {
-    width: 3%;
-    display: none
-  }
-
-  .volume-off {
-    width: 2.5%;
-    
-  }
-  
-  #home span {
-    font-size: calc(12px + 1vw);
+ 
+.main-lang-choice {
+    font-size: calc(10px + 1vw);
     font-weight: 600;
-    margin-top: 15px;
+    margin-top: 12px;
+    transition: 2s;
+  }
+
+.pol {
+  opacity: 0.2;
+  cursor: default
+}
+
+.deu {
+  opacity: 0.8;
+  cursor: pointer
+}
+
+  .self-made-burger {
+    width: 85px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 2s;
+  }
+
+  @media screen and (max-width: 350px) {
+    .self-made-burger {
+      width: 55px;
+    }
   }
   
   .container-main {
@@ -44,13 +49,35 @@
   }
   
   .main-page-child {
-    width: 150%;
-    flex: 1;
-  }
-  
-  .main-page-child.title {
     display: flex;
-    
+    font-family: grueber, serif;
+    font-style: normal;
+
+    .title {
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .subtitle {
+      font-weight: 200;
+    }
+
+    .k1, .o {
+      color: $base-green;
+    }
+
+    .r, .i {
+      color: $base-red;
+    }
+
+    .a1, .w, .k3 {
+      color: $base-yellow;
+    }
+
+    .k2, .a2 {
+      color: $base-blue;
+    }
+
   }
   
   #home .section-bg {

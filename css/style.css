@@ -319,12 +319,38 @@ address {
 }
 
 .main-page-child {
-  width: 150%;
   flex: 1;
 }
 
-.main-page-child.title {
+.main-page-child {
   display: flex;
+  font-family: grueber, serif;
+  font-style: normal;
+}
+
+.main-page-child .title {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.main-page-child .subtitle {
+  font-weight: 200;
+}
+
+.main-page-child .k1, .main-page-child .o {
+  color: #4e7d25;
+}
+
+.main-page-child .r, .main-page-child .i {
+  color: #ee2c1d;
+}
+
+.main-page-child .a1, .main-page-child .w, .main-page-child .k3 {
+  color: #d9d731;
+}
+
+.main-page-child .k2, .main-page-child .a2 {
+  color: #3eccdd;
 }
 
 #home .section-bg {
@@ -334,9 +360,7 @@ address {
 
 .team-main {
   position: absolute;
-  top: 12vh;
-  right: 3.5vw;
-  left: 17vw;
+  margin: 7vw 5vw;
   display: flex;
   flex-direction: row;
 }
@@ -346,26 +370,36 @@ address {
   border: dotted 3px white;
 }
 
-.team-member-container {
+.middlesection-col-wrapper-team {
   display: flex;
-  flex-direction: column;
-  margin: 0 15px;
+  flex: 8;
+  flex-direction: row;
+  padding: 0 1vw;
+}
+
+.middlesection-col-wrapper-team p {
+  text-align: left;
 }
 
 .team-member {
-  background-color: rgba(134, 129, 129, 0.5);
-  padding: 5px 15px 15px 1px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .team-memb-img {
-  background-color: #c9bf8f;
-  padding: 8px;
-  float: left;
-  transform: scale(0.8);
+  flex: 1;
+  transform: scale(0.7);
+  margin: -1vh 0;
 }
 
 .team-memb-story {
-  text-align: right;
+  flex: 3;
+}
+
+@media screen and (max-width: 800px) {
+  .middlesection-col-wrapper-team {
+    flex-wrap: wrap;
+  }
 }
 
 #history {
@@ -568,6 +602,61 @@ img.hover-shadow {
   left: 45vw;
 }
 
+.middlesection {
+  margin: 10vh 1vw 7vh 1vw;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 440px) {
+  .middlesection {
+    margin: 27vh 1vw 7vh 1vw;
+    flex-direction: column;
+  }
+  h3 {
+    text-align: center;
+    font-size: calc(15px + 2vw);
+    margin: 0vh 1vw;
+  }
+}
+
+.middlesection-col-wrapper-partners {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+  padding: 0 9vw;
+}
+
+.middlesection-col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  display: inline-block;
+  width: 15vw;
+  opacity: .79;
+  margin: 1vh 0.3vw;
+}
+
+.middlesection-title {
+  flex: 2;
+  padding: 0.5vh;
+}
+
+h3 {
+  text-align: right;
+  font-size: calc(15px + 2vw);
+  margin: 3vh 1vw;
+}
+
+.middlesection-col-wrapper-partners p {
+  text-align: left;
+  margin: 0.5vh;
+}
+
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
@@ -576,7 +665,7 @@ img.hover-shadow {
 body {
   margin: -2px -1px;
   text-align: center;
-  color: green;
+  color: white;
   background-color: #4d4a4a;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);

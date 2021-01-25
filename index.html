@@ -11,55 +11,70 @@
 </head>
 
 <body>
-    <div id="audioModal" class="audio-modal">
-        <div class="audio-modal-button">
-            <span class="audio-modal-span">&times;</span>
-        </div>
+    <div id="audio-modal" class="audio-modal">
+        <img src="audio-on-150.svg" id="audio-modal-btn-on" class="audio-modal-btn audio-on">
+        <img src="audio-off-150.svg" id="audio-modal-btn-off" class="audio-modal-btn audio-off">
     </div>
+    <audio id="audio-bcg" preload='auto' loop>
+        <source src="audio/Gronicek skrzypce.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- <div class="nav-menu-outer"> -->
+        <nav class="nav-menu-holder">
+            <ul class="nav-menu-ul">
+                <li class="main-menu-item"><a href="#home">Home</a></li>
+                <li class="main-menu-item"><a href="#about">O nas</a></li>
+                <li class="main-menu-item"><a href="#photogallery">Galeria</a></li>
+                <li class="main-menu-item"><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <!-- </div> -->
     <section id="home" class="section-bg">
         <div class="container">
             <div class="header">
-                <span class="nav-menu-button">
-                    <img src="./img/self-made-burger.png" alt="menu icon" class="self-made-burger">
-                </span>
-                <div class="header-child header-child2">
-                    <!-- <audio id="myAudio" autoplay loop><source src="audio/Gronicek skrzypce.mp3" type="audio/mpeg"/>
-                </audio> -->
-                    <img src="/img/audio/volume-on.svg" class="audio volume-on">
-                    <img src="/img/audio/volume-off.svg" class="audio volume-off">
-                    <span>polski / deutsch</span>
+                <div class="nav-menu-button">
+                    <img src="./img/self-made-burger.svg" alt="menu icon" class="self-made-burger">
+                </div>
+                <div class="main-header-child header-child2">
+                    <div class="main-audio-wrapper">
+                        <div>
+                            <img src="audio-on-150.svg" id="audio-main-on" class="audio-main-on">
+                        </div>
+                        <div>
+                            <img src="audio-off-150.svg" id="audio-main-off" class="audio-main-off">
+                        </div>
+                    </div>
+                    <span class="main-lang-choice"><span id="pol" class="pol">polski</span> / <span id="deu" class="deu">deutsch</span></span>
                 </div>
             </div>
-
-            <div class="color-square red"></div>
-            <div class="color-square green"></div>
-            <div class="color-square blue"></div>
-            <div class="color-square yellow"></div>
-            <!-- <div class="nav-menu-outer"> -->
-            <nav class="nav-menu-holder">
-                <ul class="nav-menu-ul">
-                    <li class="main-menu-item"><a href="#home">Home</a></li>
-                    <li class="main-menu-item"><a href="#about">O nas</a></li>
-                    <li class="main-menu-item"><a href="#history">Historia</a></li>
-                    <li class="main-menu-item"><a href="#team">Ludzie</a></li>
-                    <li class="main-menu-item"><a href="#photogallery">Galeria</a></li>
-                    <li class="main-menu-item"><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-            <!-- </div> -->
             <div class='main-page'>
                 <div class="main-page-child title">
-                    <img src="./img/krakowiak-four-colours.svg" alt="" class="krakowiak-homepage-svg">
+                    <span class="main-title-letter k1">k</span>
+                    <span class="main-title-letter r">r</span>
+                    <span class="main-title-letter a1">a</span>
+                    <span class="main-title-letter k2">k</span>
+                    <span class="main-title-letter o">o</span>
+                    <span class="main-title-letter w">w</span>
+                    <span class="main-title-letter i">i</span>
+                    <span class="main-title-letter a2">a</span>
+                    <span class="main-title-letter k3">k</span>
                 </div>
-                <div class="main-page-child">Zespół Pieśni i Tańca</div>
+                <div class="main-page-child subtitle">Zespół Pieśni i Tańca</div>
             </div>
         </div>
 
     </section>
-    
+
+    <div class="quotation-container">
+        <blockquote>"Sens życia i wiara nie bierze się z pustki,
+            lecz z pielęgnowania tradycji i ocalenia
+            pamięci narodowej, która stanowi
+            o przyszłości i wielkości narodu."</blockquote>
+        <span class="quotation-author">Jerzy Waldorff, pisarz polski</span>
+    </div>
+
+
     <section id="about" class="section-bg">
         <div class="about-container">
-
             <div class="header">
                 <div class="header-child header-child1">
                     <span class="nav-menu-button">
@@ -113,25 +128,7 @@
                     <!-- <img src="img/krakowiakhandwritten.png" alt="handwritten greetings"> -->
                 </div>
             </div>
-            <div class="about-partners">
-                <a href="http://www.diebruecke-darmstadt.de/" target="_blank">
-                    <img src="./img/partners/DieBruckeV1.jpg" alt="logo of Die Brucke organisation"
-                        class="img-about"></a>
-                <a href="https://www.griesheim.de/start/" target="_blank">
-                    <img src="./img/partners/StadtGriesheimV1.jpg" alt="logo of city of Griesheim"
-                        class="img-about"></a>
-                <a href="https://ambasada.de/konsulat-honorowy-rp-we-frankfurcie-nad-menem/" target="_blank">
-                    <img src="./img/partners/KonsulatV1.jpg" alt="logo of Polish Consulate in Germany"
-                        class="img-about"></a>
-                <a href="https://salonik.de/" target="_blank">
-                    <img src="./img/partners/SalonikV1.jpg" alt="logo of Salonik organisation"
-                        class="img-about img-salonik"></a>
-                <a href="http://www.darmstadt.pl/" target="_blank">
-                    <img src="./img/partners/DarmstadtPLV1.jpg" alt="logo of Darmstadt.pl" class="img-about"></a>
-                <a href="https://www.twojemiasto.eu/" target="_blank">
-                    <img src="./img/partners/TwojMaiatoV1.jpg" alt="logo of Twoje Miasto organisation"
-                        class="img-about"></a>
-            </div>
+
         </div>
 
         <div class="sticky-arrow-up">
@@ -140,18 +137,38 @@
             </a>
         </div>
     </section>
-
-    <section class="quotation">
-        <div class="quotation-container">
-            <blockquote>"Sens życia i wiara nie bierze się z pustki,
-                lecz z pielęgnowania tradycji i ocalenia
-                pamięci narodowej, która stanowi
-                o przyszłości i wielkości narodu."</blockquote>
-                <span class="quotation-author">Jerzy Waldorff, pisarz polski</span>
+    <div class="middlesection">
+        <div class="middlesection-title">
+            <h3>nasi mecenasi i partnerzy</h3>
         </div>
-    </section>
+        <div class="middlesection-col-wrapper-partners">
+            <div class="middlesection-col">
+                <a href="http://www.diebruecke-darmstadt.de/" target="_blank">
+                    <img src="./img/partners/DieBruckeV1.jpg" alt="logo of Die Brucke organisation"
+                        class="img-about"></a>
+                <a href="http://www.darmstadt.pl/" target="_blank">
+                    <img src="./img/partners/DarmstadtPLV1.jpg" alt="logo of Darmstadt.pl" class="img-about"></a>
+            </div>
+            <div class="middlesection-col">
+                <a href="https://ambasada.de/konsulat-honorowy-rp-we-frankfurcie-nad-menem/" target="_blank">
+                    <img src="./img/partners/KonsulatV1.jpg" alt="logo of Polish Consulate in Germany"
+                        class="img-about"></a>
+                <a href="https://www.griesheim.de/start/" target="_blank">
+                    <img src="./img/partners/StadtGriesheimV1.jpg" alt="logo of city of Griesheim"
+                        class="img-about"></a>
+            </div>
+            <div class="middlesection-col">
+                <a href="https://salonik.de/" target="_blank">
+                    <img src="./img/partners/SalonikV1.jpg" alt="logo of Salonik organisation"
+                        class="img-about img-salonik"></a>
+                <a href="https://www.twojemiasto.eu/" target="_blank">
+                    <img src="./img/partners/TwojMaiatoV1.jpg" alt="logo of Twoje Miasto organisation"
+                        class="img-about"></a>
+            </div>
+        </div>
+    </div>
     <section id="history" class="section-bg">
-        <div >
+        <div>
             <div class="header">
                 <div class="header-child header-child1">
                     <span class="nav-menu-button">
@@ -164,67 +181,154 @@
             </div>
             <div class="main main-history">
                 <div class="main-history-child">
-                    Historia Zespołu
+                    <div class="history-details">
+                        <p class="hist-item">
+                            <span class="hist-par-date">1982</span>
+                            <span>Zespół Pieśni i Tańca Krakowiak działa przy Stowarzyszeniu Polaków w Niemczech "Lech"w
+                                Griesheim założonym przez Pana Władysława Patrzałka.</span>
+                            </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">1994</span>
+                            <span>Magda Borucińska i Zbigniew Krasnopolski zajmują się choreografią zespołu.</span>
+                        </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">1995</span>
+                            <span>Zespół Pieśni i Tańca Krakowiak zostaje zarejestrowany w Darmstadt jako odrębne
+                                stowarzyszenie użyteczności publicznej. W skład pierwszego zarządu wchodzą jego
+                                założycielki: Beata Korzewska i Edda Schnegelsberg.</span>
+                            </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">1997</span>
+                            <span>Choreografem zespołu zostaje Renata Lapuk-Breitner.</span>
+                        </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">2004</span>
+                            <span>Zespół Krakowiak nawiązuje współpracę z Zespołem Pieśni i Tańca „Mały Bolesławiec”.</span>
+                        </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">2006</span>
+                            <span>Osobą odpowiedzialną za przygotowanie artystyczne zespołu zostaje choreograf, absolwent Państwowej Szkoły Baletowej w Bytomiu, tancerz oraz pedagog baletu Zbigniew Michalik.
+                            </span>
+                        </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">2008</span>
+                            <span>Ważnym wydarzeniem w historii zespołu jest powstanie grupy dziecięcej.</span>
+                        </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">2010</span>
+                            <span>Wyjazd zespołu do Bolesławca na zaproszenie zespołu „Mały Bolesławiec” w celu nauki
+                                nowego układu tanecznego z tamtejszego regionu. Warsztaty taneczne owocują wspólnym
+                                występem.</span>
+                            </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">2011</span>
+                            <span>Zespół Krakowiak udaje się na 15 Światowy Festiwal Polonijnych Zespołów Folklorystycznych
+                                w Rzeszowie, gdzie bierze udział w warsztatach tanecznych.</span>
+                            </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">2013</span>
+                            <span>Występ zespołu Krakowiak na festiwalu poświęconym Polsce oraz polskiej kulturze w
+                                Stuttgart.</span>
+                            </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">2015</span>
+                            <span>Choreografem grupy dziecięcej zostaje Katarzyna Kulling, tancerkaoraz instruktorka tańca
+                                modern dance i folkloru z wieloletnim stażem.</span>
+                            </p>
+                        <p class="hist-item">
+                            <span class="hist-par-date">2015</span>
+                            <span>Zespół Pieśni i Tańca Krakowiak ma już 20 lat!!! Z tej okazji odbywa siękoncert
+                                jubileuszowy, na którym zostaje zaprezentowany przekrój całejtwórczości zespołu.</span>
+                            <p class="hist-item">
+                                <span class="hist-par-date">2016</span>
+                                <span>W zespole Krakowiak zostaje utworzona grupa młodzieżowa, w sklad ktorej wchodza m.in. absolwenci grupy dziecięcej, oraz pozostała młodzież, pragnąca uczyć siętańców
+                                    ludowych
+                                </span>
+                            </p>
+                            <p class="hist-item">
+                                <span class="hist-par-date">2016</span>
+                                <span>Choreografem grupy dziecięcej zostaje Natalia Zawadzka. Tancerka zespołu Krakowiak.
+                                </span>
+                            </p>
+                            <p class="hist-item">
+                                <span class="hist-par-date">2018</span>
+                                <span>Adam Burzyński przewodniczący Zarządu i wieloletni członek zespołu przejmuje funkcję Kierownika Zespołu.</span>
+                                </p>
+                            <p class="hist-item">
+                                <span class="hist-par-date">2018</span>
+                                <span>Koncert w Orangerie – Darmstadt z Okazji 100-lecia Odzyskania Niepodległości</span>
+                        </p>
+                            <p class="hist-item">
+                                <span class="hist-par-date">2019</span>
+                                <span>Choreograf zespołu zostaje Artur Stala. Pochodzi z Belgii, gdzie wychował się w rodzinie polskich społeczników, oddanych działalności polonijnej. Całe dzieciństwo i mlodość spędził na wywijaniu hołubców w Zespół Pieśni i Tańca Krakus.</span>
+                                </p>
+                            <p class="hist-item">
+                                <span class="hist-par-date">2020</span>
+                                <span>Zespół Pieśni i Tańca Krakowiak świętuje 25 lecie, a na świecie wybucha pandemia Covid-19. Obchody jubileuszu odsuwają się w bliżej nieokreśloną przyszłość...</span>
+                                </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section id="team" class="section-bg">
-        <div class="subsection">
-            <div class="header">
-                <div class="header-child header-child1">
-                    <span class="nav-menu-button">
-                        <img src="img/krak-website-k-menu.png" alt="big k letter" class='img-responsive'>
-                    </span>
-                </div>
-                <h2 class="header-child header-child2">
-                    ludzie
-                </h2>
-            </div>
-            <div class="team-main">
-                <div class="team-member-container">
-                    <div class="team-member">
-                        <img class="k-menu team-memb-img" src="img/k-menu.png" alt="big k letter">
-                        <p class="team-memb-story">
+
+    <div class="middlesection">
+            <div class="middlesection-title">
+            <h3>
+                zespół prowadzą
+            </h3>
+        </div>
+        <div class="middlesection-col-wrapper-team">
+            <div class="middlesection-col">
+                <div class="team-member">
+                    <img class="team-memb-img" src="img/turbo-small.jpg" alt="team member's photo">
+                    <div class="team-memb-story">
+                        <p>
                             Nasz kierownik Adam jest informatykiem, ale jego prawdziwą pasją jest muzyka. W "Krakowiaku"
                             tańczy, śpiewa i gra na akordeonie. Na gitarze elektrycznej gra w zespole o wszystko
                             mówiącej nazwie "Rockowiak".
                         </p>
                     </div>
-                    <hr>
-                    <div class="team-member">
-                        <img class="k-menu team-memb-img" src="img/k-menu.png" alt="big k letter">
-                        <p class="team-memb-story">
+                </div>
+                <div class="team-member">
+                    <img class="team-memb-img" src="img/turbo-small.jpg" alt="team member's photo">
+                    <div class="team-memb-story">
+                        <p>
                             Choreograf Artur pochodzi z Belgii, gdzie wychował się w rodzinie polskich społeczników,
-                            oddanych działalności polonijnej. Całe dzieciństwo i mlodość spędził na wywijaniu hołubców i
-                            strzelaniu bramek w polonijnych zespołach tanecznym nomen omen "Krakus" i piłkarskim nomen
-                            omen "Cracovia".
+                        oddanych działalności polonijnej. Całe dzieciństwo i mlodość spędził na wywijaniu hołubców i
+                        strzelaniu bramek w polonijnych zespołach tanecznym nomen omen "Krakus" i piłkarskim nomen
+                        omen "Cracovia".
                         </p>
                     </div>
                 </div>
-                <div class="team-member-container">
-                    <div class="team-member">
-                        <img class="k-menu team-memb-img" src="img/k-menu.png" alt="big k letter">
-                        <p class="team-memb-story">
+            </div>
+            <div class="middlesection-col">
+                <div class="team-member">
+                    <img class="team-memb-img" src="img/turbo-small.jpg" alt="team member's photo">
+                    <div class="team-memb-story">
+                        <p>
                             Nasz kierownik Adam jest informatykiem, ale jego prawdziwą pasją jest muzyka. W "Krakowiaku"
                             tańczy, śpiewa i gra na akordeonie. Na gitarze elektrycznej gra w zespole o wszystko
                             mówiącej nazwie "Rockowiak".
                         </p>
                     </div>
-                    <hr>
-                    <div class="team-member">
-                        <img class="k-menu team-memb-img" src="img/k-menu.png" alt="big k letter">
-                        <p class="team-memb-story">
+                </div>
+
+                <div class="team-member">
+                    <img class="team-memb-img" src="img/turbo-small.jpg" alt="team member's photo">
+                    <div class="team-memb-story">
+                        <p>
                             Choreograf Artur pochodzi z Belgii, gdzie wychował się w rodzinie polskich społeczników,
-                            oddanych działalności polonijnej. Całe dzieciństwo i mlodość spędził na wywijaniu hołubców i
-                            strzelaniu bramek w polonijnych zespołach tanecznym nomen omen "Krakus" i piłkarskim nomen
-                            omen "Cracovia".
+                        oddanych działalności polonijnej. Całe dzieciństwo i mlodość spędził na wywijaniu hołubców i
+                        strzelaniu bramek w polonijnych zespołach tanecznym nomen omen "Krakus" i piłkarskim nomen
+                        omen "Cracovia".
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
     <section id="photogallery" class="section-bg">
         <div class="photogal-main-container">
             <div class="header">
@@ -271,6 +375,15 @@
             </div>
         </div>
     </section>
+
+    <div class="quotation-container">
+        <blockquote>"Sens życia i wiara nie bierze się z pustki,
+            lecz z pielęgnowania tradycji i ocalenia
+            pamięci narodowej, która stanowi
+            o przyszłości i wielkości narodu."</blockquote>
+        <span class="quotation-author">Jerzy Waldorff, pisarz polski</span>
+    </div>
+
     <section id="contact" class="section-bg">
         <div class="contact-container">
             <div class="header">

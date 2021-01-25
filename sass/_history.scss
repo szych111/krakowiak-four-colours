@@ -1,3 +1,25 @@
 #history {
-    background-color: tomato;
+    background-image: url(../img/nav-menu.jpg);
+  }
+
+  .history-details {
+
+    p {
+      padding: none;
+      font-size: clamp(8px, calc(8px + .5vw), 16px);
+      margin: none;
+      display: inline;
+    }
+  }
+
+  .hist-par-date {
+    margin-left: 0;
+  }
+
+  .hist-item {
+    margin: auto 15px;
+  }
+  .hist-item:hover {
+    background-color: rgb(189, 123, 96);
+    cursor: pointer;
   }

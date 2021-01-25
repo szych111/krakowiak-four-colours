@@ -3,6 +3,15 @@
   height: 756px;
 }
 
+@media screen and (max-width: 440px) {
+  .about-container {
+    height: 1000px;
+  }
+  #about {
+    background-image: none;
+  }
+}
+
 .about-about {
   position: absolute;
   top: 12vh;
@@ -20,7 +29,7 @@
   }
 
   p {
-    background-color: rgba($base-beige,0.8);
+    background-color: rgba($base-beige, 0.8);
     margin: 0;
     padding: .5vw 1.5vw;
   }
@@ -30,26 +39,8 @@
   margin: 0
 }
 
-.about-partners {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(white,1);
-  opacity: .8;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 5vw;
-  
-  img {
-    opacity: .9;
-      width: calc(50% + 2.7vw);
-      vertical-align: middle;
-      padding: 1vw;
-  }
-  }
-
 #about {
-    background-color: tomato;
+    background-image: url(../img/grupowe.jpg);
  
   }
   

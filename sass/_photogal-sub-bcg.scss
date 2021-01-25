@@ -8,13 +8,21 @@
 #photogal-goralskie {
   background-image: url(../galeria/dances-special-features/ciupaga.png);
   background-position: center;
-  background-size: 40%;
+  background-size: 110%;
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 #photogal-rzeszowskie {
   background-image: url(../galeria/dances-special-features/rzeszowskie-haft.png);
   background-position: center;
-  background-size: 70%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+#photogal-lubelskie {
+  background-image: url(../galeria/dances-special-features/Lub01.jpg);
+  background-position: center;
+  background-size: 40%;
   background-repeat: no-repeat;
 }

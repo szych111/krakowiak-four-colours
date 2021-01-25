@@ -1,0 +1,69 @@
+.audio-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 32vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0);
+  background-color: rgba($base-grey,0.8);
+}
+
+.audio-modal-btn {
+  width: 8vw;
+  margin-top: 18px;
+  margin: 1.8vh 2.5vw;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.modal-audio-wrapper {
+  display: inline-block;
+  flex-direction: row;
+  padding: 1vw;
+  text-align: center;
+  margin: auto;
+  opacity: 1;
+}
+  
+.main-audio-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8vh 1vw;
+  margin-right: 2vw;
+  opacity: 1;
+}
+
+.audio-main-on {
+  border-right: 3px solid white;
+  width: 45px;
+  padding-right: 12px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.audio-main-off {
+  width: 45px;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+  .audio-main-on {
+    border-right: 2px solid white;
+    width: 30px;
+    padding-right: 5px;
+  }
+  .audio-main-off {
+    width: 30px;
+    padding-left: 5px;
+  }
+  .main-audio-wrapper {
+    margin: 0.2vh 2vw;
+    padding: 1vw 2vw;
+  }
+}
+
