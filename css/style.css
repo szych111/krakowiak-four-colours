@@ -1,17 +1,17 @@
 .sticky-arrow-up {
-  border: 2px solid white;
+  box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   width: min-content;
   position: fixed;
   right: 0;
   bottom: 0;
   margin: 1vh;
-  opacity: 0.3;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .sticky-arrow-up a {
   color: white;
-  cursor: pointer;
 }
 
 .sticky-arrow-up .fa-arrow-up {
@@ -24,23 +24,23 @@
   top: 0;
   bottom: 0;
   transition: 1.5s;
-  margin-left: -240px;
+  margin-left: -290px;
   vertical-align: baseline;
   position: fixed;
   z-index: 100;
 }
 
 .nav-menu-open {
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 nav ul {
   list-style: none;
   text-align: right;
-  font-size: calc(24px + 1vw);
+  font-size: calc(10px + 1vw);
   font-weight: 800;
-  line-height: 2;
-  background-color: #c0b598;
+  line-height: 2.52;
+  background-color: rgba(161, 173, 71, 0.5);
   padding: 5vh 1vw;
   top: 10%;
   bottom: 10%;
@@ -79,6 +79,7 @@ nav a:hover {
   text-align: left;
   margin: 2vh;
   float: right;
+  font-size: calc(30px + 2.2vw);
 }
 
 .photogal-container {
@@ -92,14 +93,14 @@ nav a:hover {
   flex: 1;
   padding: 2vw 3vw;
   margin-left: 2vw;
-  background-color: rgba(201, 219, 120, 0.8);
+  background-color: rgba(179, 123, 50, 0.8);
 }
 
 .photogal-photos {
   flex: 2;
   margin: -2vh 1vw;
   padding: 1vh 0;
-  background-color: rgba(77, 74, 74, 0.8);
+  background-color: rgba(82, 80, 75, 0.8);
 }
 
 .photogal-photo {
@@ -109,7 +110,7 @@ nav a:hover {
 
 /* photogallery main page */
 #photogallery {
-  background-color: tomato;
+  background-image: url(../img/kubraktylem-baw.jpg);
 }
 
 #photogallery .photogal-main-container {
@@ -170,6 +171,15 @@ nav a:hover {
   height: 756px;
 }
 
+@media screen and (max-width: 440px) {
+  .about-container {
+    height: 1000px;
+  }
+  #about {
+    background-image: none;
+  }
+}
+
 .about-about {
   position: absolute;
   top: 12vh;
@@ -188,7 +198,7 @@ nav a:hover {
 }
 
 .about-about p {
-  background-color: rgba(192, 181, 152, 0.8);
+  background-color: rgba(161, 173, 71, 0.8);
   margin: 0;
   padding: .5vw 1.5vw;
 }
@@ -197,26 +207,8 @@ nav a:hover {
   margin: 0;
 }
 
-.about-partners {
-  position: absolute;
-  bottom: 0;
-  background-color: white;
-  opacity: .8;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 5vw;
-}
-
-.about-partners img {
-  opacity: .9;
-  width: calc(50% + 2.7vw);
-  vertical-align: middle;
-  padding: 1vw;
-}
-
 #about {
-  background-color: tomato;
+  background-image: url(../img/grupowe-baw.jpg);
 }
 
 .open {
@@ -224,7 +216,7 @@ nav a:hover {
 }
 
 #contact {
-  background-color: tomato;
+  background-image: url(../img/dwieparywpodskoku-baw.jpg);
 }
 
 .contact-container {
@@ -250,13 +242,13 @@ nav a:hover {
 }
 
 .contact-main p {
-  background-color: rgba(192, 181, 152, 0.8);
+  background-color: rgba(161, 173, 71, 0.8);
   margin: 0;
   padding: 1vw 1.5vw;
 }
 
 address {
-  background-color: rgba(192, 181, 152, 0.8);
+  background-color: rgba(161, 173, 71, 0.8);
 }
 
 .social-media a {
@@ -274,32 +266,37 @@ address {
 }
 
 #home {
-  background-color: tomato;
+  background-image: url(/img/main-baw.jpg);
 }
 
-.audio-modal {
-  display: none;
-}
-
-.audio {
-  font-size: calc(12px + 1vw);
-  margin-top: 18px;
-  margin: 1.8vh 2.5vw;
-}
-
-.volume-on {
-  width: 3%;
-  display: none;
-}
-
-.volume-off {
-  width: 2.5%;
-}
-
-#home span {
-  font-size: calc(12px + 1vw);
+.main-lang-choice {
+  font-size: calc(10px + 1vw);
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 12px;
+  transition: 2s;
+}
+
+.pol {
+  opacity: 0.2;
+  cursor: default;
+}
+
+.deu {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.self-made-burger {
+  width: 85px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+@media screen and (max-width: 350px) {
+  .self-made-burger {
+    width: 55px;
+  }
 }
 
 .container-main {
@@ -319,38 +316,17 @@ address {
 }
 
 .main-page-child {
+  font-size: calc(10px + 1.6vw);
+  font-weight: 600;
   flex: 1;
 }
 
-.main-page-child {
+.main-page-child.title {
   display: flex;
-  font-family: grueber, serif;
-  font-style: normal;
-}
-
-.main-page-child .title {
-  font-weight: 700;
-  font-size: 12px;
-}
-
-.main-page-child .subtitle {
-  font-weight: 200;
-}
-
-.main-page-child .k1, .main-page-child .o {
-  color: #4e7d25;
-}
-
-.main-page-child .r, .main-page-child .i {
-  color: #ee2c1d;
-}
-
-.main-page-child .a1, .main-page-child .w, .main-page-child .k3 {
-  color: #d9d731;
-}
-
-.main-page-child .k2, .main-page-child .a2 {
-  color: #3eccdd;
+  font-size: calc(25px + 9vw);
+  font-stretch: expanded;
+  font-weight: calc(600 * 1.5vw);
+  margin-bottom: -2.2vw;
 }
 
 #home .section-bg {
@@ -403,7 +379,27 @@ address {
 }
 
 #history {
-  background-color: tomato;
+  background-image: url(../img/nav-menu-baw.jpg);
+}
+
+.history-details p {
+  padding: none;
+  font-size: clamp(8px, calc(8px + .5vw), 16px);
+  margin: none;
+  display: inline;
+}
+
+.hist-par-date {
+  margin-left: 0;
+}
+
+.hist-item {
+  margin: auto 15px;
+}
+
+.hist-item:hover {
+  background-color: #bd7b60;
+  cursor: pointer;
 }
 
 body {
@@ -447,7 +443,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(77, 74, 74, 0.8);
+  background-color: rgba(82, 80, 75, 0.8);
 }
 
 /* Modal Content */
@@ -564,42 +560,92 @@ img.hover-shadow {
 #photogal-goralskie {
   background-image: url(../galeria/dances-special-features/ciupaga.png);
   background-position: center;
-  background-size: 40%;
+  background-size: 110%;
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 #photogal-rzeszowskie {
   background-image: url(../galeria/dances-special-features/rzeszowskie-haft.png);
   background-position: center;
-  background-size: 70%;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 
-.color-square {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 2vh;
+#photogal-lubelskie {
+  background-image: url(../galeria/dances-special-features/Lub01.jpg);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
 }
 
-.red {
-  background-color: #ee2c1d;
-  left: 47vw;
+.audio-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 32vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(82, 80, 75, 0.8);
 }
 
-.blue {
-  background-color: #3eccdd;
-  left: 49vw;
+.audio-modal-btn {
+  width: 8vw;
+  margin-top: 18px;
+  margin: 1.8vh 2.5vw;
+  opacity: 1;
+  cursor: pointer;
 }
 
-.yellow {
-  background-color: #d9d731;
-  left: 51vw;
+.modal-audio-wrapper {
+  display: inline-block;
+  flex-direction: row;
+  padding: 1vw;
+  text-align: center;
+  margin: auto;
+  opacity: 1;
 }
 
-.green {
-  background-color: #4e7d25;
-  left: 45vw;
+.main-audio-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8vh 1vw;
+  margin-right: 2vw;
+  opacity: 1;
+}
+
+.audio-main-on {
+  border-right: 3px solid white;
+  width: 45px;
+  padding-right: 12px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.audio-main-off {
+  width: 45px;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+  .audio-main-on {
+    border-right: 2px solid white;
+    width: 30px;
+    padding-right: 5px;
+  }
+  .audio-main-off {
+    width: 30px;
+    padding-left: 5px;
+  }
+  .main-audio-wrapper {
+    margin: 0.2vh 2vw;
+    padding: 1vw 2vw;
+  }
 }
 
 .middlesection {
@@ -666,7 +712,7 @@ body {
   margin: -2px -1px;
   text-align: center;
   color: white;
-  background-color: #4d4a4a;
+  background-color: #52504b;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
 }
@@ -685,6 +731,7 @@ body {
   flex-flow: row nowrap;
   flex-basis: 100%;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 0 1.5vw 0 1.5vw;
 }
 
@@ -693,17 +740,13 @@ body {
   flex: 1;
 }
 
-.img-responsive {
-  width: calc(30px + 10vw);
-  height: auto;
-}
-
 .header-child1 {
   align-items: flex-start;
   justify-content: flex-start;
 }
 
 .header-child2 {
+  display: flex;
   align-items: flex-start;
   justify-content: flex-end;
 }
@@ -713,6 +756,11 @@ h2 {
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: -0.8em;
+}
+
+.img-responsive {
+  width: calc(30px + 10vw);
+  height: auto;
 }
 
 .section-bg {
@@ -727,15 +775,21 @@ h2 {
 .subsection {
   width: 100vw;
   height: 756px;
-  background-color: tomato;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .quotation-container {
-  margin: 10vh 30vw;
-  width: 30vw;
+  margin: 10vh 20vw;
+  width: 40vw;
+}
+
+@media screen and (max-width: 800px) {
+  .quotation-container {
+    margin: 10vh 10vw;
+    width: 80vw;
+  }
 }
 
 blockquote {

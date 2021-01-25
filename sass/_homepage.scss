@@ -1,5 +1,5 @@
 #home {
-  background-image: url(../img/main-yellow.jpg);
+  background-image: url(/img/main-baw.jpg);
 }
  
 .main-lang-choice {
@@ -49,35 +49,17 @@
   }
   
   .main-page-child {
+    font-size: calc(10px + 1.6vw);
+    font-weight: 600;
+    flex: 1;
+  }
+  
+  .main-page-child.title {
     display: flex;
-    font-family: grueber, serif;
-    font-style: normal;
-
-    .title {
-      font-weight: 700;
-      font-size: 12px;
-    }
-
-    .subtitle {
-      font-weight: 200;
-    }
-
-    .k1, .o {
-      color: $base-green;
-    }
-
-    .r, .i {
-      color: $base-red;
-    }
-
-    .a1, .w, .k3 {
-      color: $base-yellow;
-    }
-
-    .k2, .a2 {
-      color: $base-blue;
-    }
-
+    font-size: calc(25px + 9vw);
+    font-stretch: expanded;
+    font-weight: calc(600 * 1.5vw);
+    margin-bottom: -2.2vw;
   }
   
   #home .section-bg {
