@@ -54,28 +54,36 @@
     flex: 1;
   }
   
+  .subtitle {
+    margin-left: 1vw;
+  }
+  
+  
   .main-page-child.title {
     display: flex;
-    font-size: calc(25px + 9vw);
+    font-size: calc(21px + 9vw);
     font-stretch: expanded;
-    font-weight: calc(600 * 1.5vw);
-    margin-bottom: -2.2vw;
+    font-weight: 900;
   }
 
   .k1, .o,  {
     color: $base-green;
+    padding: 5vh 1vw 0;
   }
 
   .r, .i,  {
     color: $base-red;
+    padding: 3vh 1vw 0;
   }
 
   .a1, .w, .k3, {
     color: $base-yellow;
+    padding: 6vh 1vw 0;
   }
 
-  .k2, .a2, {
+  .k2, .a2 {
     color: $base-blue;
+    padding: 4vh 1vw 0;
   }
   
   #home .section-bg {
