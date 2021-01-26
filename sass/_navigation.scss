@@ -22,7 +22,7 @@
 
 .nav-menu-holder {
     padding-right: 3vw;
-    background-color: rgba(134, 129, 129, 0.2);
+    background-color: rgba($base-red, 0.2);
     top:0;
     bottom: 0;
     transition: 1.5s;
@@ -42,7 +42,7 @@
     font-size: calc(10px + 1vw);
     font-weight: 800;
     line-height: 2.52;
-    background-color: $base-beige;
+    background-color: $base-red;
     padding: 5vh 1vw;
     top: 10%;
     bottom: 10%;

@@ -6,17 +6,19 @@
     font-size: calc(10px + 1vw);
     font-weight: 600;
     margin-top: 12px;
-    transition: 2s;
+    
   }
 
 .pol {
   opacity: 0.2;
-  cursor: default
+  cursor: default;
+  transition: 1s;
 }
 
 .deu {
   opacity: 0.8;
-  cursor: pointer
+  cursor: pointer;
+  transition: 1s;
 }
 
   .self-made-burger {
@@ -55,6 +57,7 @@
   }
   
   .subtitle {
+    margin-top: 1vh;
     margin-left: 1vw;
   }
   
@@ -68,21 +71,45 @@
   .k1, .o,  {
     color: $base-green;
     padding: 5vh 1vw 0;
+    animation: greenUp infinite ease-out 1s;
+  }
+
+  @keyframes greenUp {
+    50% { padding-top: 3vh;}
+    75% { padding-top: 2vh;}
   }
 
   .r, .i,  {
-    color: $base-red;
+    color: white;
     padding: 3vh 1vw 0;
+    animation: whiteUp infinite ease-out 2s;
+  }
+
+  @keyframes whiteUp {
+    50% { padding-top: 1vh;}
+    75% { padding-top: 0vh;}
   }
 
   .a1, .w, .k3, {
     color: $base-yellow;
-    padding: 6vh 1vw 0;
+    padding: 4vh 1vw 0;
+    animation: yellowUp 2s ease-out 3s;
+  }
+
+  @keyframes yellowUp {
+    50% { padding-top: 1vh;}
+    75% { padding-top: 1vh;}
   }
 
   .k2, .a2 {
     color: $base-blue;
     padding: 4vh 1vw 0;
+    animation: blueUp infinite ease-out 4s;
+  }
+
+  @keyframes blueUp {
+    50% { padding-top: 2vh;}
+    75% { padding-top: 1vh;}
   }
   
   #home .section-bg {

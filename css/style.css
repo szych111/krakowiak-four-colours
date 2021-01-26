@@ -21,7 +21,7 @@
 
 .nav-menu-holder {
   padding-right: 3vw;
-  background-color: rgba(134, 129, 129, 0.2);
+  background-color: rgba(238, 44, 29, 0.2);
   top: 0;
   bottom: 0;
   transition: 1.5s;
@@ -41,7 +41,7 @@ nav ul {
   font-size: calc(10px + 1vw);
   font-weight: 800;
   line-height: 2.52;
-  background-color: #c0b598;
+  background-color: #ee2c1d;
   padding: 5vh 1vw;
   top: 10%;
   bottom: 10%;
@@ -101,7 +101,7 @@ nav a:hover {
   flex: 2;
   margin: -2vh 1vw;
   padding: 1vh 0;
-  background-color: rgba(77, 74, 74, 0.8);
+  background-color: rgba(128, 128, 128, 0.8);
 }
 
 .photogal-photo {
@@ -199,7 +199,7 @@ nav a:hover {
 }
 
 .about-about p {
-  background-color: rgba(192, 181, 152, 0.8);
+  background-color: rgba(155, 155, 117, 0.8);
   margin: 0;
   padding: .5vw 1.5vw;
 }
@@ -243,13 +243,13 @@ nav a:hover {
 }
 
 .contact-main p {
-  background-color: rgba(192, 181, 152, 0.8);
+  background-color: rgba(155, 155, 117, 0.8);
   margin: 0;
   padding: 1vw 1.5vw;
 }
 
 address {
-  background-color: rgba(192, 181, 152, 0.8);
+  background-color: rgba(155, 155, 117, 0.8);
 }
 
 .social-media a {
@@ -274,17 +274,18 @@ address {
   font-size: calc(10px + 1vw);
   font-weight: 600;
   margin-top: 12px;
-  transition: 2s;
 }
 
 .pol {
   opacity: 0.2;
   cursor: default;
+  transition: 1s;
 }
 
 .deu {
   opacity: 0.8;
   cursor: pointer;
+  transition: 1s;
 }
 
 .self-made-burger {
@@ -323,6 +324,7 @@ address {
 }
 
 .subtitle {
+  margin-top: 1vh;
   margin-left: 1vw;
 }
 
@@ -336,21 +338,61 @@ address {
 .k1, .o,   {
   color: #4e7d25;
   padding: 5vh 1vw 0;
+  animation: greenUp infinite ease-out 1s;
+}
+
+@keyframes greenUp {
+  50% {
+    padding-top: 3vh;
+  }
+  75% {
+    padding-top: 2vh;
+  }
 }
 
 .r, .i,   {
-  color: #ee2c1d;
+  color: white;
   padding: 3vh 1vw 0;
+  animation: whiteUp infinite ease-out 2s;
+}
+
+@keyframes whiteUp {
+  50% {
+    padding-top: 1vh;
+  }
+  75% {
+    padding-top: 0vh;
+  }
 }
 
 .a1, .w, .k3,   {
   color: #d9d731;
-  padding: 6vh 1vw 0;
+  padding: 4vh 1vw 0;
+  animation: yellowUp 2s ease-out 3s;
+}
+
+@keyframes yellowUp {
+  50% {
+    padding-top: 1vh;
+  }
+  75% {
+    padding-top: 1vh;
+  }
 }
 
 .k2, .a2 {
   color: #3eccdd;
   padding: 4vh 1vw 0;
+  animation: blueUp infinite ease-out 4s;
+}
+
+@keyframes blueUp {
+  50% {
+    padding-top: 2vh;
+  }
+  75% {
+    padding-top: 1vh;
+  }
 }
 
 #home .section-bg {
@@ -467,7 +509,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(77, 74, 74, 0.8);
+  background-color: rgba(128, 128, 128, 0.8);
 }
 
 /* Modal Content */
@@ -613,7 +655,7 @@ img.hover-shadow {
   width: 100%;
   height: 100%;
   background-color: black;
-  background-color: rgba(77, 74, 74, 0.8);
+  background-color: rgba(128, 128, 128, 0.8);
 }
 
 .audio-modal-btn {
@@ -646,7 +688,7 @@ img.hover-shadow {
   width: 45px;
   padding-right: 12px;
   cursor: pointer;
-  transition: 2s;
+  transition: 1s;
 }
 
 .audio-main-off {
@@ -706,7 +748,7 @@ img.hover-shadow {
 
 img {
   display: inline-block;
-  width: 15vw;
+  width: 10vw;
   opacity: .79;
   margin: 1vh 0.3vw;
 }
@@ -736,7 +778,7 @@ body {
   margin: -2px -1px;
   text-align: center;
   color: white;
-  background-color: #4d4a4a;
+  background-color: #9b9b75;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
 }
