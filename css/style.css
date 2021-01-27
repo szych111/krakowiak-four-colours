@@ -1,4 +1,20 @@
 @charset "UTF-8";
+.red {
+  background-color: #ee2c1d;
+}
+
+.blue {
+  background-color: #3eccdd;
+}
+
+.yellow {
+  background-color: #d9d731;
+}
+
+.green {
+  background-color: #4e7d25;
+}
+
 .sticky-arrow-up {
   box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0.8);
   border-radius: 50%;
@@ -165,6 +181,22 @@ nav a:hover {
   font-weight: calc(100 * 0.2vw);
   padding: 0;
   margin-bottom: -1.4vw;
+}
+
+.red {
+  background-color: #ee2c1d;
+}
+
+.blue {
+  background-color: #3eccdd;
+}
+
+.yellow {
+  background-color: #d9d731;
+}
+
+.green {
+  background-color: #4e7d25;
 }
 
 .about-container {
@@ -351,12 +383,12 @@ address {
 }
 
 .r, .i,   {
-  color: white;
+  color: #ee2c1d;
   padding: 3vh 1vw 0;
-  animation: whiteUp infinite ease-out 2s;
+  animation: redUp infinite ease-out 2s;
 }
 
-@keyframes whiteUp {
+@keyframes redUp {
   50% {
     padding-top: 1vh;
   }
@@ -448,11 +480,42 @@ address {
   background-image: url(../img/nav-menu-baw.jpg);
 }
 
-.history-details p {
+.main-history {
+  padding: 2vw;
+}
+
+.main-history p {
   padding: none;
   font-size: clamp(8px, calc(8px + .5vw), 16px);
   margin: none;
-  display: inline;
+  display: inline-block;
+  margin: auto;
+}
+
+.span-hist-detail {
+  display: none;
+}
+
+.history-ball {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  margin: 1px;
+  padding: 0 5px;
+  transition: 1s;
+  position: relative;
+  opacity: .9;
+}
+
+.history-ball :hover {
+  opacity: .3;
+}
+
+#ball1982 {
+  top: -5vh;
 }
 
 .hist-par-date {
@@ -721,7 +784,7 @@ img.hover-shadow {
 }
 
 @media screen and (max-width: 440px) {
-  .middlesection {
+  .middlesection:not(.middlesection-main-menu) {
     margin: 27vh 1vw 7vh 1vw;
     flex-direction: column;
   }
@@ -769,6 +832,34 @@ h3 {
   margin: 0.5vh;
 }
 
+.middlesection-main-menu {
+  margin: 1vw;
+  justify-content: center;
+}
+
+.middlesection-main-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: calc(10px + 1vw);
+}
+
+.menu-circle {
+  width: 10vw;
+  height: 10vw;
+  margin: 2vw 3.5vw 3vw;
+  opacity: .7;
+  border-radius: 50%;
+  text-align: center;
+  padding: 3vw 0;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.menu-circle:hover {
+  opacity: .5;
+  transform: scale(2.3);
+}
+
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
@@ -778,7 +869,7 @@ body {
   margin: -2px -1px;
   text-align: center;
   color: white;
-  background-color: #9b9b75;
+  background-color: #808080;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
 }

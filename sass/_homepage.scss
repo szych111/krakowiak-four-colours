@@ -80,12 +80,12 @@
   }
 
   .r, .i,  {
-    color: white;
+    color: $base-red;
     padding: 3vh 1vw 0;
-    animation: whiteUp infinite ease-out 2s;
+    animation: redUp infinite ease-out 2s;
   }
 
-  @keyframes whiteUp {
+  @keyframes redUp {
     50% { padding-top: 1vh;}
     75% { padding-top: 0vh;}
   }

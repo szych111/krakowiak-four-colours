@@ -1,15 +1,45 @@
+$hist-ball-size: 50px;
+
 #history {
     background-image: url(../img/nav-menu-baw.jpg);
   }
 
-  .history-details {
+  .main-history {
+    padding: 2vw;
 
     p {
       padding: none;
       font-size: clamp(8px, calc(8px + .5vw), 16px);
       margin: none;
-      display: inline;
+      display: inline-block;
+      margin: auto;
     }
+  }
+
+  .span-hist-detail {
+    display: none;
+  }
+
+  .history-ball {
+    display: inline-block;
+    width: $hist-ball-size;
+    height: $hist-ball-size;
+    border-radius: 50%;
+    line-height: $hist-ball-size;
+    text-align: center;
+    margin: 1px;
+    padding: 0 5px;
+    transition: 1s;
+    position: relative;
+    opacity: .9;
+
+    :hover {
+      opacity: .3;
+    }
+  }
+
+  #ball1982 {
+    top: -5vh;
   }
 
   .hist-par-date {

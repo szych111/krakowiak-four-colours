@@ -9,10 +9,10 @@
     margin: 10vh 1vw 7vh 1vw;
     display: flex;
     flex-direction: row;
-
 }
+
 @media screen and (max-width: 440px) {
-    .middlesection {
+    .middlesection:not(.middlesection-main-menu) {
         margin: 27vh 1vw 7vh 1vw;
         flex-direction: column;
     }
