@@ -65,13 +65,13 @@
     display: flex;
     font-size: calc(21px + 9vw);
     font-stretch: expanded;
-    font-weight: 900;
+    font-weight: bold;
   }
 
   .k1, .o,  {
     color: $base-green;
     padding: 5vh 1vw 0;
-    animation: greenUp infinite ease-out 1s;
+    // animation: greenUp infinite ease-out 1s;
   }
 
   @keyframes greenUp {
@@ -82,7 +82,7 @@
   .r, .i,  {
     color: $base-red;
     padding: 3vh 1vw 0;
-    animation: redUp infinite ease-out 2s;
+    // animation: redUp infinite ease-out 2s;
   }
 
   @keyframes redUp {
@@ -92,8 +92,8 @@
 
   .a1, .w, .k3, {
     color: $base-yellow;
-    padding: 4vh 1vw 0;
-    animation: yellowUp 2s ease-out 3s;
+    padding: 5.6vh 1vw 0;
+    // animation: yellowUp 2s ease-out 3s;
   }
 
   @keyframes yellowUp {
@@ -104,7 +104,7 @@
   .k2, .a2 {
     color: $base-blue;
     padding: 4vh 1vw 0;
-    animation: blueUp infinite ease-out 4s;
+    // animation: blueUp infinite ease-out 4s;
   }
 
   @keyframes blueUp {

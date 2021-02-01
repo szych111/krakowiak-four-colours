@@ -57,3 +57,10 @@ spanPol.onclick = function(event) {
   spanDeu.style.opacity = 0.8;
   spanDeu.style.cursor = 'pointer';
 } 
+
+let ballsArr = document.getElementsByClassName('history-ball')
+console.log(ballsArr)
+for (let ball = 0; ball < ballsArr.length; ball++) {
+  console.log(ball)
+  
+}

@@ -364,13 +364,12 @@ address {
   display: flex;
   font-size: calc(21px + 9vw);
   font-stretch: expanded;
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .k1, .o,   {
   color: #4e7d25;
   padding: 5vh 1vw 0;
-  animation: greenUp infinite ease-out 1s;
 }
 
 @keyframes greenUp {
@@ -385,7 +384,6 @@ address {
 .r, .i,   {
   color: #ee2c1d;
   padding: 3vh 1vw 0;
-  animation: redUp infinite ease-out 2s;
 }
 
 @keyframes redUp {
@@ -399,8 +397,7 @@ address {
 
 .a1, .w, .k3,   {
   color: #d9d731;
-  padding: 4vh 1vw 0;
-  animation: yellowUp 2s ease-out 3s;
+  padding: 5.6vh 1vw 0;
 }
 
 @keyframes yellowUp {
@@ -415,7 +412,6 @@ address {
 .k2, .a2 {
   color: #3eccdd;
   padding: 4vh 1vw 0;
-  animation: blueUp infinite ease-out 4s;
 }
 
 @keyframes blueUp {

@@ -19,16 +19,7 @@ $(document).ready(function () {
     $('.main-menu-item').on('click', () => {
         $menu.toggleClass('nav-menu-open');
     });
-    
-    const $histDate = $('#r1982');
-    const $histBall = $('#ball1982')
 
-    console.log($histBall)
-
-    $histDate.on('click', () => {
-        console.log('click')
-        $histBall.style({backgroundColor: 'green'})
-    })
         
     })
 
