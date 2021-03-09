@@ -1,56 +1,31 @@
-.team-main {
-  position: absolute;
-  margin: 7vw 5vw;
-  display: flex;
-  flex-direction: row;
-
-  hr { 
-    margin: 20px 0;
-    border: dotted 3px white;
-  }
-}
-
-// .team-col {
-//   display: flex;
-//   flex-direction: column;
-//   margin: 0 15px;
-
-//   p {
-//     background-color: rgba(134, 129, 129, 0.5);
-//     width: 70%;
-//     text-align: left;
-//     padding: 1vw;
-//   }
-// }
-.middlesection-col-wrapper-team {
-  display: flex;
-  flex: 8;
-  flex-direction: row;
-  padding: 0 1vw;
-
-  p {
-    text-align: left;
-  }
-}
-
 .team-member {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-around;
   align-items: flex-start;
+  margin: 1vh;
+  padding: 15px;
+
+  p {
+    text-align: justify;
+    margin: 0 0 0 1em;
+  }
+
+  img {
+    margin: 0;
+    width: 100%;
+  }
 }
 
-.team-memb-img {
+.member__img {
   flex: 1;
-  transform: scale(0.7);
-  margin: -1vh 0;
 }
 
-.team-memb-story {
+.member__story {
   flex: 3;
 }
 
-@media screen and (max-width: 800px) {
-  .middlesection-col-wrapper-team {
-    flex-wrap: wrap;
-  }
-}
+
  
