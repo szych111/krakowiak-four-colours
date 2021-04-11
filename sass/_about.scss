@@ -1,51 +1,59 @@
-.about-container {
-  position: relative;
+#about {
+    background-image: url(../img/grupowe-baw.jpg);
+  }
+
+.section-wrapper {
+  padding: 1.5vw;
+  display: flex;
   height: 756px;
 }
 
-@media screen and (max-width: 440px) {
-  .about-container {
-    height: 1000px;
-  }
-  #about {
-    background-image: none;
-  }
+.section__main {
+  display: flex;
+  flex-direction: column;
 }
 
-.about-about {
-  position: absolute;
-  top: 12vh;
-  right: 3.5vw;
-  left: 17vw;
-  columns: 2;
-  column-width: 250px;
+.section__main__title {
+  margin-bottom: 1vh;
+  text-align: right;
+}
+
+.section__main__content--gallery {
+  a:first-child {margin-top: 2vh;}
+}
+
+.section__main__content {
+  padding: 0.5vh 1vh;
+  margin: 1vh 1em;
+
+  p {
+    background: rgba($base-beige,0.7);
+    margin: 0;
+    padding: 1vw 1.5vw 0;
+  }
 
   p:first-child {
-    padding-top: 1.5vh;
+    padding-top:2.0em;
   }
   
   p:last-child {
-    padding-bottom: 1.5vh;
-  }
-
-  p {
-    background-color: rgba($base-beige, 0.8);
-    margin: 0;
-    padding: .5vw 1.5vw;
+    padding-bottom: 2.0em;
   }
 }
 
-.main-about {
-  margin: 0
-}
+@media (min-width: 900px) {
+  .section__main__content {
+    columns: 2;
+    column-width: 38%;
+    column-gap: 3%;
+    margin: 3vw 1em;
 
-#about {
-    background-image: url(../img/grupowe-baw.jpg);
- 
+    p {
+      padding-bottom: 0.6em;
+    }
   }
-  
-  .open {
-    display: inline;
+
+  .section__main__content--gallery {
+    margin: 4vw 1em;
   }
-  
-  
+}

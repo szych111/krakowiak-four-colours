@@ -13,6 +13,11 @@ body {
   font-size: clamp(10px, calc(10px + .5vw), 20px);
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 h1, h2, h3 {
   margin: 0;
 }
@@ -28,63 +33,44 @@ h2 {
 
 // containers //
 
-.section__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 3vw;
-}
 
-.section__main {
-  position: relative;
-  height: 756px;
+// .section__main {
+//   background: purple;
+//   position: relative;
+//   height: 756px;
+// }
 
-}
+// .section__content {
+//   background: green;
+//   margin: -5vh 1vw 0 17vw;
+//   padding: 2em 2.2em;
+//   max-width: 95%;
+//   margin: 0 auto;
 
-.section__main--small-content {
-  margin: -5vh 1vw 0 17vw;
-}
+//   p {
+//     background: rgba($base-beige,0.7);
+//     margin: 0;
+//     padding: 1vw 1.5vw 0;
+//   }
 
-.section__main--large-content {
-  margin: -15vh 2vw 0 15vw;
-}
-
-.main__content {
-  padding: 2em 2.2em;
-  max-width: 95%;
-  margin: 0 auto;
-
-  p {
-    background: rgba($base-beige,0.7);
-    margin: 0;
-    padding: 1vw 1.5vw 0;
-  }
-
-  p:first-child {
-    padding-top:2.0em;
-  }
+//   p:first-child {
+//     padding-top:2.0em;
+//   }
   
-  p:last-child {
-    padding-bottom: 2.0em;
-  }
-}
+//   p:last-child {
+//     padding-bottom: 2.0em;
+//   }
+// }
 
-@media (min-width: 850px) {
-  .main__content {
-    columns: 2;
-    column-width: 38%;
-    column-gap: 3%;
-    
-  }
-  .section__main--small-content {
-    margin: -5vh 2vw 0 15vw;
-  }
+// @media (min-width: 850px) {
+//   .section__content {
+//     columns: 2;
+//     column-width: 38%;
+//     column-gap: 3%;
+//     margin: -25vh 2vw 0 15vw;
+//   }
   
-  .section__main--large-content {
-    margin: -20vh 2vw 0 15vw;
-  }
-  
-}
+// }
 
 /// --- /// --- ///
 
@@ -92,6 +78,16 @@ h2 {
 
 .midsec {
   margin: 10vw auto 7vw;
+}
+
+.midsec--partners {
+  margin-top: 40vh;
+}
+
+@media (min-width: 420px) {
+  .midsec--partners {
+    margin-top: 10vw;
+  }
 }
 
 .midsec__title {
@@ -102,10 +98,10 @@ h2 {
 
 .midsec__main {
   max-width: 1600px;
-  margin: 5vh auto 15vh;
+  margin: 3vh auto 12vh;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 430px) {
   .midsec__main {
     display: flex;
     padding: 4vh 3vw;
@@ -177,4 +173,8 @@ blockquote {
   text-align: right;
 }
 
+footer {
+  margin-bottom: 1em;
+
+}
 

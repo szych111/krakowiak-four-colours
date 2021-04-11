@@ -11,10 +11,6 @@
     opacity: 0.7;
     cursor: pointer;
 
-    a {
-        color: white;
-    }
-
     .fa-arrow-up {
         padding: 0.5vh 1vh 1vh;
     }
@@ -22,7 +18,7 @@
 
 .nav-menu-holder {
     padding-right: 3vw;
-    background-color: rgba($base-red, 0.2);
+    background-color: rgba(134, 129, 129, 0.2);
     top:0;
     bottom: 0;
     transition: 1.5s;
@@ -42,16 +38,10 @@
     font-size: calc(10px + 1vw);
     font-weight: 800;
     line-height: 2.52;
-    background-color: $base-red;
+    background-color: $base-beige;
     padding: 5vh 1vw;
     top: 10%;
     bottom: 10%;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    padding: 1.5vh;
   }
   
   nav a:hover {
@@ -66,6 +56,115 @@
   .nav-menu-button:hover {
     cursor: pointer;
   }
+
+  .red {
+    background-color: $base-red;
+  }
+
+  .green {
+    background-color: $base-green;
+  }
+
+  .blue {
+    background-color: $base-blue;
+  }
+
+  .yellow {
+    background-color: $base-yellow;
+  }
+
+  .menu-circle {
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 2vw;
+    position: relative;
+    vertical-align: middle;
+  
+    a {
+      position: absolute;
+      top: 40%;
+      left: 20%;
+      font-size: calc(8px + 1.0vw);
+    }
+  }
+
+  *,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// html {
+//   min-height: 100%;
+// }
+
+// body {
+//   margin: 64px auto;
+//   max-width: 640px;
+//   width: 94%;
+//   text-align: center;
+// }
+
+/**
+ * Circle Styles
+ */
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 2em 0;
+  background-color: green;
+  color: #222;
+  text-align: center;
+}
+
+.circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgb(168, 25, 25);
+  content: "";
+}
+
+.circle__inner {
+  position: absolute;
+  //background-color: indigo;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1%;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__wrapper {
+  display: table;
+  //background-color: pink;
+  width: 100%;
+  height: 100%;
+}
+
+.circle__content {
+  display: table-cell;
+  padding: 1em;
+  vertical-align: middle;
+}
+
+@media (min-width: 480px) {
+  .circle__content {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .circle__content {
+    font-size: 4em;
+  }
+}
 
   
   

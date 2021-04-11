@@ -11,486 +11,500 @@
 </head>
 
 <body>
-    <div id="audio-modal" class="audio-modal">
-        <img src="audio-on-150.svg" id="audio-modal-btn-on" class="audio-modal-btn audio-on">
-        <img src="audio-off-150.svg" id="audio-modal-btn-off" class="audio-modal-btn audio-off">
-    </div>
-    <audio id="audio-bcg" preload='auto' loop>
-        <source src="audio/Gronicek skrzypce.mp3" type="audio/mpeg" />
-    </audio>
-    <!-- <div class="nav-menu-outer"> -->
-        <!-- <nav class="nav-menu-holder">
+    <div class="main-container">
+        <div id="audio-modal" class="audio-modal">
+            <img src="audio-on-150.svg" id="audio-modal-btn-on" class="audio-modal-btn audio-on">
+            <img src="audio-off-150.svg" id="audio-modal-btn-off" class="audio-modal-btn audio-off">
+        </div>
+        <audio id="audio-bcg" preload='auto' loop>
+            <source src="audio/Gronicek skrzypce.mp3" type="audio/mpeg" />
+        </audio>
+        <nav class="nav-menu-holder">
             <ul class="nav-menu-ul">
                 <li class="main-menu-item"><a href="#home">Home</a></li>
                 <li class="main-menu-item"><a href="#about">O nas</a></li>
                 <li class="main-menu-item"><a href="#photogallery">Galeria</a></li>
                 <li class="main-menu-item"><a href="#contact">Kontakt</a></li>
             </ul>
-        </nav> -->
-        <!-- </div> -->
-    <section id="home" class="section-bg">
-        <div class="container">
-            <div class="header">
-                <div class="nav-menu-button">
-                    <img src="self-made-burger.png" alt="menu icon" class="self-made-burger">
-                </div>
-                <div class="main-header-child header-child2">
-                    <div class="main-audio-wrapper">
-                        <div>
-                            <img src="audio-on-150.svg" id="audio-main-on" class="audio-main-on">
-                        </div>
-                        <div>
-                            <img src="audio-off-150.svg" id="audio-main-off" class="audio-main-off">
-                        </div>
+        </nav>
+        <section id="home" class="section-bg">
+            <div class="container">
+                <div class="main__header">
+                    <div class="header__left">
+                        <!-- <img src="./img/self-made-burger.svg" alt="menu icon" class="nav-menu-button self-made-burger"> -->
                     </div>
-                    <span class="main-lang-choice"><span id="pol" class="pol">polski</span> / <span id="deu" class="deu">deutsch</span></span>
+                    <div class="header__right row">
+                        <div class="main-audio-wrapper">
+                            <div>
+                                <img src="audio-on-150.svg" id="audio-main-on" class="audio-main-on">
+                            </div>
+                            <div>
+                                <img src="audio-off-150.svg" id="audio-main-off" class="audio-main-off">
+                            </div>
+                        </div>
+                        <span class="main-lang-choice"><span id="pol" class="pol">polski</span> / <span id="deu"
+                                class="deu">deutsch</span></span>
+                    </div>
+                </div>
+                <div class='main-page'>
+                    <div class="main-page-child title">
+                        <span class="k1">k</span>
+                        <span class="r1">r</span>
+                        <span class="a1">a</span>
+                        <span class="k2">k</span>
+                        <span class="o1">o</span>
+                        <span class="w1">w</span>
+                        <span class="i1">i</span>
+                        <span class="a2">a</span>
+                        <span class="k3">k</span>
+                    </div>
+                    <div class="main-page-child">Zespół Pieśni i Tańca</div>
                 </div>
             </div>
-            <div class='main-page'>
+
+        </section>
+          
+        <div class="middlesection middlesection-main-menu">
+            <div class="menu-circle red"><a href="#about">o nas</a></div>
+            <div class="menu-circle yellow"><a href="#team">zespół</a></div>
+            <div class="menu-circle green"><a href="#photogallery">galeria</a></div>
+            <div class="menu-circle blue"><a href="#contact">kontakt</a></div>
+        </div>
+
+        <div class="quotation-container">
+            <blockquote>"Sens życia i wiara nie biorą się z pustki,
+                lecz z pielęgnowania tradycji i ocalenia
+                pamięci narodowej, która stanowi
+                o przyszłości i wielkości narodu."</blockquote>
+            <span class="quotation-author">Jerzy Waldorff, pisarz polski</span>
+        </div>
+
+
+        <section id="about" class="section-bg">
+            <div class="section-wrapper">
+                <div class="section__nav-k">
+                    <span class="nav-menu-button">
+                        <img src="img/k-menu.png" alt="" class='img-responsive'>
+                    </span>
+                </div>
+                <div class="section__main">
+                    <h2 class="section__main__title">
+                        o nas
+                    </h2>
+                    <div class="section__main__content">
+                        <p>Zespół Pieśni i Tańca Krakowiak e.V. jest stowarzyszeniem miłośników polskiej kultury
+                            ludowej.
+                        </p>
+                        <p>Nazwa zespołu wywodzi się od narodowego tańca polskiego, pochodzącego ze starego,
+                            królewskiego
+                            miasta
+                            Krakowa, dawnej stolicy Polski.
+                        </p>
+                        <p>Zespół wywodzi się ze stowarzyszenia Polaków w Niemczech “Lech”, zalozonego w roku 1982 przez
+                            pana Władysława Patrzałka. Zespół Pieśni i Tańca Krakowiak e.V. jako odrębne stowarzyszenie
+                            pożytku
+                            poblicznego został zarejestrowany w 1995 roku.</p>
+                        <p>Zespół składa się dziś z dwóch grup (dorosłych oraz dzieci) i liczy ok.50 osób. Pomimo różnic
+                            wiekowych,
+                            narodowych czy też zawodowych łączy nas jedna cecha: miłość do tańca i śpiewu. Dzięki temu w
+                            zespole
+                            panuje istnie rodzinna atmosfera.</p>
+                        <p>Nasz program obejmuje zbiór najpopularniejszych tańców i przyśpiewek z różnych regionów
+                            Polski.
+                            Charakteryzują nas piękne i kolorowe stroje ludowe, wielobarwne głosy oraz ciekawe układy
+                            choreograficzne. </p>
+                        <p> Dumą i przyszłością naszego stowarzyszenia są dzieci, które chętnie uczą sie i kontynuują
+                            tradycje
+                            naszych pradziadów.</p>
+                        <p> Głównym naszym celem jest kultywowanie polskiego folkloru. Działalność artystyczna, którą
+                            prezentujemy
+                            na scenie jest sztuką o wielkim ładunku emocjonalnym. Poprzez intensywne treningi wciąż
+                            udoskonalamy i
+                            poszerzamy nasz repertuar.</p>
+                        <p> Jesteśmy grupą otwartą dla osób, które interesują się współpracą lub wstąpieniem do zespołu.
+                        </p>
+                        <p> Zobaczyć można nas na festiwalach, festynach czy też prywatnych imprezach, zarówno polskich
+                            jak
+                            i
+                            wielokulturowych. “Krakowiak” został wpisany na stałe w kalendarze wielu imprez
+                            organizowanych
+                            przez
+                            inne stowarzyszenia. Co roku z niezmierną przyjemnością śpiewamy także kolędy na mszy
+                            polskiej w
+                            Darmstadt. </p>
+                        <p> Serdecznie zapraszamy na nasze występy oraz próby!!! </p>
+                        <p> Z pozdrowieniami </p>
+                        <p class="krakowiak-hand-written">Zespół Pieśni i Tańca “Krakowiak”</p>
+                    </div>
+                </div>
+        </section>
+
+        <div class="midsec midsec--partners">
+            <div class="midsec__title">
+                <h3>
+                    zespół prowadzą
+                </h3>
+            </div>
+            <div class="midsec__main">
+                <div class="midsec__col">
+                    <div class="team-member">
+                        <div class="member__img">
+                            <img src="img/team/adam-small-1850x2346.jpg" alt="team member's photo">
+                        </div>
+                        <div class="member__story">
+                            <p>
+                                Nasz kierownik Adam jest informatykiem, ale jego prawdziwą pasją jest muzyka. W
+                                "Krakowiaku"
+                                tańczy, śpiewa i gra na akordeonie. Na gitarze elektrycznej gra w zespole o wszystko
+                                mówiącej nazwie "Rockowiak".
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member__img">
+                            <img src="img/team/genios-small-1850x2346.jpg" alt="team member's photo">
+                        </div>
+                        <div class="member__story">
+                            <p>
+                                Joanna Genios przygodę z folklorem zaczęła już w dzieciństwie w Zespole Pieśni i Tańca
+                                Wałbrzych, który był całym światem i dzięki zagranicznym wyjazdom pozwalał odkrywać
+                                świat. W 1990 r. przeprowadziła się do Niemiec. Kiedy tylko usłyszała o zespole w
+                                Griesheim dołączyła bey wahania. Od 1995 r. z krótkimi przerwami działa w zarządzie i
+                                kultywuje polską kulturę folklorystyczną.
+                                <!-- Joanna Genios od 10 roku zyciu zwiazana z Polskim Folklorem.Z.P.i.TWalbrzych byl jej zyciem,gdzie śpiewała,tańczyła przyjaciół miała i życie i świat poznawala na wyjazdach za granice Polski.W 1990 roku wyjechala do Niemiec.W 1995 roku doszły ją pogłoski o zespole w Griesheim,co ją bardzo ucieszyło i natychmiast do działania zmobilizowalo.Po 15 latach kierownictwa z krótkimi przerwami dalej działa w zarzadzie i kultywuje polska kulturę folklorystyczna. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="midsec__col">
+                    <div class="team-member">
+                        <div class="member__img">
+                            <img src="img/team/beata-small-1850x2346.jpg" alt="team member's photo">
+                        </div>
+                        <div class="member__story">
+                            <p>
+                                Beata Nowoświat urodzona w Poznaniu i aktywna jako dziecko w zespole tańca ludowego i
+                                baletu w Pałacu Kultury w Poznaniu. Żyje od 1989 w Darmstadt. Z zawodu Pedagog socjalny.
+                                Pracuje jako kierowniczka dużego przedszkola w Darmstadt. Wieloletnia członkini Zespołu
+                                i pasjonatka grania na klawiaturze.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member__img">
+                            <img src="img/team/turbo-small-1850x2346.jpg" alt="team member's photo">
+                        </div>
+                        <div class="member__story">
+                            <p>
+                                Choreograf Artur pochodzi z Belgii, gdzie wychował się w rodzinie polskich społeczników,
+                                oddanych działalności polonijnej. Całe dzieciństwo i mlodość spędził na wywijaniu
+                                hołubców i
+                                strzelaniu bramek w polonijnych zespołach tanecznym nomen omen "Krakus" i piłkarskim
+                                nomen
+                                omen "Cracovia".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="history" class="section-bg">
+            <div class="history-modal" id="history-modal">
                 
-                <div class="main-page-child title">
-                    <span class="main-title-letter k1">k</span>
-                    <span class="main-title-letter r">r</span>
-                    <span class="main-title-letter a1">a</span>
-                    <span class="main-title-letter k2">k</span>
-                    <span class="main-title-letter o">o</span>
-                    <span class="main-title-letter w">w</span>
-                    <span class="main-title-letter i">i</span>
-                    <span class="main-title-letter a2">a</span>
-                    <span class="main-title-letter k3">k</span>
-                    
+            </div>
+            <div>
+                <div class="header">
+                    <div class="header-child header-child1">
+                        <span class="nav-menu-button">
+                            <img src="img/krak-website-k-menu.png" alt="big k letter" class='img-responsive'>
+                        </span>
+                    </div>
+                    <h2 class="header-child header-child2">
+                        historia
+                    </h2>
                 </div>
-                <div class="main-page-child subtitle">Zespół Pieśni i Tańca</div>
-            </div>
-        </div>
-
-    </section>
-
-    <div class="middlesection middlesection-main-menu">
-        <div class="menu-circle red"><a href="#about">o nas</a></div>
-        <div class="menu-circle yellow"><a href="#team">zespół</a></div>
-        <div class="menu-circle green"><a href="#photogallery">galeria</a></div>
-        <div class="menu-circle blue"><a href="#contact">kontakt</a></div>
-    </div>
-
-    <!-- <div class="quotation-container">
-        <blockquote>"Sens życia i wiara nie bierze się z pustki,
-            lecz z pielęgnowania tradycji i ocalenia
-            pamięci narodowej, która stanowi
-            o przyszłości i wielkości narodu."</blockquote>
-        <span class="quotation-author">Jerzy Waldorff, pisarz polski</span>
-    </div> -->
-
-
-    <section id="about" class="section-bg">
-        <div class="about-container">
-            <div class="header">
-                <div class="header-child header-child1">
-                    <span class="nav-menu-button">
-                        <img src="img/krak-website-k-menu.png" alt="" class='img-responsive'>
-                    </span>
+                <div class="main main-history">
+                            <div class="history-ball red" id="ball1982">
+                                <p class="hist-item">
+                                    <span class="hist-par-date" id="r1982">1982</span>
+                                    <span class="span-hist-detail">Zespół Pieśni i Tańca Krakowiak działa przy Stowarzyszeniu Polaków w Niemczech "Lech"w
+                                        Griesheim założonym przez Pana Władysława Patrzałka.</span>
+                                    </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">1994</span>
+                                    <span  class="span-hist-detail r1982">Magda Borucińska i Zbigniew Krasnopolski zajmują się choreografią zespołu.</span>
+                                </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">1995</span>
+                                    <span  class="span-hist-detail r1982">Zespół Pieśni i Tańca Krakowiak zostaje zarejestrowany w Darmstadt jako odrębne
+                                        stowarzyszenie użyteczności publicznej. W skład pierwszego zarządu wchodzą jego
+                                        założycielki: Beata Korzewska i Edda Schnegelsberg.</span>
+                                    </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">1997</span>
+                                    <span class="span-hist-detail r1982">Choreografem zespołu zostaje Renata Lapuk-Breitner.</span>
+                                </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2004</span>
+                                    <span  class="span-hist-detail r1982">Zespół Krakowiak nawiązuje współpracę z Zespołem Pieśni i Tańca „Mały Bolesławiec”.</span>
+                                </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2006</span>
+                                    <span class="span-hist-detail r1982">Osobą odpowiedzialną za przygotowanie artystyczne zespołu zostaje choreograf, absolwent Państwowej Szkoły Baletowej w Bytomiu, tancerz oraz pedagog baletu Zbigniew Michalik.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2008</span>
+                                    <span class="span-hist-detail r1982">Ważnym wydarzeniem w historii zespołu jest powstanie grupy dziecięcej.</span>
+                                </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2010</span>
+                                    <span class="span-hist-detail r1982">Wyjazd zespołu do Bolesławca na zaproszenie zespołu „Mały Bolesławiec” w celu nauki nowego układu tanecznego z tamtejszego regionu. Warsztaty taneczne owocują wspólnym występem.</span>
+                                    </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2011</span>
+                                    <span class="span-hist-detail r1982">Zespół Krakowiak udaje się na 15 Światowy Festiwal Polonijnych Zespołów Folklorystycznych
+                                        w Rzeszowie, gdzie bierze udział w warsztatach tanecznych.</span>
+                                    </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2013</span>
+                                    <span class="span-hist-detail r1982">Występ zespołu Krakowiak na festiwalu poświęconym Polsce oraz polskiej kulturze w
+                                        Stuttgart.</span>
+                                    </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2015</span>
+                                    <span class="span-hist-detail r1982">Choreografem grupy dziecięcej zostaje Katarzyna Kulling, tancerkaoraz instruktorka tańca
+                                        modern dance i folkloru z wieloletnim stażem.</span>
+                                    </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2015</span>
+                                    <span class="span-hist-detail r1982">Zespół Pieśni i Tańca Krakowiak ma już 20 lat!!! Z tej okazji odbywa się koncert jubileuszowy, na którym zostaje zaprezentowany przekrój twórczości zespołu.</span>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2016</span>
+                                    <span class="span-hist-detail r1982">W zespole Krakowiak zostaje utworzona grupa młodzieżowa, w sklad ktorej wchodza m.in. absolwenci grupy dziecięcej, oraz pozostała młodzież, pragnąca uczyć się tańców ludowych.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2016</span>
+                                    <span class="span-hist-detail r1982">Choreografem grupy dziecięcej zostaje Natalia Zawadzka. Tancerka zespołu Krakowiak.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2018</span>
+                                    <span class="span-hist-detail r1982">Adam Burzyński przewodniczący Zarządu i wieloletni członek zespołu przejmuje funkcję Kierownika Zespołu.</span>
+                                    </p>
+                            </div>  
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2018</span>
+                                    <span class="span-hist-detail r1982">Koncert w Orangerie – Darmstadt z Okazji 100-lecia Odzyskania Niepodległości</span>
+                            </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2019</span>
+                                    <span class="span-hist-detail r1982">Choreografem zespołu zostaje pochodzacy z Belgii Artur Stala. Rodzice Artura prowadzili Zespol Piesni i Tanca "Krakus" i byli jednymi z pomyslodawcow polonijnego Fetsiwalu Zespołów Folklorystycznych w Rzeszowie.</span>
+                                    </p>
+                            </div>
+                            <div class="history-ball red">
+                                <p class="hist-item">
+                                    <span class="hist-par-date">2020</span>
+                                    <span class="span-hist-detail r1982">Zespół Pieśni i Tańca Krakowiak świętuje 25 lecie, a na świecie wybucha pandemia Covid-19. Obchody jubileuszu odsuwają się w bliżej nieokreśloną przyszłość...</span>
+                                    </p>
+                            </div>
+                    </div>
                 </div>
-                <h2 class="header-child header-child2">
-                    o nas
-                </h2>
-
-            </div>
-            <div class="main main-about">
-                <div class="about-about">
-                    <p>Zespół Pieśni i Tańca Krakowiak e.V. jest stowarzyszeniem miłośników polskiej kultury ludowej.
-                    </p>
-                    <p>Nazwa zespołu wywodzi się od narodowego tańca polskiego, pochodzącego ze starego, królewskiego
-                        miasta
-                        Krakowa, dawnej stolicy Polski.
-                    </p>
-                    <p>Zespół wywodzi się ze stowarzyszenia Polaków w Niemczech “Lech”, zalozonego w roku 1982 przez
-                        pana Władysława Patrzałka. Zespół Pieśni i Tańca Krakowiak e.V. jako odrębne stowarzyszenie
-                        pożytku
-                        poblicznego został zarejestrowany w 1995 roku.</p>
-                    <p>Zespół składa się dziś z dwóch grup (dorosłych oraz dzieci) i liczy ok.50 osób. Pomimo różnic
-                        wiekowych,
-                        narodowych czy też zawodowych łączy nas jedna cecha: miłość do tańca i śpiewu. Dzięki temu w
-                        zespole
-                        panuje istnie rodzinna atmosfera.</p>
-                    <p>Nasz program obejmuje zbiór najpopularniejszych tańców i przyśpiewek z różnych regionów Polski.
-                        Charakteryzują nas piękne i kolorowe stroje ludowe, wielobarwne głosy oraz ciekawe układy
-                        choreograficzne. </p>
-                    <p> Dumą i przyszłością naszego stowarzyszenia są dzieci, które chętnie uczą sie i kontynuują
-                        tradycje
-                        naszych pradziadów.</p>
-                    <p> Głównym naszym celem jest kultywowanie polskiego folkloru. Działalność artystyczna, którą
-                        prezentujemy
-                        na scenie jest sztuką o wielkim ładunku emocjonalnym. Poprzez intensywne treningi wciąż
-                        udoskonalamy i
-                        poszerzamy nasz repertuar. </p>
-                    <p> Jesteśmy grupą otwartą dla osób, które interesują się współpracą lub wstąpieniem do zespołu.</p>
-                    <p> Zobaczyć można nas na festiwalach, festynach czy też prywatnych imprezach, zarówno polskich jak
-                        i
-                        wielokulturowych. “Krakowiak” został wpisany na stałe w kalendarze wielu imprez organizowanych
-                        przez
-                        inne stowarzyszenia. Co roku z niezmierną przyjemnością śpiewamy także kolędy na mszy polskiej w
-                        Darmstadt. </p>
-                    <p> Serdecznie zapraszamy na nasze występy oraz próby!!! </p>
-                    <p> Z pozdrowieniami </p>
-                    <p class="krakowiak-hand-written">Zespół Pieśni i Tańca “Krakowiak”</p>
-                    <!-- <span class="two">Zespół Pieśni i Tańca “Krakowiak”</span><br> -->
-                    <!-- <img src="img/krakowiakhandwritten.png" alt="handwritten greetings"> -->
-                </div>
-            </div>
-
-        </div>
-
-        <div class="sticky-arrow-up">
-            <a href="#home">
-                <i class="fa fa-arrow-up" aria-hidden="true"></i>
-            </a>
-        </div>
-    </section>
-
-    <div class="midsec">
-        <div class="midsec__title">
-            <h3>nasi mecenasi i partnerzy</h3>
-        </div>
-        <div class="midsec__main">
-            <div class="midsec__col">
-                <a href="http://www.diebruecke-darmstadt.de/" target="_blank">
-                    <img src="./img/partners/DieBruckeV1.jpg" alt="logo of Die Brucke organisation"
-                        class="img-partners"></a>
-                <a href="http://www.darmstadt.pl/" target="_blank">
-                    <img src="./img/partners/DarmstadtPLV1.jpg" alt="logo of Darmstadt.pl" class="img-partners"></a>
-            </div>
-            <div class="midsec__col">
-                <a href="https://ambasada.de/konsulat-honorowy-rp-we-frankfurcie-nad-menem/" target="_blank">
-                    <img src="./img/partners/KonsulatV1.jpg" alt="logo of Polish Consulate in Germany"
-                        class="img-partners"></a>
-                <a href="https://www.griesheim.de/start/" target="_blank">
-                    <img src="./img/partners/StadtGriesheimV1.jpg" alt="logo of city of Griesheim"
-                        class="img-partners"></a>
-            </div>
-            <div class="midsec__col">
-                <a href="https://salonik.de/" target="_blank">
-                    <img src="./img/partners/SalonikV1.jpg" alt="logo of Salonik organisation"
-                        class="img-partners"></a>
-                <a href="https://www.twojemiasto.eu/" target="_blank">
-                    <img src="./img/partners/TwojMaiatoV1.jpg" alt="logo of Twoje Miasto organisation"
-                        class="img-partners"></a>
-            </div>
-        </div>
-    </div>
+        </section>
     
-    <section id="history" class="section-bg">
-        <div class="history-modal" id="history-modal">
-            
+
+        <div class="quotation-container">
+            <blockquote>"Sens życia i wiara nie bierą się z pustki,
+                lecz z pielęgnowania tradycji i ocalenia
+                pamięci narodowej, która stanowi
+                o przyszłości i wielkości narodu."</blockquote>
+            <span class="quotation-author">Jerzy Waldorff, pisarz polski</span>
         </div>
-        <div>
-            <div class="header">
-                <div class="header-child header-child1">
+
+        <section id="photogallery" class="section-bg">
+            <div class="section-wrapper">
+                <div class="section__nav-k">
                     <span class="nav-menu-button">
-                        <img src="img/krak-website-k-menu.png" alt="big k letter" class='img-responsive'>
+                        <img src="img/k-menu.png" alt="" class='img-responsive'>
                     </span>
                 </div>
-                <h2 class="header-child header-child2">
-                    historia
-                </h2>
-            </div>
-            <div class="main main-history">
-                        <div class="history-ball red" id="ball1982">
-                            <p class="hist-item">
-                                <span class="hist-par-date" id="r1982">1982</span>
-                                <span class="span-hist-detail">Zespół Pieśni i Tańca Krakowiak działa przy Stowarzyszeniu Polaków w Niemczech "Lech"w
-                                    Griesheim założonym przez Pana Władysława Patrzałka.</span>
-                                </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">1994</span>
-                                <span  class="span-hist-detail r1982">Magda Borucińska i Zbigniew Krasnopolski zajmują się choreografią zespołu.</span>
-                            </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">1995</span>
-                                <span  class="span-hist-detail r1982">Zespół Pieśni i Tańca Krakowiak zostaje zarejestrowany w Darmstadt jako odrębne
-                                    stowarzyszenie użyteczności publicznej. W skład pierwszego zarządu wchodzą jego
-                                    założycielki: Beata Korzewska i Edda Schnegelsberg.</span>
-                                </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">1997</span>
-                                <span class="span-hist-detail r1982">Choreografem zespołu zostaje Renata Lapuk-Breitner.</span>
-                            </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2004</span>
-                                <span  class="span-hist-detail r1982">Zespół Krakowiak nawiązuje współpracę z Zespołem Pieśni i Tańca „Mały Bolesławiec”.</span>
-                            </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2006</span>
-                                <span class="span-hist-detail r1982">Osobą odpowiedzialną za przygotowanie artystyczne zespołu zostaje choreograf, absolwent Państwowej Szkoły Baletowej w Bytomiu, tancerz oraz pedagog baletu Zbigniew Michalik.
-                                </span>
-                            </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2008</span>
-                                <span class="span-hist-detail r1982">Ważnym wydarzeniem w historii zespołu jest powstanie grupy dziecięcej.</span>
-                            </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2010</span>
-                                <span class="span-hist-detail r1982">Wyjazd zespołu do Bolesławca na zaproszenie zespołu „Mały Bolesławiec” w celu nauki nowego układu tanecznego z tamtejszego regionu. Warsztaty taneczne owocują wspólnym występem.</span>
-                                </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2011</span>
-                                <span class="span-hist-detail r1982">Zespół Krakowiak udaje się na 15 Światowy Festiwal Polonijnych Zespołów Folklorystycznych
-                                    w Rzeszowie, gdzie bierze udział w warsztatach tanecznych.</span>
-                                </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2013</span>
-                                <span class="span-hist-detail r1982">Występ zespołu Krakowiak na festiwalu poświęconym Polsce oraz polskiej kulturze w
-                                    Stuttgart.</span>
-                                </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2015</span>
-                                <span class="span-hist-detail r1982">Choreografem grupy dziecięcej zostaje Katarzyna Kulling, tancerkaoraz instruktorka tańca
-                                    modern dance i folkloru z wieloletnim stażem.</span>
-                                </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2015</span>
-                                <span class="span-hist-detail r1982">Zespół Pieśni i Tańca Krakowiak ma już 20 lat!!! Z tej okazji odbywa się koncert jubileuszowy, na którym zostaje zaprezentowany przekrój twórczości zespołu.</span>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2016</span>
-                                <span class="span-hist-detail r1982">W zespole Krakowiak zostaje utworzona grupa młodzieżowa, w sklad ktorej wchodza m.in. absolwenci grupy dziecięcej, oraz pozostała młodzież, pragnąca uczyć się tańców ludowych.
-                                </span>
-                            </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2016</span>
-                                <span class="span-hist-detail r1982">Choreografem grupy dziecięcej zostaje Natalia Zawadzka. Tancerka zespołu Krakowiak.
-                                </span>
-                            </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2018</span>
-                                <span class="span-hist-detail r1982">Adam Burzyński przewodniczący Zarządu i wieloletni członek zespołu przejmuje funkcję Kierownika Zespołu.</span>
-                                </p>
-                        </div>  
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2018</span>
-                                <span class="span-hist-detail r1982">Koncert w Orangerie – Darmstadt z Okazji 100-lecia Odzyskania Niepodległości</span>
-                        </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2019</span>
-                                <span class="span-hist-detail r1982">Choreografem zespołu zostaje pochodzacy z Belgii Artur Stala. Rodzice Artura prowadzili Zespol Piesni i Tanca "Krakus" i byli jednymi z pomyslodawcow polonijnego Fetsiwalu Zespołów Folklorystycznych w Rzeszowie.</span>
-                                </p>
-                        </div>
-                        <div class="history-ball red">
-                            <p class="hist-item">
-                                <span class="hist-par-date">2020</span>
-                                <span class="span-hist-detail r1982">Zespół Pieśni i Tańca Krakowiak świętuje 25 lecie, a na świecie wybucha pandemia Covid-19. Obchody jubileuszu odsuwają się w bliżej nieokreśloną przyszłość...</span>
-                                </p>
-                        </div>
+                <div class="section__main">
+                    <h2 class="section__main__title">
+                        galeria
+                    </h2>
+                    <div class="section__main__content--gallery">
+                        <a href="./galeria/krakowskie/ksiestwa-warsz.html" class="photogal ">
+                            <div>
+                                <div class="gal-grupa">Księstwa</div>
+                                <div class="galfontL">Warszawskiego</div>
+                            </div>
+                        </a>
+                        <a href="./galeria/krakowskie/rzeszowskie.html" class="photogal galfontXL">rzeszowskie</a>
+                        <a href="./galeria/krakowskie/lubelskie.html" class="photogal galfontS">lubelskie</a>
+                        <a href="./galeria/krakowskie/zywieckie.html" class="photogal galfontM">żywieckie</a>
+                        <a href="./galeria/krakowskie/goralskie.html" class="photogal galfontS">góralskie</a>
+                        <a href="./galeria/krakowskie/krakowskie.html" class="photogal galfontXL">krakowskie</a>
+                        <a href="./galeria/krakowskie/filmy.html" class="photogal galfontL">filmy</a>
+                        <a href="./galeria/krakowskie/dzieci.html" class="photogal ">
+                            <div>
+                                <div class="gal-grupa">grupa</div>
+                                <div class="galfontM">dzieci</div>
+                            </div>
+                        </a>
+                        <a href="./galeria/krakowskie/mlodziez.html" class="photogal">
+                            <div>
+                                <div class="gal-grupa">grupa</div>
+                                <div class="galfontL">młodzieży</div>
+                            </div>
+                        </a>
+                        <a href="./galeria/krakowskie/dorosli.html" class="photogal galfontS">
+                            <div>
+                                <div class="gal-grupa">grupa</div>
+                                <div class="galfontL">dorosłych</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <div class="midsec">
+            <div class="midsec__title">
+                <h3>nasi mecenasi i partnerzy</h3>
+            </div>
+            <div class="midsec__main">
+                <div class="midsec__col">
+                    <a href="http://www.diebruecke-darmstadt.de/" target="_blank">
+                        <img src="./img/partners/DieBruckeV1.jpg" alt="logo of Die Brucke organisation"
+                            class="img-partners"></a>
+                    <a href="http://www.darmstadt.pl/" target="_blank">
+                        <img src="./img/partners/DarmstadtPLV1.jpg" alt="logo of Darmstadt.pl" class="img-partners"></a>
+                </div>
+                <div class="midsec__col">
+                    <a href="https://ambasada.de/konsulat-honorowy-rp-we-frankfurcie-nad-menem/" target="_blank">
+                        <img src="./img/partners/KonsulatV1.jpg" alt="logo of Polish Consulate in Germany"
+                            class="img-partners"></a>
+                    <a href="https://www.griesheim.de/start/" target="_blank">
+                        <img src="./img/partners/StadtGriesheimV1.jpg" alt="logo of city of Griesheim"
+                            class="img-partners"></a>
+                </div>
+                <div class="midsec__col">
+                    <a href="https://salonik.de/" target="_blank">
+                        <img src="./img/partners/SalonikV1.jpg" alt="logo of Salonik organisation"
+                            class="img-partners"></a>
+                    <a href="https://www.twojemiasto.eu/" target="_blank">
+                        <img src="./img/partners/TwojMaiatoV1.jpg" alt="logo of Twoje Miasto organisation"
+                            class="img-partners"></a>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" class="section-bg">
+            <div class="section-wrapper">
+                <div class="section__nav-k">
+                    <span class="nav-menu-button">
+                        <img src="img/k-menu.png" alt="" class='img-responsive'>
+                    </span>
+                </div>
+                <div class="section__main">
+                    <h2 class="section__main__title">
+                        kontakt
+                    </h2>
+                <div class="section__main__content">
+                        <p>Adres korespondencyjny:</p>
+                        <address>
+                            Krakowiak e.V.<br>
+                            c/o Mirosław Adam Burzyński<br>
+                            Willy - Brandt - Str. 16<br>
+                            DE-55276 Oppenheim<br>
+                            Tel. +49 178 7054509<br>
+                            info@krakowiakev.de </address>
+                        <p>Zapraszamy do spotkania w czasie naszych prób:</p>
+                        <address>
+                            Das Kochschulhaus<br>
+                            Wilhelm Leuschner Str. 2<br>
+                            Platz "Bar-le-Duc"<br>
+                            64347 Griesheim<br>
+                        </address>
+                        <p>Zainteresowane osoby prosimy o uprzedni kontakt telefoniczny lub mailowy.</p>
+                        <p class="social-media">
+                            <a href="https://www.facebook.com/people/Krakowiak-EV/100009296999540" target="_blank"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/krakowiak_ev/?hl=en" target="_blank"><i
+                                    class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="mailto:info@krakowiakev.de" target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </p>
+                        <p>Osoby pragnące wesprzeć działalność naszego zespołu prosimy o wpłatę darowizny na poniższe
+                            konto
+                            bankowe:
+                        </p>
+                        <p>Krakowiak e.V. <br>
+                            IBAN: DE95 5085 0150 0027 0235 09 <br>
+                            BIC: HELADEF1DAS </p>
+                        <p> Kwota darowizny może zostać odliczona przez darczyńcę od podstawy opodatkowania przy
+                            rozliczeniu
+                            z urzędem finansowym w Niemczech.</p>
+                        <p> Wpłaty zostaną przeznaczone wyłącznie na cele statutowe zespolu, m.in. na zakup strojów
+                            ludowych, w których występujemy. </p>
+                        <p>Dziękujemy za wsparcie!!!</p>
+                </div>
+            </div>
+    </div>
     </section>
 
-    <div class="midsec">
-        <div class="midsec__title">
-            <h3>
-                zespół prowadzą
-            </h3>
-        </div>
-        <div class="midsec__main">
-            <div class="midsec__col">
-                <div class="team-member">
-                    <div class="member__img">
-                        <img src="img/team/adam-small-1850x2346.jpg" alt="team member's photo">
-                    </div>
-                    <div class="member__story">
-                        <p>
-                            Nasz kierownik Adam jest informatykiem, ale jego prawdziwą pasją jest muzyka. W
-                            "Krakowiaku"
-                            tańczy, śpiewa i gra na akordeonie. Na gitarze elektrycznej gra w zespole o wszystko
-                            mówiącej nazwie "Rockowiak".
-                        </p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member__img">
-                        <img src="img/team/genios-small-1850x2346.jpg" alt="team member's photo">
-                    </div>
-                    <div class="member__story">
-                        <p>
-                            Joanna Genios przygodę z folklorem zaczęła już w dzieciństwie w Zespole Pieśni i Tańca Wałbrzych, który był całym światem i dzięki zagranicznym wyjazdom pozwalał odkrywać świat. W 1990 r. przeprowadziła się do Niemiec. Kiedy tylko usłyszała o zespole w Griesheim dołączyła bey wahania. Od 1995 r. z krótkimi przerwami działa w zarządzie i kultywuje polską kulturę folklorystyczną.
-                            <!-- Joanna Genios od 10 roku zyciu zwiazana z Polskim Folklorem.Z.P.i.TWalbrzych byl jej zyciem,gdzie śpiewała,tańczyła przyjaciół miała i życie i świat poznawala na wyjazdach za granice Polski.W 1990 roku wyjechala do Niemiec.W 1995 roku doszły ją pogłoski o zespole w Griesheim,co ją bardzo ucieszyło i natychmiast do działania zmobilizowalo.Po 15 latach kierownictwa z krótkimi przerwami dalej działa w zarzadzie i kultywuje polska kulturę folklorystyczna. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="midsec__col">
-                <div class="team-member">
-                    <div class="member__img">
-                        <img src="img/team/turbo-small-1850x2346.jpg" alt="team member's photo">
-                    </div>
-                    <div class="member__story">
-                        <p>
-                            Choreograf Artur pochodzi z Belgii, gdzie wychował się w rodzinie polskich społeczników,
-                            oddanych działalności polonijnej. Całe dzieciństwo i mlodość spędził na wywijaniu
-                            hołubców i
-                            strzelaniu bramek w polonijnych zespołach tanecznym nomen omen "Krakus" i piłkarskim
-                            nomen
-                            omen "Cracovia".
-                        </p>
-                    </div>
-                </div>
-                <div class="team-member">
-                    <div class="member__img">
-                        <img src="img/team/beata-small-1850x2346.jpg" alt="team member's photo">
-                    </div>
-                    <div class="member__story">
-                        <p>
-                            Beata Nowoświat urodzona w Poznaniu i aktywna jako dziecko w zespole tańca ludowego i
-                            baletu w Pałacu Kultury w Poznaniu. Żyje od 1989 w Darmstadt. Z zawodu Pedagog socjalny.
-                            Pracuje jako kierowniczka dużego przedszkola w Darmstadt. Wieloletnia członkini Zespołu
-                            i pasjonatka grania na klawiaturze.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="sticky-arrow-up">
+        <a href="#home">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
     </div>
 
-    <section id="photogallery" class="section-bg">
-        <div class="photogal-main-container">
-            <div class="header">
-                <div class="header-child header-child1">
-                    <span class="nav-menu-button">
-                        <img src="img/krak-website-k-menu.png" alt="" class='img-responsive'>
-                    </span>
-                </div>
-                <h2 class="header-child header-child2">
-                    galeria
-                </h2>
-            </div>
-            <div class="main photogal-main-main">
-                <a href="./galeria/krakowskie/ksiestwa-warsz.html" class="photogal ">
-                    <div>
-                        <div class="gal-grupa">Księstwa</div>
-                        <div class="galfontL">Warszawskiego</div>
-                    </div>
-                </a>
-                <a href="./galeria/krakowskie/rzeszowskie.html" class="photogal galfontXL">rzeszowskie</a>
-                <a href="./galeria/krakowskie/lubelskie.html" class="photogal galfontS">lubelskie</a>
-                <a href="./galeria/krakowskie/zywieckie.html" class="photogal galfontM">żywieckie</a>
-                <a href="./galeria/krakowskie/goralskie.html" class="photogal galfontS">góralskie</a>
-                <a href="./galeria/krakowskie/krakowskie.html" class="photogal galfontXL">krakowskie</a>
-                <a href="./galeria/krakowskie/filmy.html" class="photogal galfontL">filmy</a>
-                <a href="./galeria/krakowskie/dzieci.html" class="photogal ">
-                    <div>
-                        <div class="gal-grupa">grupa</div>
-                        <div class="galfontM">dzieci</div>
-                    </div>
-                </a>
-                <a href="./galeria/krakowskie/mlodziez.html" class="photogal">
-                    <div>
-                        <div class="gal-grupa">grupa</div>
-                        <div class="galfontL">młodzieży</div>
-                    </div>
-                </a>
-                <a href="./galeria/krakowskie/dorosli.html" class="photogal galfontS">
-                    <div>
-                        <div class="gal-grupa">grupa</div>
-                        <div class="galfontL">dorosłych</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+    <footer>
+        <p>
+          copyright &copy; Krakowiak e.V.
+          <span id="date"></span>. all rights reserved
+        </p>
+      </footer>
 
-    <div class="quotation-container">
-        <blockquote>"Sens życia i wiara nie bierze się z pustki,
-            lecz z pielęgnowania tradycji i ocalenia
-            pamięci narodowej, która stanowi
-            o przyszłości i wielkości narodu."</blockquote>
-        <span class="quotation-author">Jerzy Waldorff, pisarz polski</span>
-    </div>
-
-    <section id="contact" class="section-bg">
-        <div class="contact-container">
-            <div class="header">
-                <div class="header-child header-child1">
-                    <span class="nav-menu-button">
-                        <img src="img/krak-website-k-menu.png" alt="" class='img-responsive'>
-                    </span>
-                </div>
-                <h2 class="header-child header-child2">
-                    kontakt
-                </h2>
-            </div>
-            <div class="main contact-main">
-                <p>Adres korespondencyjny:</p>
-                <address>
-                    Krakowiak e.V.<br>
-                    c/o Mirosław Adam Burzynski<br>
-                    Willy - Brandt - Str. 16<br>
-                    DE-55276 Oppenheim<br>
-                    Tel. +49 178 7054509<br>
-                    info@krakowiakev.de </address>
-                <p>Zapraszamy do spotkania w czasie naszych prób:</p>
-                <address>
-                    Das Kochschulhaus<br>
-                    Wilhelm Leuschner Str. 2<br>
-                    Platz "Bar-le-Duc"<br>
-                    64347 Griesheim<br>
-                </address>
-                <p>Zainteresowane osoby prosimy o uprzedni kontakt telefoniczny lub mailowy.</p>
-                <p class="social-media">
-                    <a href="https://www.facebook.com/people/Krakowiak-EV/100009296999540" target="_blank"><i
-                            class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="https://www.instagram.com/krakowiak_ev/?hl=en" target="_blank"><i class="fa fa-instagram"
-                            aria-hidden="true"></i></a>
-                    <a href="mailto:info@krakowiakev.de" target="_blank">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </p>
-                <p>Osoby pragnace wesprzec dzialalnosc naszego zespolu prosimy o wplate darowizny na ponizsze konto
-                    bankowe:
-                </p>
-                <p>Krakowiak e.V. <br>
-                    IBAN: DE95 5085 0150 0027 0235 09 <br>
-                    BIC: HELADEF1DAS </p>
-                <p> Kwota darowizny może zostać odliczona przez darczyńcę od podstawy opodatkowania przy rozliczeniu
-                    z urzędem finansowym w Niemczech.</p>
-                <p> Wplaty zostana przeznaczone wylacznie na cele statutowe zespolu, m.in. na zakup strojow
-                    ludowych, w ktorych wystepujemy. </p>
-                <p>Dziękujemy za wsparcie!!!</p>
-            </div>
-        </div>
-    </section>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/onload-modal.js"></script>
+    </div>
 </body>
 
 </html>

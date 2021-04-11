@@ -1,62 +1,86 @@
+//photogal-subgalleries
+
+.photogal-sub {
+  background-color: rgba($base-grey,.8);
+  padding: 0 0 1vw;
+
+  div {
+    margin: 1vh 0;
+  }
+}
+
 .photogal-header {
-    text-align: left;
-    padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh;
 }
 
 .photogal-menu-k {
-    width: 10vw;
-    margin: 1vw;
+  max-width: 20%;
+  flex: 1;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .photogal-menu-k {
+    max-width: 12%;
+  }
 }
 
 .photogal-title {
-    text-align: left;
-    margin: 2vh;
-    float: right;
-    font-size: calc(30px + 2.2vw);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    font-size: calc(12px + 2.1vw);
 }
 
 .photogal-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div {
+      margin: 1vw 3vw;
+    }
+}
+
+@media (min-width: 600px) {
+  .photogal-container {
+    flex-direction: row;
+  }
+  .photogal-photos {
+    order: 2;
+  }
 }
 
 .photogal-about {
-    width: fit-content;
-    height: fit-content;
-    line-height: 1.5;
-    flex: 1;
-    padding: 2vw 3vw;
-    margin-left: 2vw;
     background-color: rgba($color: #b37b32, $alpha: .8);
+    padding: 1em;
+    margin: 15vw;
+    flex: 2;
 }
 
 .photogal-photos {
-    flex: 2;
-    margin: -2vh 1vw;
+    flex: 4;
     padding: 1vh 0;
     background-color: rgba($base-grey,.8);
 }
 
 .photogal-photo {
-    width: 15vw;
+    width: 20vw;
     margin: 1%;
 }
+
+// -- // -- //
 
 /* photogallery main page */
 
 #photogallery {
     background-image: url(../img/kubraktylem-baw.jpg);
-
-.photogal-main-container {
-    position: relative;
-    height: 756px;
-}
-
-.photogal-main-main {
-    position: absolute;
-    top: 12vh;
-    right: 3.5vw;
-    left: 17vw;
-}
 
  a {
     text-decoration: none;

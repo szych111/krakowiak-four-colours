@@ -2,22 +2,18 @@ $base-green: rgb(78,125,37);
 $base-red: rgb(238,44,29);
 $base-yellow: rgb(217,215,49);
 $base-blue: rgb(62,204,221);
-
 $base-beige: #9b9b75;
 $base-grey: #808080;
 
 .red {
-    background-color: $base-red;
+    color: $base-red;
 }
-
 .blue {
-    background-color: $base-blue;
+    color: $base-blue;
 }
-
 .yellow {
-    background-color: $base-yellow;
+    color: $base-yellow;
 }
-
 .green {
-    background-color: $base-green;
+    color: $base-green;
 }

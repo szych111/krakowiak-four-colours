@@ -1,10 +1,8 @@
 $hist-ball-size: 50px;
-
 #history {
     background-image: url(../img/nav-menu-baw.jpg);
     position: relative;
   }
-
   .history-modal {
     display: none;
     position: absolute;
@@ -15,12 +13,9 @@ $hist-ball-size: 50px;
     border-radius: 50%;
     background-color: rgba($base-red, 0.5);
     z-index: 10000;
-
   }
-
   .main-history {
     padding: 2vw;
-
     p {
       padding: none;
       font-size: clamp(8px, calc(8px + .5vw), 16px);
@@ -29,11 +24,9 @@ $hist-ball-size: 50px;
       margin: auto;
     }
   }
-
   .span-hist-detail {
     display: none;
   }
-
   .history-ball {
     display: inline-block;
     width: $hist-ball-size;
@@ -46,20 +39,16 @@ $hist-ball-size: 50px;
     transition: 1s;
     position: relative;
     opacity: .9;
-
     :hover {
       opacity: .3;
     }
   }
-
   #ball1982 {
     top: -5vh;
   }
-
   .hist-par-date {
     margin-left: 0;
   }
-
   .hist-item {
     margin: auto 15px;
   }
