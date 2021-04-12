@@ -1,5 +1,5 @@
 .red {
-  color: #ee2c1d;
+  background-color: #ee2c1d;
 }
 
 .blue {
@@ -288,7 +288,7 @@ nav a:hover {
 }
 
 .red {
-  color: #ee2c1d;
+  background-color: #ee2c1d;
 }
 
 .blue {
@@ -357,6 +357,9 @@ nav a:hover {
     padding-bottom: 0.6em;
   }
   .section__main__content--gallery {
+    margin: 4vw 1em;
+  }
+  .section__main__content--history {
     margin: 4vw 1em;
   }
 }
@@ -547,6 +550,14 @@ address {
   position: relative;
 }
 
+.section__main__content--history {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3vw;
+  justify-content: center;
+  align-items: center;
+}
+
 .history-modal {
   display: none;
   position: absolute;
@@ -559,33 +570,18 @@ address {
   z-index: 10000;
 }
 
-.main-history {
-  padding: 2vw;
-}
-
-.main-history p {
-  padding: none;
-  font-size: clamp(8px, calc(8px + .5vw), 16px);
-  margin: none;
-  display: inline-block;
-  margin: auto;
-}
-
 .span-hist-detail {
   display: none;
 }
 
 .history-ball {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
   border-radius: 50%;
-  line-height: 50px;
-  text-align: center;
-  margin: 1px;
-  padding: 0 5px;
   transition: 1s;
-  position: relative;
   opacity: .9;
 }
 
@@ -593,12 +589,8 @@ address {
   opacity: .3;
 }
 
-#ball1982 {
-  top: -5vh;
-}
-
 .hist-par-date {
-  margin-left: 0;
+  font-size: 10px;
 }
 
 .hist-item {
@@ -990,5 +982,9 @@ blockquote {
 
 .quotation-author {
   text-align: right;
+}
+
+footer {
+  margin-bottom: 1em;
 }
 /*# sourceMappingURL=style.css.map */
