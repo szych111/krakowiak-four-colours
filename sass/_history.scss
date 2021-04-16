@@ -1,11 +1,13 @@
-$hist-ball-font-size: 10px;
-$hist-ball-size: $hist-ball-font-size * 4;
-$hist-ball-margin: $hist-ball-font-size / 2;
+
 
 #history {
     background-image: url(../img/nav-menu-baw.jpg);
     position: relative;
   }
+
+.history-bcg {
+  background-color: lightcoral;
+}
 
 .section__main__content--history {
   display: flex;
@@ -13,6 +15,8 @@ $hist-ball-margin: $hist-ball-font-size / 2;
   padding: 3vw;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background-color: rgb(152, 152, 206);
 }
 
   .history-modal {
@@ -30,27 +34,14 @@ $hist-ball-margin: $hist-ball-font-size / 2;
   .span-hist-detail {
     display: none;
   }
-  .history-ball {
-    display: flex;
-    justify-content: center;
-    width: $hist-ball-size;
-    height: $hist-ball-size;
-    margin: $hist-ball-margin;
-    border-radius: 50%;
-    transition: 1s;
-    opacity: .9;
-
-    :hover {
-      opacity: .3;
-    }
-  }
 
   .hist-par-date {
-    font-size: $hist-ball-font-size;
+    font-size: .8em;
   }
 
-  .hist-item {
+  p.hist-item {
     margin: auto 15px;
+    background-color: transparent;
   }
 
   .hist-item:hover {
@@ -59,5 +50,7 @@ $hist-ball-margin: $hist-ball-font-size / 2;
   }
 
   @media (min-width: 900px) {
-    $hist-ball-font-size: 20px;
+    .hist-par-date {
+      font-size: 1.5rem;
+    }
   }

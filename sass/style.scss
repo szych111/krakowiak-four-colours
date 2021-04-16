@@ -11,7 +11,6 @@ body {
   color: white;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
-  
 }
 
 a {
@@ -174,7 +173,7 @@ blockquote {
   text-align: right;
 }
 
-footer {
-  margin-bottom: 1em;
+.footer {
+    padding-bottom: 2vh;
 }
 
