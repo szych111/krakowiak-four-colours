@@ -5,10 +5,6 @@
     position: relative;
   }
 
-.history-bcg {
-  background-color: lightcoral;
-}
-
 .section__main__content--history {
   display: flex;
   flex-wrap: wrap;
@@ -33,24 +29,4 @@
   
   .span-hist-detail {
     display: none;
-  }
-
-  .hist-par-date {
-    font-size: .8em;
-  }
-
-  p.hist-item {
-    margin: auto 15px;
-    background-color: transparent;
-  }
-
-  .hist-item:hover {
-    background-color: rgb(189, 123, 96);
-    cursor: pointer;
-  }
-
-  @media (min-width: 900px) {
-    .hist-par-date {
-      font-size: 1.5rem;
-    }
   }

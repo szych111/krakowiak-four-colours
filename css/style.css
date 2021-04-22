@@ -14,6 +14,10 @@
   color: #4e7d25;
 }
 
+:root {
+  --width: 15vw;
+}
+
 .sticky-arrow-up {
   box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0.8);
   border-radius: 50%;
@@ -87,83 +91,24 @@ nav a:hover {
   background-color: #d9d731;
 }
 
+.middlesection-main-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.middlesection-main-menu > * + * {
+  margin-left: calc(var(--width)/5);
+}
+
 .menu-circle {
-  display: none;
-  width: 50px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --width: 15vw;
+  width: var(--width);
+  height: var(--width);
   border-radius: 50%;
-  margin: 0 2vw;
-  position: relative;
-  vertical-align: middle;
-}
-
-.menu-circle a {
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  font-size: calc(8px + 1.0vw);
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/**
- * Circle Styles
- */
-.circle {
-  position: relative;
-  display: block;
-  margin: 2em 0;
-  background-color: green;
-  color: #222;
-  text-align: center;
-}
-
-.circle:after {
-  display: block;
-  padding-bottom: 100%;
-  width: 100%;
-  height: 0;
-  border-radius: 50%;
-  background-color: #a81919;
-  content: "";
-}
-
-.circle__inner {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1%;
-  width: 100%;
-  height: 100%;
-}
-
-.circle__wrapper {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
-.circle__content {
-  display: table-cell;
-  padding: 1em;
-  vertical-align: middle;
-}
-
-@media (min-width: 480px) {
-  .circle__content {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 768px) {
-  .circle__content {
-    font-size: 4em;
-  }
+  font-size: calc(var(--width)/5);
 }
 
 .photogal-sub {
@@ -550,10 +495,6 @@ address {
   position: relative;
 }
 
-.history-bcg {
-  background-color: lightcoral;
-}
-
 .section__main__content--history {
   display: flex;
   flex-wrap: wrap;
@@ -578,26 +519,6 @@ address {
 
 .span-hist-detail {
   display: none;
-}
-
-.hist-par-date {
-  font-size: .8em;
-}
-
-p.hist-item {
-  margin: auto 15px;
-  background-color: transparent;
-}
-
-.hist-item:hover {
-  background-color: #bd7b60;
-  cursor: pointer;
-}
-
-@media (min-width: 900px) {
-  .hist-par-date {
-    font-size: 1.5rem;
-  }
 }
 
 body {
@@ -863,106 +784,22 @@ img.hover-shadow {
   }
 }
 
-.history-flex-wrap {
+.flex {
   display: flex;
-  flex-direction: column;
-  background-color: khaki;
-  margin: 0 5vw;
-}
-
-.history-flex-wrap--left {
-  justify-content: flex-end;
-}
-
-.history-flex-wrap--right {
-  justify-content: flex-start;
-}
-
-:root {
-  --ball-width: 9vh;
+  flex-wrap: wrap;
 }
 
 .history-ball {
   display: flex;
   justify-content: center;
-  width: var(--ball-width);
-  height: var(--ball-width);
-  margin: 2vw;
+  align-items: center;
+  width: calc(var(--width)/3);
+  height: calc(var(--width)/3);
+  margin-bottom: calc(var(--width)/20);
   border-radius: 50%;
   transition: 1s;
-  opacity: .9;
-}
-
-.ball1982 {
-  margin: 1vw;
-}
-
-.ball1994 {
-  margin: 1vw 1vw 1vw 5vw;
-}
-
-.ball1995 {
-  margin: 1vw 1vw 1vw 7vw;
-}
-
-.ball1997 {
-  margin: 1vw;
-}
-
-.ball2004 {
-  margin: 1vw;
-}
-
-.ball2006 {
-  margin: 1vw;
-}
-
-.ball2008 {
-  margin: 1vw;
-}
-
-.ball2010 {
-  margin: 1vw;
-}
-
-.ball2011 {
-  margin: 1vw;
-}
-
-.ball2013 {
-  margin: 1vw;
-}
-
-.ball2015-1 {
-  margin: 1vw;
-}
-
-.ball2015-2 {
-  margin: 1vw;
-}
-
-.ball2016-1 {
-  margin: 1vw;
-}
-
-.ball2016-2 {
-  margin: 1vw;
-}
-
-.ball2018-1 {
-  margin: 1vw;
-}
-
-.ball2018-2 {
-  margin: 1vw;
-}
-
-.ball2019 {
-  margin: 1vw;
-}
-
-.ball2020 {
-  margin: 1vw;
+  opacity: .8;
+  font-size: calc(var(--width)/10);
 }
 
 @font-face {
@@ -976,6 +813,7 @@ body {
   color: white;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
+  max-height: 100vh;
 }
 
 a {

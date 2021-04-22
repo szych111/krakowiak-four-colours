@@ -1,101 +1,17 @@
-.history-flex-wrap {
+.flex {
     display: flex;
-    flex-direction: column;
-    background-color: khaki;
-    margin: 0 5vw;
+    flex-wrap: wrap;
 }
-
-.history-flex-wrap--left {
-    justify-content: flex-end;
-}
-
-.history-flex-wrap--right {
-    justify-content: flex-start;
-}
-
-:root {
-    --ball-width: 9vh;
-  }
 
   .history-ball {
     display: flex;
     justify-content: center;
-    width: var(--ball-width);
-    height: var(--ball-width);
-    margin: 2vw;
+    align-items: center;
+    width: calc(var(--width)/3);
+    height: calc(var(--width)/3);
+    margin-bottom: calc(var(--width)/20);
     border-radius: 50%;
     transition: 1s;
-    opacity: .9;
+    opacity: .8;
+    font-size: calc(var(--width)/10);
   }
-
-  .ball1982 {
-      margin: 1vw;
-  }
-
-  .ball1994 {
-    margin: 1vw 1vw 1vw 5vw;
-}
-
-.ball1995 {
-    margin: 1vw 1vw 1vw 7vw;
-}
-
-.ball1997 {
-    margin: 1vw;
-}
-
-.ball2004 {
-    margin: 1vw;
-}
-
-.ball2006 {
-    margin: 1vw;
-}
-
-.ball2008 {
-    margin: 1vw;
-}
-
-.ball2010 {
-    margin: 1vw;
-}
-
-.ball2011 {
-    margin: 1vw;
-}
-
-.ball2013 {
-    margin: 1vw;
-}
-
-.ball2015-1 {
-    margin: 1vw;
-}
-
-.ball2015-2 {
-    margin: 1vw;
-}
-
-.ball2016-1 {
-    margin: 1vw;
-}
-
-.ball2016-2 {
-    margin: 1vw;
-}
-
-.ball2018-1 {
-    margin: 1vw;
-}
-
-.ball2018-2 {
-    margin: 1vw;
-}
-
-.ball2019 {
-    margin: 1vw;
-}
-
-.ball2020 {
-    margin: 1vw;
-}
