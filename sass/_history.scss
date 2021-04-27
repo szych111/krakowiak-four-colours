@@ -1,19 +1,34 @@
-
-
 #history {
     background-image: url(../img/nav-menu-baw.jpg);
-    position: relative;
   }
 
-.section__main__content--history {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3vw;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: rgb(152, 152, 206);
+  .section__content--history {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    align-content: center;
+    max-height: 400px;
+    padding: 0.5vh 1vh;
+    margin: 5vh 1em;
+    flex-grow: 0;
+  }
+
+  :root {
+    --width: 60px;
 }
+
+  .history-ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--width);
+    height: var(--width);
+    margin: 0.1em;
+    border-radius: 50%;
+    transition: 1s;
+    opacity: .8;
+    font-size: calc(var(--width)/5);
+  }
 
   .history-modal {
     display: none;
@@ -24,7 +39,7 @@
     height: 50%;
     border-radius: 50%;
     background-color: rgba($base-red, 0.5);
-    z-index: 10000;
+    z-index: 1000;
   }
   
   .span-hist-detail {

@@ -1,0 +1,27 @@
+.midsec {
+    margin: 10vw auto 7vw;
+  }
+  
+  .midsec__title {
+    text-align: right;
+    font-size: calc(12px + 1.5vw);
+    padding-right: 5vw;
+  }
+  
+  .midsec__content {
+    max-width: 1600px;
+    margin: 3vh auto 12vh;
+  }
+  
+  @media (min-width: 430px) {
+    .midsec__content {
+      display: flex;
+      padding: 4vh 3vw;
+    }
+  
+    .midsec__col {
+      flex: 1;
+    }
+  
+  }
+  

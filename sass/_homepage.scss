@@ -3,6 +3,11 @@
   
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main__header {
   display: flex;
   justify-content: space-between;

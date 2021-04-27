@@ -2,16 +2,16 @@
   background-color: #ee2c1d;
 }
 
+.green {
+  background-color: #4e7d25;
+}
+
 .blue {
-  color: #3eccdd;
+  background-color: #3eccdd;
 }
 
 .yellow {
-  color: #d9d731;
-}
-
-.green {
-  color: #4e7d25;
+  background-color: #d9d731;
 }
 
 :root {
@@ -34,43 +34,35 @@
   padding: 0.5vh 1vh 1vh;
 }
 
-.red {
-  background-color: blue;
+nav {
+  margin: 0 auto;
 }
 
-.green {
-  background-color: #4e7d25;
-}
-
-.blue {
-  background-color: #3eccdd;
-}
-
-.yellow {
-  background-color: #d9d731;
-}
-
-.middlesection-main-menu {
+.nav-menu {
   display: flex;
   justify-content: center;
   position: sticky;
-  top: calc(var(--width)/-2.3);
-  opacity: 0.7;
+  top: 0;
+  margin: 0 1vw;
 }
 
-.middlesection-main-menu > * + * {
-  margin-left: calc(var(--width)/3);
+.nav-menu > * + * {
+  margin-left: 4vw;
 }
 
-.menu-circle {
+.nav-menu-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--width);
-  height: var(--width);
-  border-radius: 50%;
-  font-size: calc(var(--width)/5);
-  z-index: 100;
+  flex-grow: 1;
+  width: 100%;
+  font-size: calc(0.6rem + 1.1vw);
+  opacity: 0.7;
+  padding: 0.2em;
+}
+
+.nav-menu-item a {
+  opacity: 1;
 }
 
 .photogal-sub {
@@ -205,77 +197,20 @@
   background-color: #ee2c1d;
 }
 
+.green {
+  background-color: #4e7d25;
+}
+
 .blue {
-  color: #3eccdd;
+  background-color: #3eccdd;
 }
 
 .yellow {
-  color: #d9d731;
-}
-
-.green {
-  color: #4e7d25;
+  background-color: #d9d731;
 }
 
 #about {
   background-image: url(../img/grupowe-baw.jpg);
-}
-
-.section-wrapper {
-  padding: 1.5vw;
-  display: flex;
-  height: 756px;
-}
-
-.section__main {
-  display: flex;
-  flex-direction: column;
-}
-
-.section__main__title {
-  margin-bottom: 1vh;
-  text-align: right;
-}
-
-.section__main__content--gallery a:first-child {
-  margin-top: 2vh;
-}
-
-.section__main__content {
-  padding: 0.5vh 1vh;
-  margin: 1vh 1em;
-}
-
-#about p,
-#contact > * p {
-  background: rgba(155, 155, 117, 0.7);
-  margin: 0;
-  padding: 1vw 1.5vw 0;
-}
-
-#about p:first-child,
-#contact > * p:first-child {
-  padding-top: 2.0em;
-}
-
-#about p:last-child,
-#contact > * p:last-child {
-  padding-bottom: 2.0em;
-}
-
-@media (min-width: 900px) {
-  .section__main__content {
-    columns: 2;
-    column-width: 38%;
-    column-gap: 3%;
-    margin: 3vw 1em;
-  }
-  .section__main__content p {
-    padding-bottom: 0.6em;
-  }
-  .section__main__content--gallery {
-    margin: 4vw 1em;
-  }
 }
 
 #contact {
@@ -302,6 +237,11 @@ address {
 
 #home {
   background-image: url(../img/main-baw.jpg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .main__header {
@@ -461,17 +401,34 @@ address {
 
 #history {
   background-image: url(../img/nav-menu-baw.jpg);
-  position: relative;
 }
 
-.section__main__content--history {
+.section__content--history {
   display: flex;
-  flex-wrap: wrap;
-  padding: 3vw;
+  flex-flow: column wrap;
+  align-items: center;
+  align-content: center;
+  max-height: 400px;
+  padding: 0.5vh 1vh;
+  margin: 5vh 1em;
+  flex-grow: 0;
+}
+
+:root {
+  --width: 60px;
+}
+
+.history-ball {
+  display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  background-color: #9898ce;
+  width: var(--width);
+  height: var(--width);
+  margin: 0.1em;
+  border-radius: 50%;
+  transition: 1s;
+  opacity: .8;
+  font-size: calc(var(--width)/5);
 }
 
 .history-modal {
@@ -483,7 +440,7 @@ address {
   height: 50%;
   border-radius: 50%;
   background-color: rgba(238, 44, 29, 0.5);
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .span-hist-detail {
@@ -753,27 +710,94 @@ img.hover-shadow {
   }
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
+.midsec {
+  margin: 10vw auto 7vw;
 }
 
-.history-ball {
+.midsec__title {
+  text-align: right;
+  font-size: calc(12px + 1.5vw);
+  padding-right: 5vw;
+}
+
+.midsec__content {
+  max-width: 1600px;
+  margin: 3vh auto 12vh;
+}
+
+@media (min-width: 430px) {
+  .midsec__content {
+    display: flex;
+    padding: 4vh 3vw;
+  }
+  .midsec__col {
+    flex: 1;
+  }
+}
+
+.section-bg {
+  max-width: 100%;
+  height: 756px;
+  background-position: center;
+  background-size: cover;
+  margin: 0px auto 5vh;
+  display: block;
+}
+
+.section-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(var(--width)/3);
-  height: calc(var(--width)/3);
-  margin-bottom: calc(var(--width)/20);
-  border-radius: 50%;
-  transition: 1s;
-  opacity: .8;
-  font-size: calc(var(--width)/10);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5vw;
+}
+
+.section__title {
+  margin-bottom: 1vh;
+  text-align: right;
+}
+
+.section__content {
+  padding: 0.5vh 1vh;
+  margin: 1vh 1em;
+  flex-grow: 1;
+}
+
+#about p,
+#contact p {
+  background: rgba(155, 155, 117, 0.7);
+  margin: 0;
+  padding: 1vw 1.5vw 0;
+}
+
+#about p:first-child,
+#contact p:first-child {
+  padding-top: 2.0em;
+}
+
+#about p:last-child,
+#contact p:last-child {
+  padding-bottom: 2.0em;
+}
+
+@media (min-width: 600px) {
+  .columns {
+    columns: 2;
+    column-width: 38%;
+    column-gap: 3%;
+    margin: 3vw 1em;
+  }
+  .columns p {
+    padding-bottom: 0.6em;
+  }
 }
 
 @font-face {
   font-family: 'Museo Slab';
   src: url(../fonts/Museo_Slab_500.otf);
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
 body {
@@ -785,9 +809,18 @@ body {
   max-height: 100vh;
 }
 
+main {
+  max-width: 1400px;
+}
+
 a {
   color: white;
   text-decoration: none;
+}
+
+ul, li {
+  margin: 0;
+  list-style: none;
 }
 
 h1, h2, h3 {
@@ -803,50 +836,10 @@ h2 {
   align-items: center;
 }
 
-.midsec {
-  margin: 10vw auto 7vw;
-}
-
-.midsec--partners {
-  margin-top: 40vh;
-}
-
-@media (min-width: 420px) {
-  .midsec--partners {
-    margin-top: 10vw;
-  }
-}
-
-.midsec__title {
-  text-align: right;
-  font-size: calc(12px + 1.5vw);
-  padding-right: 5vw;
-}
-
-.midsec__main {
-  max-width: 1600px;
-  margin: 3vh auto 12vh;
-}
-
-@media (min-width: 430px) {
-  .midsec__main {
-    display: flex;
-    padding: 4vh 3vw;
-  }
-  .midsec__col {
-    flex: 1;
-  }
-}
-
 .main-container {
   width: 100%;
   background-color: #808080;
   margin: 0 auto;
-}
-
-.container {
-  display: flex;
-  flex-flow: column nowrap;
 }
 
 .main {
@@ -863,15 +856,6 @@ h2 {
 .img-responsive {
   width: calc(25px + 9vw);
   height: auto;
-}
-
-.section-bg {
-  max-width: 100vw;
-  height: 756px;
-  background-position: center;
-  background-size: cover;
-  margin: 0px auto 5vh;
-  display: block;
 }
 
 .quotation-container {

@@ -7,13 +7,16 @@ $base-grey: #808080;
 
 .red {
     background-color: $base-red;
-}
-.blue {
-    color: $base-blue;
-}
-.yellow {
-    color: $base-yellow;
-}
-.green {
-    color: $base-green;
-}
+  }
+
+  .green {
+    background-color: $base-green;
+  }
+
+  .blue {
+    background-color: $base-blue;
+  }
+
+  .yellow {
+    background-color: $base-yellow;
+  }
