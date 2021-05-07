@@ -1,5 +1,5 @@
 .midsec {
-    margin: 10vw auto 7vw;
+    margin: 14vw auto 7vw;
   }
   
   .midsec__title {
@@ -14,6 +14,10 @@
   }
   
   @media (min-width: 430px) {
+    .midsec {
+      margin: 3vw auto 7vw;
+    }
+
     .midsec__content {
       display: flex;
       padding: 4vh 3vw;

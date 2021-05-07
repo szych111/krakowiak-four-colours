@@ -43,6 +43,7 @@ nav {
   justify-content: center;
   position: sticky;
   top: 0;
+  bottom: 0;
   margin: 0 1vw;
 }
 
@@ -418,6 +419,16 @@ address {
   --width: 60px;
 }
 
+.history-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 600px;
+  background-color: pink;
+}
+
 .history-ball {
   display: flex;
   justify-content: center;
@@ -628,7 +639,7 @@ img.hover-shadow {
 }
 
 .audio-modal {
-  display: none;
+  display: block;
   position: fixed;
   z-index: 1000;
   padding-top: 32vh;
@@ -711,7 +722,7 @@ img.hover-shadow {
 }
 
 .midsec {
-  margin: 10vw auto 7vw;
+  margin: 14vw auto 7vw;
 }
 
 .midsec__title {
@@ -726,6 +737,9 @@ img.hover-shadow {
 }
 
 @media (min-width: 430px) {
+  .midsec {
+    margin: 3vw auto 7vw;
+  }
   .midsec__content {
     display: flex;
     padding: 4vh 3vw;
@@ -859,7 +873,7 @@ h2 {
 }
 
 .quotation-container {
-  width: 80%;
+  width: 90%;
   max-width: 600px;
   margin: 10vh auto 15vh;
 }
