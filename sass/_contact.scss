@@ -1,46 +1,46 @@
 #contact {
-    background-image: url(../img/dwieparywpodskoku-baw.jpg);
-  }
-  
-  // .contact-main {
-  //   position: absolute;
-  //   top: 12vh;
-  //   right: 3.5vw;
-  //   left: 17vw;
-  //   columns: 2;
-  //   column-width: 250px;
-  
-    // p:first-child {
-    //   padding-top: 2vh;
-    // }
-    
-    // p:last-child {
-    //   padding-bottom: 2vh;
-    // }
-  
-  //   p {
-  //     background-color: rgba($base-beige,0.8);
-  //     margin: 0;
-  //     padding: 1vw 1.5vw;
-  //   }
-  // }
-
-  address {
-      background-color: rgba($base-beige,0.8);
+    background-image: url(../img/dwieparywpodskoku.jpg);
   }
 
-  .social-media a {
-    font-size: calc(8px + 1vw);
+.social-media {
+  display: flex;
+  margin: 0 auto 3vw;
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--bead-size);
+  height: var(--bead-size);
+  background-color: $base-beige;
+  border-radius: 50%;
+  margin: 0 1.3vmin 0;
+  text-align: center;
+  font-size: calc(8px + 1.2vw);
+  cursor: pointer;
+  transition: 800ms;
+
+  a {
     color: white;
-    display: inline-block;
-    margin-right: 1.2vw;
-    margin-bottom: 2vh;;
-    transition: 3s;
   }
-  
-  .social-media a :hover {
-    opacity: .6;
-    transform: scale(1.1);
+}
+
+.social-media-container:hover {
+  transform: scale(1.1);
+  background-color: rgba(black, 0.2);
+}
+
+@media (max-width: 750px) {
+  .contact-first {
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
+
+  .contact-second {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
 
   

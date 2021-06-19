@@ -1,11 +1,5 @@
 #home {
-  background-image: url(../img/main-baw.jpg);
-  
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
+  background-image: url(../img/main-yellow.jpg);
 }
 
 .main__header {
@@ -37,7 +31,7 @@
     transition: 2s;
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 500px) {
     .self-made-burger {
       width: 45px;
     }
@@ -67,7 +61,7 @@
   
   .main-page-child.title {
     display: flex;
-    font-size: calc(18px + 9vw);
+    font-size: calc(25px + 9vw);
     font-stretch: expanded;
     font-weight: calc(600 * 1.5vw);
     margin-bottom: -2.2vw;
@@ -76,41 +70,4 @@
   #home .section-bg {
     position: relative;
     text-align: center;
-  }
-
-  .k1, .o1  {
-    color: $base-green;
-    padding: 5vh 1vw 0;
-    // animation: greenUp infinite ease-out 1s;
-  }
-  @keyframes greenUp {
-    50% { padding-top: 3vh;}
-    75% { padding-top: 2vh;}
-  }
-  .r1, .i1  {
-    color: $base-red;
-    padding: 3vh 1vw 0;
-    // animation: redUp infinite ease-out 2s;
-  }
-  @keyframes redUp {
-    50% { padding-top: 1vh;}
-    75% { padding-top: 0vh;}
-  }
-  .a1, .w1, .k3 {
-    color: $base-yellow;
-    padding: 5.6vh 1vw 0;
-    // animation: yellowUp 2s ease-out 3s;
-  }
-  @keyframes yellowUp {
-    50% { padding-top: 1vh;}
-    75% { padding-top: 1vh;}
-  }
-  .k2, .a2 {
-    color: $base-blue;
-    padding: 4vh 1vw 0;
-    // animation: blueUp infinite ease-out 4s;
-  }
-  @keyframes blueUp {
-    50% { padding-top: 2vh;}
-    75% { padding-top: 1vh;}
   }

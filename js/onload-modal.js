@@ -57,3 +57,17 @@ spanPol.onclick = function(event) {
   spanDeu.style.opacity = 0.8;
   spanDeu.style.cursor = 'pointer';
 } 
+
+//--- about-modal ---//
+
+const readMoreBtn = document.querySelector('.read-more-btn');
+const readLessBtn = document.querySelector('.read-less-btn');
+const aboutModal = document.querySelector('.about-modal');
+
+readMoreBtn.addEventListener('click', () => {
+  aboutModal.classList.add('about-modal-open')
+})
+
+readLessBtn.addEventListener('click', () => {
+  aboutModal.classList.remove('about-modal-open')
+})

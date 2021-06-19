@@ -1,4 +1,86 @@
 #about {
-    background-image: url(../img/grupowe-baw.jpg);
+    background-image: url(../img/grupowe.jpg);
   }
 
+.about-content {
+  display: flex;
+  // margin-bottom: auto;
+  // margin-top: auto;
+  margin: auto 3vw
+}
+
+.about-content > * {
+  background-color: rgba($base-beige, 0.9);
+  padding: 1em;
+  flex-basis: 100%;
+}
+
+.about-content > * + * {
+  margin-left: 1em;
+}
+
+.krakowiak-hand-written {
+  font-family: cortado, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4em;
+
+}
+
+.read-more-btn {
+  display: none;
+}
+
+.about-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($base-grey, 0.9);
+  font-size: 0.6rem;
+  padding: 1.5rem 0.5rem;
+  display: none;
+}
+
+.read-less-btn {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 0.5em;
+  right: 0.7em;
+  cursor: pointer;
+  transition: 1000ms;
+}
+
+@media (max-width: 750px) {
+  .about-content {
+    flex-wrap: wrap;
+  }
+
+  .about-content > * + * {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-second {
+    display: none;
+  }
+
+  .read-more-btn {
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    padding: 0 1em 1em 0;
+  }
+
+  .about-content {
+    display: grid;
+    place-items: center;
+  }
+
+  .about-modal-open {
+    display: block;
+    z-index: 4;
+  }
+}

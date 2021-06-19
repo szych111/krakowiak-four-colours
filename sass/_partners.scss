@@ -1,13 +1,12 @@
 .img-partners {
     display: inline-block;
-    width: 35vw;
+    width: 15vmax;
     opacity: .79;
-    margin: 1vh 1.5vh;
+    margin: 0.5vw;
 }
 
-@media (min-width: 400px) {
-    .img-partners {
-        width: 25vw;
-        margin: 1vh 0;
-}
+.midsec--partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

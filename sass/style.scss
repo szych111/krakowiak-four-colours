@@ -5,31 +5,12 @@
   src: url(../fonts/Museo_Slab_500.otf);
 }
 
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
 body {
-  margin: -2px -1px;
   text-align: center;
   color: white;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
-  max-height: 100vh;
-}
-
-main {
-  max-width: 1400px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-ul, li {
-  margin: 0;
-  list-style: none;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -45,13 +26,51 @@ h2 {
   align-items: center;
 }
 
-/// --- /// --- ///
-
-.main-container {
+main {
   width: 100%;
-  // max-width: 1600px;
   background-color: $base-grey;
   margin: 0 auto;
+}
+
+//middlesection //
+
+.midsec {
+  margin: 0 auto 10vmax;
+}
+
+.midsec__title {
+  display: flex;
+  justify-content: flex-end;
+  font-size: calc(12px + 1.5vw);
+  padding-right: 5vw;
+  margin-bottom: 3vmax;
+
+  h3 {
+    max-width: 40vw;
+    text-align: right;
+  }
+}
+
+.midsec__main {
+  max-width: 1600px;
+  margin: 3vh auto 12vh;
+}
+
+@media (min-width: 430px) {
+  .midsec__main {
+    display: flex;
+    padding: 4vh 3vw;
+  }
+
+  .midsec__col {
+    flex: 1;
+  }
+
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .main {
@@ -70,13 +89,10 @@ h2 {
   height: auto;
 }
 
-
-// -- // quotations // - //
-
 .quotation-container {
   width: 90%;
   max-width: 600px;
-  margin: 10vh auto 15vh;
+  margin: 0 auto 10vmax;
 }
 
 blockquote {
@@ -90,9 +106,19 @@ blockquote {
   text-align: right;
 }
 
-// ----- // ------ //
-
-.footer {
-    padding-bottom: 2vh;
+.team-history-division {
+  width: 80vw;
+  height: 0.5vh;
+  background-color: $base-beige;
+  border-radius: 2px;
+  margin: 0 auto 7vh;
 }
+
+// footer //
+
+footer {
+  margin-bottom: 1vh;
+}
+
+
 
