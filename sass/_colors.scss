@@ -1,8 +1,23 @@
+$base-green: rgb(78,125,37);
+$base-red: rgb(238,44,29);
+$base-yellow: rgb(217,215,49);
+$base-blue: rgb(62,204,221);
+
 $base-beige: #9b9b75;
-$base-grey: rgb(82, 80, 75);
-$dark-green: rgb(45, 68, 11);
+$base-grey: #808080;
 
-// rgba(39, 35, 34, 0.5);
-// $base-beige: rgb(201,191,143);
+.red {
+    background-color: $base-red;
+}
 
-// $base-beige: rgb(114, 105, 67);
+.blue {
+    background-color: $base-blue;
+}
+
+.yellow {
+    background-color: $base-yellow;
+}
+
+.green {
+    background-color: $base-green;
+}

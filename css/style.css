@@ -1,3 +1,19 @@
+.red {
+  background-color: #ee2c1d;
+}
+
+.blue {
+  background-color: #3eccdd;
+}
+
+.yellow {
+  background-color: #d9d731;
+}
+
+.green {
+  background-color: #4e7d25;
+}
+
 .sticky-arrow-up {
   box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0.8);
   border-radius: 50%;
@@ -67,7 +83,7 @@ nav a:hover {
 }
 
 .photogal-sub {
-  background-color: rgba(82, 80, 75, 0.8);
+  background-color: rgba(128, 128, 128, 0.8);
   padding: 0 0 1vw;
 }
 
@@ -134,7 +150,7 @@ nav a:hover {
 .photogal-photos {
   flex: 4;
   padding: 1vh 0;
-  background-color: rgba(82, 80, 75, 0.8);
+  background-color: rgba(128, 128, 128, 0.8);
 }
 
 .photogal-photo {
@@ -144,7 +160,7 @@ nav a:hover {
 
 /* photogallery main page */
 #photogallery {
-  background-image: url(../img/kubraktylem.jpg);
+  background-image: url(../img/kubraktylem-baw.jpg);
 }
 
 #photogallery a {
@@ -172,8 +188,24 @@ nav a:hover {
   margin-bottom: -1.4vw;
 }
 
+.red {
+  background-color: #ee2c1d;
+}
+
+.blue {
+  background-color: #3eccdd;
+}
+
+.yellow {
+  background-color: #d9d731;
+}
+
+.green {
+  background-color: #4e7d25;
+}
+
 #about {
-  background-image: url(../img/grupowe.jpg);
+  background-image: url(../img/grupowe-baw.jpg);
 }
 
 .about-content {
@@ -208,7 +240,7 @@ nav a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(82, 80, 75, 0.9);
+  background-color: rgba(128, 128, 128, 0.9);
   font-size: 0.6rem;
   padding: 1.5rem 0.5rem;
   display: none;
@@ -253,12 +285,13 @@ nav a:hover {
 }
 
 #contact {
-  background-image: url(../img/dwieparywpodskoku.jpg);
+  background-image: url(../img/dwieparywpodskoku-baw.jpg);
 }
 
 .social-media {
   display: flex;
   margin: 0 auto 3vw;
+  padding-top: 1vw;
 }
 
 .social-media-container {
@@ -297,7 +330,7 @@ nav a:hover {
 }
 
 #home {
-  background-image: url(../img/main-yellow.jpg);
+  background-image: url(../img/main-baw.jpg);
 }
 
 .main__header {
@@ -365,6 +398,26 @@ nav a:hover {
   margin-bottom: -2.2vw;
 }
 
+.main-page-child.title span {
+  display: inline-block;
+}
+
+.k1, .o {
+  color: #3eccdd;
+}
+
+.r, .w, .k3 {
+  color: #d9d731;
+}
+
+.a1, .i, .k {
+  color: #ee2c1d;
+}
+
+.k2, .a2 {
+  color: #4e7d25;
+}
+
 #home .section-bg {
   position: relative;
   text-align: center;
@@ -429,7 +482,7 @@ nav a:hover {
   height: 420px;
   margin-right: 0 auto;
   padding: 1em;
-  box-shadow: 5px 5px 10px 5px #3b3a3a;
+  box-shadow: 5px 5px 10px 5px #6d6868;
 }
 
 .history--card__date {
@@ -477,7 +530,8 @@ p.history-details {
   font-size: calc(var(--bead-size) * 0.3);
   cursor: pointer;
   transition: 1000ms;
-  background-color: #9b9b75;
+  background-color: #ee2c1d;
+  box-shadow: inset 6px 5px 12px 3px #cc8585, 5px 5px 10px 3px #925d5d;
 }
 
 .hist-item:hover {
@@ -500,7 +554,7 @@ p.history-details {
     flex-basis: 100%;
   }
   .history--card {
-    height: 400px;
+    height: 480px;
   }
   .history--quote {
     flex-basis: 40%;
@@ -560,7 +614,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(82, 80, 75, 0.8);
+  background-color: rgba(128, 128, 128, 0.8);
 }
 
 /* Modal Content */
@@ -709,7 +763,7 @@ img.hover-shadow {
   width: 100%;
   height: 100%;
   background-color: black;
-  background-color: rgba(82, 80, 75, 0.8);
+  background-color: rgba(128, 128, 128, 0.8);
 }
 
 .audio-modal-btn {
@@ -875,7 +929,7 @@ h2 {
 
 main {
   width: 100%;
-  background-color: #52504b;
+  background-color: #808080;
   margin: 0 auto;
 }
 
@@ -952,7 +1006,7 @@ blockquote {
 .team-history-division {
   width: 80vw;
   height: 0.5vh;
-  background-color: #9b9b75;
+  background-color: #d9d731;
   border-radius: 2px;
   margin: 0 auto 7vh;
 }

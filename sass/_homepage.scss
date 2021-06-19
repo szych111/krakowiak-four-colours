@@ -1,5 +1,5 @@
 #home {
-  background-image: url(../img/main-yellow.jpg);
+  background-image: url(../img/main-baw.jpg);
 }
 
 .main__header {
@@ -65,6 +65,26 @@
     font-stretch: expanded;
     font-weight: calc(600 * 1.5vw);
     margin-bottom: -2.2vw;
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  .k1, .o {
+    color: $base-blue;
+  }
+
+  .r, .w, .k3 {
+    color: $base-yellow;
+  }
+
+  .a1, .i, .k {
+    color: $base-red;
+  }
+
+  .k2, .a2 {
+    color: $base-green;
   }
   
   #home .section-bg {
