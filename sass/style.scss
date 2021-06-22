@@ -93,6 +93,24 @@ h2 {
   width: 90%;
   max-width: 600px;
   margin: 0 auto 10vmax;
+  background-color: rgba($base-yellow, 0.8);
+  padding: 2em;
+  border-radius: 10%;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    border-top: 50px solid rgba($base-yellow, 0.7);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    transform: rotate(135deg);
+  }
 }
 
 blockquote {

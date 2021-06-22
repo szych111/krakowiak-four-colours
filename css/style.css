@@ -214,7 +214,7 @@ nav a:hover {
 }
 
 .about-content > * {
-  background-color: rgba(155, 155, 117, 0.9);
+  background-color: rgba(128, 128, 128, 0.9);
   padding: 1em;
   flex-basis: 100%;
 }
@@ -531,7 +531,6 @@ p.history-details {
   cursor: pointer;
   transition: 1000ms;
   background-color: #ee2c1d;
-  box-shadow: inset 6px 5px 12px 3px #cc8585, 5px 5px 10px 3px #925d5d;
 }
 
 .hist-item:hover {
@@ -990,6 +989,24 @@ h2 {
   width: 90%;
   max-width: 600px;
   margin: 0 auto 10vmax;
+  background-color: rgba(217, 215, 49, 0.8);
+  padding: 2em;
+  border-radius: 10%;
+  position: relative;
+}
+
+.quotation-container::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  border-top: 50px solid rgba(217, 215, 49, 0.7);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transform: rotate(135deg);
 }
 
 blockquote {
