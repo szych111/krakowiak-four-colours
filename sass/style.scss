@@ -5,12 +5,15 @@
   src: url(../fonts/Museo_Slab_500.otf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   text-align: center;
   color: white;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
-  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -92,9 +95,9 @@ h2 {
 .quotation-container {
   width: 90%;
   max-width: 600px;
-  margin: 0 auto 10vmax;
+  margin: 0 auto 14vmax;
   background-color: rgba($base-yellow, 0.8);
-  padding: 1.5em 2em 3em;
+  padding: 1vh 1vh 3vh;
   border-radius: 10%;
   position: relative;
 
@@ -113,9 +116,15 @@ h2 {
   }
 }
 
+@media (min-width: 900px) {
+  .quotation-container {
+    margin: 0 auto 10vmax;
+  }
+}
+
 blockquote {
   text-align: left;
-  font-size: clamp(20px, calc(20px + .5vw), 40px);
+  font-size: clamp(20px, calc(18px + .5vw), 40px);
   text-indent: 2vw;
   line-height: 1.5;
 }
@@ -135,8 +144,8 @@ blockquote {
 }
 
 .line-double {
-  border-top: 15px double $base-red;
-  border-bottom: 15px double $base-red;
+  border-top: 15px double $base-yellow;
+  border-bottom: 15px double $base-yellow;
   border-radius: 5px;
 }
 
