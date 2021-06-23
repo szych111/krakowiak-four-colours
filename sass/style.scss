@@ -94,7 +94,7 @@ h2 {
   max-width: 600px;
   margin: 0 auto 10vmax;
   background-color: rgba($base-yellow, 0.8);
-  padding: 2em;
+  padding: 1.5em 2em 3em;
   border-radius: 10%;
   position: relative;
 
@@ -104,7 +104,7 @@ h2 {
     width: 0;
     height: 0;
     position: absolute;
-    bottom: -40px;
+    bottom: -42px;
     left: 50%;
     border-top: 50px solid rgba($base-yellow, 0.7);
     border-left: 50px solid transparent;
@@ -124,12 +124,31 @@ blockquote {
   text-align: right;
 }
 
-.team-history-division {
+.horizontal-line {
   width: 80vw;
   height: 0.5vh;
-  background-color: $base-yellow;
-  border-radius: 2px;
   margin: 0 auto 7vh;
+}
+
+.line-dotted {
+  border-top: 20px dotted $base-yellow;
+}
+
+.line-double {
+  border-top: 15px double $base-red;
+  border-bottom: 15px double $base-red;
+  border-radius: 5px;
+}
+
+.roosters-container {
+  margin: 0 auto;
+}
+
+.midsection-with-roosters {
+  margin: 0 auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // footer //
