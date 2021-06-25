@@ -99,6 +99,8 @@ p.history-details {
 
 .hist-item:hover {
   transform: rotate(45deg);
+  background-color: rgba(black, 0.2);
+  transform: scale(1.2);
 }
   
 .hist-item {
