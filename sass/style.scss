@@ -149,15 +149,14 @@ blockquote {
   border-radius: 5px;
 }
 
-.roosters-container {
-  margin: 0 auto;
-}
+.cutout-container {
+  margin: 0 auto 15vmin;
+  width: 50%;
+  max-width: 600px;
 
-.midsection-with-roosters {
-  margin: 0 auto 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  img {
+    width: 100%;
+  }
 }
 
 // footer //
