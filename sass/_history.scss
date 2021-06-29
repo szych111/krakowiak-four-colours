@@ -6,6 +6,7 @@
 .history-section {
   padding: 1.5vh;
   margin-bottom: 7vh;
+  //background-color: yellowgreen;
 }
 
 .history--content {
@@ -13,22 +14,13 @@
   flex-direction: column;
   margin: 5vh 0;
   padding: 3vh;
+  //background-color: royalblue;
 }
 
 .history--quote {
   display: none;
   position: relative;
-
-  &::before {
-    content: '"';
-    display: block;
-    position: absolute;
-    font-size: 225px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    top: -25%;
-    color: $base-blue;
-  }
+  //background-color: pink;
 
   p::first-letter {
     font-size: 2em;
@@ -48,6 +40,7 @@
   margin-right: 0 auto;
   padding: 1em;
   box-shadow: 5px 5px 10px 5px rgb(109, 104, 104);
+  background-color: rgba($base-blue, 0.6);
 }
 
 .history--card__date {
@@ -58,7 +51,7 @@
 .history--card__date::after {
   content: '';
   display: block;
-  background-color: $base-blue;
+  background-color: white;
   font-size: inherit;
   width: 100%;
   height: 0.15em;
@@ -107,29 +100,41 @@ p.history-details {
   margin-bottom: calc(var(--bead-size) * 0.2);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .history--content {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: right;
+    align-items: flex-start;
   }
 
   .history--content > * + * {
     margin-right: 10vw;
   }
 
-  .history--card, .history--quote {
+  .history--card {
     flex-basis: 100%;
   }
 
-  .history--card {
-    height: 480px;
-  }
+  // .history--card {
+  //   height: 480px;
+  // }
 
   .history--quote {
     flex-basis: 40%;
     max-width: 500px;
     margin: auto 5vw;
     display: block;
+
+    &::before {
+      content: '"';
+      display: block;
+      position: absolute;
+      font-size: 200px;
+      font-family: 'Catamaran', sans-serif;
+      top: -40%;
+      left: -5%;
+      color: $base-blue;
+    }
 
     p {
       color: rgba(white, 0.9);
@@ -143,4 +148,11 @@ p.history-details {
     }
   }
   
+}
+
+@media (min-width: 900px) {
+  .history--quote::before {
+    top: -30%;
+    left: 0%;
+  }
 }

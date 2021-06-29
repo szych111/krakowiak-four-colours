@@ -39,17 +39,18 @@
   bottom: 0;
   background-color: rgba($base-grey, 0.9);
   font-size: 0.6rem;
-  padding: 1.5rem 0.5rem;
+  padding: 1.8rem 0.5rem;
   display: none;
 }
 
 .read-less-btn {
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   top: 0.5em;
   right: 0.7em;
   cursor: pointer;
   transition: 1000ms;
+  color: $base-red;
 }
 
 @media (max-width: 750px) {
@@ -72,6 +73,7 @@
     text-align: right;
     cursor: pointer;
     padding: 0 1em 1em 0;
+    color: $base-blue;
   }
 
   .about-content {

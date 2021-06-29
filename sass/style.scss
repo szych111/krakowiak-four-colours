@@ -92,10 +92,12 @@ h2 {
   height: auto;
 }
 
+///--- quotation ---///
+
 .quotation-container {
   width: 90%;
   max-width: 600px;
-  margin: 0 auto 14vmax;
+  margin: 0 auto 16vmax;
   background-color: rgba($base-yellow, 0.8);
   padding: 1vh 1vh 3vh;
   border-radius: 10%;
@@ -108,7 +110,7 @@ h2 {
     height: 0;
     position: absolute;
     bottom: -42px;
-    left: 50%;
+    left: 10%;
     border-top: 50px solid rgba($base-yellow, 0.7);
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
@@ -133,6 +135,8 @@ blockquote {
   text-align: right;
 }
 
+///--- || ---///
+
 .horizontal-line {
   width: 80vw;
   height: 0.5vh;
@@ -144,9 +148,14 @@ blockquote {
 }
 
 .line-double {
-  border-top: 15px double $base-yellow;
-  border-bottom: 15px double $base-yellow;
+  border-top: 12px double $base-yellow;
+  border-bottom: 12px double $base-yellow;
   border-radius: 5px;
+}
+
+.line-dotted-blue {
+  border-top: 12px dotted $base-blue;
+
 }
 
 .cutout-container {
@@ -159,7 +168,7 @@ blockquote {
   }
 }
 
-// footer //
+///--- footer ---///
 
 footer {
   margin-bottom: 1vh;

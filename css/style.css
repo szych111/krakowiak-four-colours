@@ -14,6 +14,22 @@
   background-color: #4e7d25;
 }
 
+.ye {
+  color: #d9d731;
+}
+
+.re {
+  color: #ee2c1d;
+}
+
+.blu {
+  color: #3eccdd;
+}
+
+.gre {
+  color: #4e7d25;
+}
+
 .sticky-arrow-up {
   box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0.8);
   border-radius: 50%;
@@ -166,7 +182,7 @@ nav a:hover {
 #photogallery a {
   text-decoration: none;
   color: white;
-  font-size: calc(20px + 2.8vw);
+  font-size: calc(20px + 2.3vw);
   font-weight: 600;
   font-stretch: extra-expanded;
   margin-bottom: calc(12px + 0.2vw);
@@ -182,7 +198,7 @@ nav a:hover {
 }
 
 .gal-grupa {
-  font-size: calc(10px + 2.2vw);
+  font-size: calc(10px + 2vw);
   font-weight: calc(100 * 0.2vw);
   padding: 0;
   margin-bottom: -1.4vw;
@@ -202,6 +218,22 @@ nav a:hover {
 
 .green {
   background-color: #4e7d25;
+}
+
+.ye {
+  color: #d9d731;
+}
+
+.re {
+  color: #ee2c1d;
+}
+
+.blu {
+  color: #3eccdd;
+}
+
+.gre {
+  color: #4e7d25;
 }
 
 #about {
@@ -242,17 +274,18 @@ nav a:hover {
   bottom: 0;
   background-color: rgba(128, 128, 128, 0.9);
   font-size: 0.6rem;
-  padding: 1.5rem 0.5rem;
+  padding: 1.8rem 0.5rem;
   display: none;
 }
 
 .read-less-btn {
   position: absolute;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   top: 0.5em;
   right: 0.7em;
   cursor: pointer;
   transition: 1000ms;
+  color: #ee2c1d;
 }
 
 @media (max-width: 750px) {
@@ -273,6 +306,7 @@ nav a:hover {
     text-align: right;
     cursor: pointer;
     padding: 0 1em 1em 0;
+    color: #3eccdd;
   }
   .about-content {
     display: grid;
@@ -472,17 +506,6 @@ nav a:hover {
   position: relative;
 }
 
-.history--quote::before {
-  content: '"';
-  display: block;
-  position: absolute;
-  font-size: 225px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  top: -25%;
-  color: #3eccdd;
-}
-
 .history--quote p::first-letter {
   font-size: 2em;
   font-weight: 600;
@@ -500,6 +523,7 @@ nav a:hover {
   margin-right: 0 auto;
   padding: 1em;
   box-shadow: 5px 5px 10px 5px #6d6868;
+  background-color: rgba(62, 204, 221, 0.6);
 }
 
 .history--card__date {
@@ -510,7 +534,7 @@ nav a:hover {
 .history--card__date::after {
   content: '';
   display: block;
-  background-color: #3eccdd;
+  background-color: white;
   font-size: inherit;
   width: 100%;
   height: 0.15em;
@@ -559,25 +583,33 @@ p.history-details {
   margin-bottom: calc(var(--bead-size) * 0.2);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
   .history--content {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: right;
+    align-items: flex-start;
   }
   .history--content > * + * {
     margin-right: 10vw;
   }
-  .history--card, .history--quote {
-    flex-basis: 100%;
-  }
   .history--card {
-    height: 480px;
+    flex-basis: 100%;
   }
   .history--quote {
     flex-basis: 40%;
     max-width: 500px;
     margin: auto 5vw;
     display: block;
+  }
+  .history--quote::before {
+    content: '"';
+    display: block;
+    position: absolute;
+    font-size: 200px;
+    font-family: 'Catamaran', sans-serif;
+    top: -40%;
+    left: -5%;
+    color: #3eccdd;
   }
   .history--quote p {
     color: rgba(255, 255, 255, 0.9);
@@ -587,6 +619,13 @@ p.history-details {
   }
   .history--quote span {
     padding-left: 1em;
+  }
+}
+
+@media (min-width: 900px) {
+  .history--quote::before {
+    top: -30%;
+    left: 0%;
   }
 }
 
@@ -1009,7 +1048,7 @@ h2 {
 .quotation-container {
   width: 90%;
   max-width: 600px;
-  margin: 0 auto 14vmax;
+  margin: 0 auto 16vmax;
   background-color: rgba(217, 215, 49, 0.8);
   padding: 1vh 1vh 3vh;
   border-radius: 10%;
@@ -1023,7 +1062,7 @@ h2 {
   height: 0;
   position: absolute;
   bottom: -42px;
-  left: 50%;
+  left: 10%;
   border-top: 50px solid rgba(217, 215, 49, 0.7);
   border-left: 50px solid transparent;
   border-right: 50px solid transparent;
@@ -1058,9 +1097,13 @@ blockquote {
 }
 
 .line-double {
-  border-top: 15px double #d9d731;
-  border-bottom: 15px double #d9d731;
+  border-top: 12px double #d9d731;
+  border-bottom: 12px double #d9d731;
   border-radius: 5px;
+}
+
+.line-dotted-blue {
+  border-top: 12px dotted #3eccdd;
 }
 
 .cutout-container {
