@@ -1078,8 +1078,15 @@ blockquote {
   line-height: 1.5;
 }
 
-.quotation-author {
-  text-align: right;
+blockquote::before {
+  content: open-quote;
+  font-family: 'Catamaran', sans-serif;
+  padding-right: 0.1em;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-family: 'Catamaran', sans-serif;
 }
 
 .horizontal-line {

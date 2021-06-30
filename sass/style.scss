@@ -133,11 +133,20 @@ blockquote {
   font-size: clamp(20px, calc(18px + .5vw), 40px);
   text-indent: 1em;
   line-height: 1.5;
+
+  &::before {
+    content: open-quote;
+    font-family: 'Catamaran', sans-serif;
+    padding-right: 0.1em;
+
+  }
+
+  &::after {
+    content: close-quote;
+    font-family: 'Catamaran', sans-serif;
+  }
 }
 
-.quotation-author {
-  text-align: right;
-}
 
 ///--- || ---///
 
