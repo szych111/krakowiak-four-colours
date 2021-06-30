@@ -29,6 +29,10 @@ h2 {
   align-items: center;
 }
 
+::selection {
+  background-color: rgba($base-blue, 0.7);
+}
+
 main {
   width: 100%;
   background-color: $base-grey;
@@ -99,7 +103,7 @@ h2 {
   max-width: 600px;
   margin: 0 auto 16vmax;
   background-color: rgba($base-yellow, 0.8);
-  padding: 1vh 1vh 3vh;
+  padding: 1em 0 3em;
   border-radius: 10%;
   position: relative;
 
@@ -127,7 +131,7 @@ h2 {
 blockquote {
   text-align: left;
   font-size: clamp(20px, calc(18px + .5vw), 40px);
-  text-indent: 2vw;
+  text-indent: 1em;
   line-height: 1.5;
 }
 

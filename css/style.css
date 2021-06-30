@@ -305,7 +305,7 @@ nav a:hover {
     text-align: right;
     cursor: pointer;
     padding: 0 1em 1em 0;
-    color: #3eccdd;
+    color: #ee2c1d;
   }
   .about-content {
     display: grid;
@@ -601,13 +601,13 @@ p.history-details {
     display: block;
   }
   .history--quote::before {
-    content: '"';
+    content: open-quote;
     display: block;
     position: absolute;
-    font-size: 200px;
+    font-size: 12em;
     font-family: 'Catamaran', sans-serif;
-    top: -40%;
-    left: -5%;
+    top: -1em;
+    left: 0;
     color: #3eccdd;
   }
   .history--quote p {
@@ -618,13 +618,6 @@ p.history-details {
   }
   .history--quote span {
     padding-left: 1em;
-  }
-}
-
-@media (min-width: 900px) {
-  .history--quote::before {
-    top: -30%;
-    left: 0%;
   }
 }
 
@@ -985,6 +978,10 @@ h2 {
   align-items: center;
 }
 
+::selection {
+  background-color: rgba(62, 204, 221, 0.7);
+}
+
 main {
   width: 100%;
   background-color: #808080;
@@ -1049,7 +1046,7 @@ h2 {
   max-width: 600px;
   margin: 0 auto 16vmax;
   background-color: rgba(217, 215, 49, 0.8);
-  padding: 1vh 1vh 3vh;
+  padding: 1em 0 3em;
   border-radius: 10%;
   position: relative;
 }
@@ -1077,7 +1074,7 @@ h2 {
 blockquote {
   text-align: left;
   font-size: clamp(20px, calc(18px + .5vw), 40px);
-  text-indent: 2vw;
+  text-indent: 1em;
   line-height: 1.5;
 }
 

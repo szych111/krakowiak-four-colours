@@ -27,6 +27,7 @@
     font-weight: 600;
     padding: 0.05em;
   }
+
 }
 
 .history--card {
@@ -126,13 +127,13 @@ p.history-details {
     display: block;
 
     &::before {
-      content: '"';
+      content: open-quote;
       display: block;
       position: absolute;
-      font-size: 200px;
+      font-size: 12em;
       font-family: 'Catamaran', sans-serif;
-      top: -40%;
-      left: -5%;
+      top: -1em;
+      left: 0;
       color: $base-blue;
     }
 
@@ -148,11 +149,4 @@ p.history-details {
     }
   }
   
-}
-
-@media (min-width: 900px) {
-  .history--quote::before {
-    top: -30%;
-    left: 0%;
-  }
 }
