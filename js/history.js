@@ -80,21 +80,24 @@ const history = [
   ];
 
   const histBeads = document.querySelector('.history-beads');
-
   const cardDate = document.querySelector('.history--card__date');
-  const cardPart1 = document.querySelector('.history--card__part1');
-  const cardPart2 = document.querySelector('.history--card__part2');
+  const cardText = document.querySelector('.history--card__part1');
 
   histBeads.addEventListener('click', (e) => {
-    const text1 = e.target.dataset.toolTip1;
-    const text2 = e.target.dataset.toolTip2;
+    const text = e.target.dataset.toolTip;
     const date = e.target.innerText;
+    const targetBead = e.target.closest("button");
+
+    if(!targetBead) return;
     
     cardDate.innerText = date;
-    cardPart1.innerText = text1;
-    if(text2) {
-      cardPart2.innerText = text2;
-    } else {cardPart2.innerText = ""}
+    cardText.innerText = text;
     
+  
+      // const targetPic = e.target.closest('img');
+      // console.log('test1');
+      // if(!targetPic) return;
+      // console.log('test2');
+  
     
   })

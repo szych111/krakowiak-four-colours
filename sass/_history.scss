@@ -83,18 +83,20 @@ p.history-details {
   height: var(--bead-size);
   margin: 0 calc(var(--bead-size) * 0.1);
   border-radius: 50%;
+  border: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: calc(var(--bead-size) * 0.3);
   cursor: pointer;
   transition: 1000ms;
+  color: inherit;
   }
 
 .hist-item:hover {
   transform: rotate(45deg);
-  background-color: rgba(black, 0.2);
-  transform: scale(1.2);
+  background-color: rgba($base-red, 0.2);
+  transform: scale(1.1);
 }
   
 .hist-item {

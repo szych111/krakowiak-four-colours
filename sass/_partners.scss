@@ -5,8 +5,39 @@
     margin: 0.5vw;
 }
 
-.midsec--partners {
+.partners-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.cutout-container {
+    flex-basis: 1;
+}
+
+.partners-logos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-basis: 2;
+    align-items: baseline;
+
 }
+
+@media (min-width: 600px) {
+    .partners-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .cutout-container {
+        flex-grow: 3;
+        background-color: pink;
+    }
+    .partners-logos {
+        margin-left: 8vw;
+    }
+}
+

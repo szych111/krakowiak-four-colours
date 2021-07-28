@@ -81,20 +81,17 @@
 /* photogallery main page */
 
 #photogallery {
-    background-image: url(../img/kubraktylem-baw.jpg);
+  background-image: url(../img/kubraktylem-baw.jpg);
 
  a {
     text-decoration: none;
     color: white;
     font-size: calc(20px + 2.3vw);
-    font-weight: 600;
+    font-weight: 800;
     font-stretch: extra-expanded;
-    margin-bottom: calc(12px + 0.2vw); 
-    margin-left: calc(10px + 0.15vw);
-    margin-right: calc(10px + 0.15vw);
+    margin: 0 1em 0.5em;
     display: inline-block;
-    transition-property: transform;
-    transition-duration: 800ms;
+    transition: transform ease-out 800ms;
   }
   
   a:hover {
@@ -103,7 +100,6 @@
 }
   .gal-grupa {
     font-size: calc(10px + 2vw);
-    font-weight: calc(100 * 0.2vw);
     padding: 0;
     margin-bottom: -1.4vw;
   }

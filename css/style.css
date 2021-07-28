@@ -182,14 +182,11 @@ nav a:hover {
   text-decoration: none;
   color: white;
   font-size: calc(20px + 2.3vw);
-  font-weight: 600;
+  font-weight: 800;
   font-stretch: extra-expanded;
-  margin-bottom: calc(12px + 0.2vw);
-  margin-left: calc(10px + 0.15vw);
-  margin-right: calc(10px + 0.15vw);
+  margin: 0 1em 0.5em;
   display: inline-block;
-  transition-property: transform;
-  transition-duration: 800ms;
+  transition: transform ease-out 800ms;
 }
 
 #photogallery a:hover {
@@ -198,7 +195,6 @@ nav a:hover {
 
 .gal-grupa {
   font-size: calc(10px + 2vw);
-  font-weight: calc(100 * 0.2vw);
   padding: 0;
   margin-bottom: -1.4vw;
 }
@@ -564,18 +560,20 @@ p.history-details {
   height: var(--bead-size);
   margin: 0 calc(var(--bead-size) * 0.1);
   border-radius: 50%;
+  border: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: calc(var(--bead-size) * 0.3);
   cursor: pointer;
   transition: 1000ms;
+  color: inherit;
 }
 
 .hist-item:hover {
   transform: rotate(45deg);
-  background-color: rgba(0, 0, 0, 0.2);
-  transform: scale(1.2);
+  background-color: rgba(238, 44, 29, 0.2);
+  transform: scale(1.1);
 }
 
 .hist-item {
@@ -877,10 +875,38 @@ img.hover-shadow {
   margin: 0.5vw;
 }
 
-.midsec--partners {
+.partners-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.cutout-container {
+  flex-basis: 1;
+}
+
+.partners-logos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-basis: 2;
+  align-items: baseline;
+}
+
+@media (min-width: 600px) {
+  .partners-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .cutout-container {
+    flex-grow: 3;
+    background-color: pink;
+  }
+  .partners-logos {
+    margin-left: 8vw;
+  }
 }
 
 section {
