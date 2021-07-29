@@ -519,6 +519,24 @@ nav a:hover {
   padding: 1em;
   box-shadow: 5px 5px 10px 5px #6d6868;
   background-color: rgba(62, 204, 221, 0.6);
+  position: relative;
+}
+
+.hist-date-prev,
+.hist-date-next {
+  font-size: 5em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.hist-date-prev {
+  left: -1em;
+}
+
+.hist-date-next {
+  right: -1em;
 }
 
 .history--card__date {
@@ -555,10 +573,10 @@ p.history-details {
   --bead-size: 5vmax;
 }
 
-.hist-item {
+.hist-bead {
   width: var(--bead-size);
   height: var(--bead-size);
-  margin: 0 calc(var(--bead-size) * 0.1);
+  margin: 0 calc(var(--bead-size) * 0.1) calc(var(--bead-size) * 0.2);
   border-radius: 50%;
   border: 0;
   display: flex;
@@ -568,16 +586,17 @@ p.history-details {
   cursor: pointer;
   transition: 1000ms;
   color: inherit;
+  background-color: #ee2c1d;
 }
 
-.hist-item:hover {
+.hist-bead .current-bead {
+  opacity: 0.5;
+}
+
+.hist-bead:hover {
   transform: rotate(45deg);
   background-color: rgba(238, 44, 29, 0.2);
   transform: scale(1.1);
-}
-
-.hist-item {
-  margin-bottom: calc(var(--bead-size) * 0.2);
 }
 
 @media (min-width: 600px) {

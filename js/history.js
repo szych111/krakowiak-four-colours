@@ -81,23 +81,37 @@ const history = [
 
   const histBeads = document.querySelector('.history-beads');
   const cardDate = document.querySelector('.history--card__date');
-  const cardText = document.querySelector('.history--card__part1');
+  const cardText = document.querySelector('.history--card__text');
+  const nextBead = document.querySelector('.hist-date-next');
+  const prevBead = document.querySelector('.hist-date-prev');
+  const beadsArray = Array.from(histBeads.children);
+  console.log(nextBead)
+
+  const historyCardFill = (date, text) => {
+    cardDate.innerText = date;
+    cardText.innerText = text;
+  }
 
   histBeads.addEventListener('click', (e) => {
     const text = e.target.dataset.toolTip;
     const date = e.target.innerText;
     const targetBead = e.target.closest("button");
 
+    targetBead.classList.add("current-bead");
+    
     if(!targetBead) return;
-    
-    cardDate.innerText = date;
-    cardText.innerText = text;
-    
-  
-      // const targetPic = e.target.closest('img');
-      // console.log('test1');
-      // if(!targetPic) return;
-      // console.log('test2');
-  
-    
+    historyCardFill (date, text)
   })
+
+  // nextBead.addEventListener('click', () => {
+  //   const currentIndex = beadsArray.findIndex(class => {class === '.current-bead'});
+  //   console.log(currentIndex)
+  // })
+
+
+
+// bead pushed hist card updated
+// bead changes e.g. color
+// prev bead returns to red
+// next button pushed: target btn = next sibling of div
+
