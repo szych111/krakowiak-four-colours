@@ -97,12 +97,16 @@ nav a:hover {
   cursor: pointer;
 }
 
-.photogal-sub {
+.subgallery {
   background-color: rgba(128, 128, 128, 0.8);
-  padding: 0 0 1vw;
+  padding: 3vmin;
+  background-image: url(../img/peacock-feather.svg);
+  background-position: center;
+  background-size: 50vw;
+  background-repeat: no-repeat;
 }
 
-.photogal-sub div {
+.subgallery div {
   margin: 1vh 0;
 }
 
@@ -787,35 +791,6 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#photogal-krakowiak {
-  background-image: url(../img/peacock-feather.svg);
-  background-position: top;
-  background-size: 80%;
-  background-repeat: no-repeat;
-}
-
-#photogal-goralskie {
-  background-image: url(../galeria/dances-special-features/ciupaga.png);
-  background-position: center;
-  background-size: 110%;
-  background-repeat: no-repeat;
-  opacity: 1;
-}
-
-#photogal-rzeszowskie {
-  background-image: url(../galeria/dances-special-features/rzeszowskie-haft.png);
-  background-position: center;
-  background-size: 90%;
-  background-repeat: no-repeat;
-}
-
-#photogal-lubelskie {
-  background-image: url(../galeria/dances-special-features/Lub01.jpg);
-  background-position: center;
-  background-size: 40%;
-  background-repeat: no-repeat;
 }
 
 .audio-modal {
