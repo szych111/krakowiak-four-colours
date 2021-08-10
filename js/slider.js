@@ -6,10 +6,10 @@ const carouselDemos = Array.from(document.querySelectorAll(".carousel__demo"));
 const slide = document.querySelector(".slide");
 
 const changeSlide = (targetDemo) => {
-    let targetDemoSrc = targetDemo.src;
-    let slicedSrc = targetDemoSrc.slice(0, -4);
-    let sliderSrc = slicedSrc.concat("-rect.jpg");
-    slide.src = sliderSrc;
+    // let targetDemoSrc = targetDemo.src;
+    // let slicedSrc = targetDemoSrc.slice(0, -4);
+    // let sliderSrc = slicedSrc.concat("-rect.jpg");
+    slide.src = targetDemo.src;
 }
 
 carouselNav.addEventListener("click", e => {

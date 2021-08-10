@@ -1,12 +1,12 @@
 //photogal-subgalleries
 
 .subgallery {
-  background-color: rgba($base-grey,.8);
   padding: 3vmin;
   background-image: url(../img/peacock-feather.svg);
-  background-position: center;
-  background-size: 50vw;
   background-repeat: no-repeat;
+  background-size: 70vw;
+  background-position-x: 30%;
+  background-position-y: 10%;
 
   div {
     margin: 1vh 0;
@@ -16,7 +16,7 @@
 .photogal-header {
   display: flex;
   justify-content: space-between;
-  padding: 2vh;
+  padding: 2vmax;
 }
 
 .photogal-menu-k {
@@ -79,6 +79,7 @@
 .photogal-photo {
     width: 20vw;
     margin: 1%;
+    cursor: pointer;
 }
 
 // -- // -- //
