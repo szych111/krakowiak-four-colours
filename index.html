@@ -309,8 +309,8 @@
                                 <p class="history--card__text">Zespół Pieśni i Tańca Krakowiak zostaje założony przez
                                     przewodniczącego Związku Polaków w Niemczech &quot;Lech&quot; w Griesheim Pana
                                     Władysława Patrzałka.</p>
-                                <div class="hist-date-prev is-hidden">&#10094;&#10094;</div>
-                                <div class="hist-date-next">&#10095;&#10095;</div>
+                                <div class="hist-date-prev is-hidden">&#10094;</div>
+                                <div class="hist-date-next">&#10095;</div>
                         </div>
                     </div>
                         <div class="history-beads" data-tool-tip="container" >
@@ -429,15 +429,28 @@
 
         <div class="horizontal-line line-double"></div>
 
-        <div class="midsec">
+        <div class="midsec partners">
             <div class="midsec__title">
                 <h3>nasi mecenasi i partnerzy</h3>
             </div>
-            <div class="partners-content">
-                <!-- <div class="cutout-container">
-                    <img src="./img/kwadrat-opoczynski.png" alt="traditional cut-out">
-                </div>      -->
-                <div class="partners-logos">
+            <div class="partners__content">
+                <div class="partners__account-details">
+                    <p>Osoby pragnące wesprzeć działalność naszego zespołu prosimy o wpłatę darowizny na
+                        poniższe
+                        konto
+                        bankowe:
+                    </p>
+                    <p>Krakowiak e.V. <br>
+                        IBAN: DE95 5085 0150 0027 0235 09 <br>
+                        BIC: HELADEF1DAS </p>
+                    <p> Kwota darowizny może zostać odliczona przez darczyńcę od podstawy opodatkowania przy
+                        rozliczeniu
+                        z urzędem finansowym w Niemczech.</p>
+                    <p> Wpłaty zostaną przeznaczone wyłącznie na cele statutowe zespolu, m.in. na zakup strojów
+                        ludowych, w których występujemy. </p>
+                    <p class="krakowiak-hand-written">Dziękujemy za wsparcie!!!</p>
+                </div>
+                <div class="partners__partners">
                         <a href="http://www.diebruecke-darmstadt.de/" target="_blank">
                             <img src="./img/partners/DieBruckeV1.jpg" alt="logo of Die Brucke organisation"
                                 class="img-partners"></a>
@@ -457,32 +470,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- <div class="horizontal-line line-double"></div> -->
-
-        <!-- <div class="midsec">
-            <div class="midsec__title">
-                <h3>nasi mecenasi i partnerzy</h3>
-            </div>
-            <div class="midsec--partners">
-                    <a href="http://www.diebruecke-darmstadt.de/" target="_blank">
-                        <img src="./img/partners/DieBruckeV1.jpg" alt="logo of Die Brucke organisation"
-                            class="img-partners"></a>
-                    <a href="http://www.darmstadt.pl/" target="_blank">
-                        <img src="./img/partners/DarmstadtPLV1.jpg" alt="logo of Darmstadt.pl" class="img-partners"></a>
-                    <a href="https://ambasada.de/konsulat-honorowy-rp-we-frankfurcie-nad-menem/" target="_blank">
-                        <img src="./img/partners/KonsulatV1.jpg" alt="logo of Polish Consulate in Germany"
-                            class="img-partners"></a>
-                    <a href="https://www.griesheim.de/start/" target="_blank">
-                        <img src="./img/partners/StadtGriesheimV1.jpg" alt="logo of city of Griesheim"
-                            class="img-partners"></a>
-                    <a href="https://salonik.de/" target="_blank">
-                        <img src="./img/partners/SalonikV1.jpg" alt="logo of Salonik organisation" class="img-partners"></a>
-                    <a href="https://www.twojemiasto.eu/" target="_blank">
-                        <img src="./img/partners/TwojMaiatoV1.jpg" alt="logo of Twoje Miasto organisation"
-                            class="img-partners"></a>
-            </div>
-        </div> -->
 
         <div class="horizontal-line line-dotted-blue"></div>
 
@@ -517,20 +504,14 @@
                             <p>Zainteresowane osoby prosimy o uprzedni kontakt telefoniczny lub mailowy.</p>
                         </div>
                         <div class="contact-second">
-                            <p>Osoby pragnące wesprzeć działalność naszego zespołu prosimy o wpłatę darowizny na
-                                poniższe
-                                konto
-                                bankowe:
-                            </p>
-                            <p>Krakowiak e.V. <br>
-                                IBAN: DE95 5085 0150 0027 0235 09 <br>
-                                BIC: HELADEF1DAS </p>
-                            <p> Kwota darowizny może zostać odliczona przez darczyńcę od podstawy opodatkowania przy
-                                rozliczeniu
-                                z urzędem finansowym w Niemczech.</p>
-                            <p> Wpłaty zostaną przeznaczone wyłącznie na cele statutowe zespolu, m.in. na zakup strojów
-                                ludowych, w których występujemy. </p>
-                            <p class="krakowiak-hand-written">Dziękujemy za wsparcie!!!</p>
+                            <h3 class="contact-form__title krakowiak-hand-written ye">Wyślij nam wiadomość</h3>
+                            <form class="contact-form" action="greet.php" method="POST">
+                                <input type="text" name='first_name' placeholder="Imię">
+                                <input type="text" name='last_name' placeholder="Nazwisko">
+                                <input type="email" name="visitor_email" placeholder="E-mail">
+                                <textarea name="message" cols="20" rows="8" placeholder="Wiadomość"></textarea>
+                                <button type="submit" class="btn contact-form-btn">Wyślij</button>
+                            </form>
                         </div>
                     </div>
                     <div class="social-media">

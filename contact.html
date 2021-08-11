@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/88beb0a41d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="img/png" href="./img/mondestat-favicon.png">
+    <title>MONDESTATE</title>
+</head>
+<body>
+    <div class="team-modal modal open-modal">
+        <section class="contact">
+            <header class="section--header">
+                <div class="logo">
+                    <img src="./img/mondestate-logo-white-small.png" alt="logo">
+                </div>
+                <a href="index.html" class="slider-modal-close">
+                    <button class="close-btn" id="contact-close">
+                        <span class="section-close-span">&times;</span>
+                    </button>
+                </a>
+            </header>
+            <h2 class="contact-greeting">
+                Bądźmy w kontakcie
+            </h2>
+            <div class="contact-content">
+                <div class="contact-data">
+                    <div class="contact-staff">
+                        <p>Patrycja Pisklewicz, Dyrektor Biura</p>
+                        <p>tel. <a href="tel:+48789108468">+48 789 108 468</a></p>
+                        <p>e-mail: patrycja.pisklewicz@mondestate.pl</p>
+                        <p>Marek Skiba, Doradca ds. Nieruchomości</p>
+                        <p>tel. <a href="tel:+48789053392">+48 789 053 392</a></p>
+                        <p>e-mail: marek.skiba@mondestate.pl</p>
+                    </div>
+                    <address>
+                        ul. Sowińskiego 25/282<br>
+                        01 - 106 Warszawa<br>
+                        e-mail: biuro@mondestate.pl
+                    </address>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/xqkwpkny" method="POST">
+                    <input type="text" name='first_name' placeholder="Imię">
+                    <input type="text" name='last_name' placeholder="Nazwisko">
+                    <input type="email" name="visitor_email" placeholder="E-mail">
+                    <textarea name="message" cols="20" rows="8" placeholder="Wiadomość"></textarea>
+                    <button type="submit" class="btn contact-form-btn">Wyślij</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

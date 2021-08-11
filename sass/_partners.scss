@@ -2,10 +2,10 @@
     display: inline-block;
     width: 15vmax;
     opacity: .79;
-    margin: 0.5vw;
+    margin: 0 0.5vw 0.5vw;
 }
 
-.partners-content {
+.partners__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,30 +14,26 @@
     margin: 0 auto;
 }
 
-.cutout-container {
-    flex-basis: 1;
-}
-
-.partners-logos {
+.partners__partners {
     display: flex;
     flex-wrap: wrap;
     flex-basis: 2;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
+.partners__account-details {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 @media (min-width: 600px) {
-    .partners-content {
+    .partners__content {
         flex-direction: row;
         align-items: flex-start;
-    }
-
-    .cutout-container {
-        flex-grow: 3;
-        background-color: pink;
-    }
-    .partners-logos {
-        margin-left: 8vw;
+        justify-content: center;
     }
 }
 

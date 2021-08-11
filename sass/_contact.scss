@@ -26,6 +26,38 @@
   }
 }
 
+.contact-form__title {
+  font-size: 2em;
+  
+}
+
+.contact-form {
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.contact-form > 
+input, textarea, button {
+  display: block;
+  font: inherit;
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+}
+
+input, textarea {
+  width: 100%;
+  min-width: 250px;
+}
+
+.contact-form-btn {
+  width: 70px;
+  background-color: $base-yellow;
+  border: 0;
+  color: white;
+  margin-inline: auto;
+  cursor: pointer;
+}
+
 .social-media-container:hover {
   transform: scale(1.1);
   background-color: rgba(black, 0.2);
