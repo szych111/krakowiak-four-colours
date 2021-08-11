@@ -52,11 +52,10 @@
 }
 
 .nav-menu-holder {
-  padding-right: 4vw;
   top: 0;
   bottom: 0;
   transition: 1.5s;
-  margin-left: -290px;
+  margin-left: -300px;
   vertical-align: baseline;
   position: fixed;
   z-index: 2;
@@ -68,7 +67,6 @@
   font-size: calc(10px + 1vw);
   font-weight: 800;
   line-height: 2.52;
-  padding: 5vh;
   top: 10%;
 }
 
@@ -597,12 +595,13 @@ p.history-details {
 }
 
 .hist-bead:hover {
-  opacity: 0.7;
+  margin-top: -0.5em;
 }
 
 .current-bead {
   background-color: rgba(62, 204, 221, 0.6);
   cursor: default;
+  margin-top: -0.5em;
 }
 
 @media (min-width: 600px) {

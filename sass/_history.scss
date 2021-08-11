@@ -110,15 +110,18 @@ p.history-details {
   transition: 1000ms;
   color: inherit;
   background-color: $base-red;
+  
   }
 
 .hist-bead:hover {
-  opacity: 0.7;
+  //transform: scale(1.1);
+  margin-top: -0.5em;
 }
 
 .current-bead {
   background-color: rgba($base-blue, 0.6);
   cursor: default;
+  margin-top: -0.5em;
 }
 
 @media (min-width: 600px) {
