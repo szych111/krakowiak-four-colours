@@ -82,36 +82,73 @@ const history = [
   const histBeads = document.querySelector('.history-beads');
   const cardDate = document.querySelector('.history--card__date');
   const cardText = document.querySelector('.history--card__text');
-  const nextBead = document.querySelector('.hist-date-next');
-  const prevBead = document.querySelector('.hist-date-prev');
+  const nextBtn = document.querySelector('.hist-date-next');
+  const prevBtn = document.querySelector('.hist-date-prev');
   const beadsArray = Array.from(histBeads.children);
-  console.log(nextBead)
+
+
 
   const historyCardFill = (date, text) => {
     cardDate.innerText = date;
     cardText.innerText = text;
   }
 
-  histBeads.addEventListener('click', (e) => {
-    const text = e.target.dataset.toolTip;
-    const date = e.target.innerText;
-    const targetBead = e.target.closest("button");
+  const updateBeads = (currentBead, targetBead) => {
+    currentBead.classList.remove("current-bead")
+    targetBead.classList.add("current-bead")
+    console.log(currentBead)
+    console.log(document.getElementById('bead-1982'))
+  }
 
-    targetBead.classList.add("current-bead");
+  const hideShowArrows = (beadsArray, prevBtn, nextBtn, targetIndex) => {
+    if(targetIndex === 0) {
+        prevBtn.classList.add("is-hidden");
+        nextBtn.classList.remove("is-hidden");
+    } else if (targetIndex === beadsArray.length - 1) {
+        nextBtn.classList.add("is-hidden");
+        prevBtn.classList.remove("is-hidden");
+    } else {
+        prevBtn.classList.remove("is-hidden");
+        nextBtn.classList.remove("is-hidden");
+    }
+}
+
+  histBeads.addEventListener('click', e => {
+    const targetBead = e.target
+    if(!targetBead.closest("button")) return
+
+    const text = e.target.dataset.toolTip
+    const date = e.target.innerText
+    const currentBead = histBeads.querySelector('.current-bead')
+    const targetIndex = beadsArray.findIndex(bead => bead === targetBead)
     
-    if(!targetBead) return;
     historyCardFill (date, text)
+    updateBeads(currentBead, targetBead)
+    hideShowArrows(beadsArray, prevBtn, nextBtn, targetIndex)
   })
 
-  // nextBead.addEventListener('click', () => {
-  //   const currentIndex = beadsArray.findIndex(class => {class === '.current-bead'});
-  //   console.log(currentIndex)
-  // })
+  nextBtn.addEventListener('click', e => {
+    const currentBead = histBeads.querySelector('.current-bead')
+    const currentIndex = beadsArray.findIndex(bead => bead === currentBead)
+    const nextIndex = currentIndex + 1
+    const nextBead = beadsArray[nextIndex]
+    const text = nextBead.dataset.toolTip
+    const date = nextBead.innerText
 
+    updateBeads(currentBead, nextBead)
+    historyCardFill(date, text)
+    hideShowArrows(beadsArray, prevBtn, nextBtn, nextIndex)
+  })
 
+  prevBtn.addEventListener('click', e => {
+    const currentBead = histBeads.querySelector('.current-bead')
+    const currentIndex = beadsArray.findIndex(bead => bead === currentBead)
+    const prevIndex = currentIndex - 1
+    const prevBead = beadsArray[prevIndex]
+    const text = prevBead.dataset.toolTip
+    const date = prevBead.innerText
 
-// bead pushed hist card updated
-// bead changes e.g. color
-// prev bead returns to red
-// next button pushed: target btn = next sibling of div
-
+    updateBeads(currentBead, prevBead)
+    historyCardFill(date, text)
+    hideShowArrows(beadsArray, prevBtn, nextBtn, prevIndex)
+  })

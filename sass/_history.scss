@@ -110,16 +110,15 @@ p.history-details {
   transition: 1000ms;
   color: inherit;
   background-color: $base-red;
-
-  .current-bead {
-    opacity: 0.5;
-  }
   }
 
 .hist-bead:hover {
-  transform: rotate(45deg);
-  background-color: rgba($base-red, 0.2);
-  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.current-bead {
+  background-color: rgba($base-blue, 0.6);
+  cursor: default;
 }
 
 @media (min-width: 600px) {

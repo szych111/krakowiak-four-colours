@@ -596,14 +596,13 @@ p.history-details {
   background-color: #ee2c1d;
 }
 
-.hist-bead .current-bead {
-  opacity: 0.5;
+.hist-bead:hover {
+  opacity: 0.7;
 }
 
-.hist-bead:hover {
-  transform: rotate(45deg);
-  background-color: rgba(238, 44, 29, 0.2);
-  transform: scale(1.1);
+.current-bead {
+  background-color: rgba(62, 204, 221, 0.6);
+  cursor: default;
 }
 
 @media (min-width: 600px) {
