@@ -1,6 +1,13 @@
-.some-class {
+.slider-container {
     width: 90vw;
     background-color: pink;
+
+    a {
+        text-decoration: none;
+        position: absolute;
+        top: 2vmax;
+        right: 2.5vmax;
+    }
 
     button {
         color: white;
@@ -11,11 +18,11 @@
     }
 }
 
-.slider-modal-close {
-    position: absolute;
-    top: 2vmax;
-    right: 2.5vmax;
-}
+// .slider-modal-close {
+//     position: absolute;
+//     top: 2vmax;
+//     right: 2.5vmax;
+// }
 
     
 

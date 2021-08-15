@@ -12,19 +12,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--bead-size);
-  height: var(--bead-size);
+  // width: var(--bead-size);
+  // height: var(--bead-size);
   border-radius: 50%;
-  margin: 0 1.3vmin 0;
-  text-align: center;
+  margin: 0 1.3vmin;
+  // text-align: center;
   font-size: calc(8px + 1.2vw);
   cursor: pointer;
   transition: 800ms;
+  padding: 1em;
 
   a {
     color: white;
   }
 }
+
+///--- contact-form ---///
 
 .contact-form__title {
   font-size: 2em;
@@ -50,12 +53,12 @@ input, textarea {
 }
 
 .contact-form-btn {
-  width: 70px;
   background-color: $base-yellow;
   border: 0;
   color: white;
   margin-inline: auto;
   cursor: pointer;
+  padding: 0.5em 1em;
 }
 
 .social-media-container:hover {
@@ -74,5 +77,54 @@ input, textarea {
     margin-top: 0;
   }
 }
+
+///--- contact-form-php ---///
+
+.form-greeting-container {
+  margin: 10vmax auto;
+  
+}
+
+.form-greeting {
+  font-size: 1.5em;
+  margin: 0 auto 5vmax;
+  max-width: 60vw;
+}
+
+.form-greeting-backhome {
+  text-decoration: none;
+  color: white;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-greeting-backhome:hover, 
+.form-greeting-backhome:focus {
+  color: $base-yellow;
+}
+
+.form-greeting-backhome::before, 
+.form-greeting-backhome::after {
+  content: '';
+  display: inline-block;
+  background-color: $base-yellow;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  // position: absolute;
+  // top: 0.2em;
+}
+
+.form-greeting-backhome::before {
+  margin-right: 0.5em;
+}
+
+.form-greeting-backhome::after {
+  margin-left: 0.5em;
+}
+
+
 
   

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Krakowiak</title>
 </head>
 <body>
     <?php
@@ -25,7 +25,9 @@
 
     ?>
 
-    <p>Dziękujemy za wiadomość, wkrótce skontaktujemy się z Tobą  <?=$_POST['first_name'] ?>.</p>
-    <a href="index.php">Reset</a>
+    <div class="form-greeting-container">
+        <p class="form-greeting krakowiak-hand-written" >Dziękujemy za wiadomość <?=$_POST['first_name'] ?>, wkrótce skontaktujemy się z Tobą</p>
+        <a class="form-greeting-backhome" href="index.html">Powrót do strony głównej</a>
+    </div>
 </body>
 </html>

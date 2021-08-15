@@ -332,14 +332,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--bead-size);
-  height: var(--bead-size);
   border-radius: 50%;
-  margin: 0 1.3vmin 0;
-  text-align: center;
+  margin: 0 1.3vmin;
   font-size: calc(8px + 1.2vw);
   cursor: pointer;
   transition: 800ms;
+  padding: 1em;
 }
 
 .social-media-container a {
@@ -369,12 +367,12 @@ input, textarea {
 }
 
 .contact-form-btn {
-  width: 70px;
   background-color: #d9d731;
   border: 0;
   color: white;
   margin-inline: auto;
   cursor: pointer;
+  padding: 0.5em 1em;
 }
 
 .social-media-container:hover {
@@ -391,6 +389,48 @@ input, textarea {
     padding-top: 0;
     margin-top: 0;
   }
+}
+
+.form-greeting-container {
+  margin: 10vmax auto;
+}
+
+.form-greeting {
+  font-size: 1.5em;
+  margin: 0 auto 5vmax;
+  max-width: 60vw;
+}
+
+.form-greeting-backhome {
+  text-decoration: none;
+  color: white;
+  padding: 1em 1.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.form-greeting-backhome:hover,
+.form-greeting-backhome:focus {
+  color: #d9d731;
+}
+
+.form-greeting-backhome::before,
+.form-greeting-backhome::after {
+  content: '';
+  display: inline-block;
+  background-color: #d9d731;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+}
+
+.form-greeting-backhome::before {
+  margin-right: 0.5em;
+}
+
+.form-greeting-backhome::after {
+  margin-left: 0.5em;
 }
 
 #home {
@@ -844,23 +884,24 @@ section {
   padding-bottom: 2.0em;
 }
 
-.some-class {
+.slider-container {
   width: 90vw;
   background-color: pink;
 }
 
-.some-class button {
+.slider-container a {
+  text-decoration: none;
+  position: absolute;
+  top: 2vmax;
+  right: 2.5vmax;
+}
+
+.slider-container button {
   color: white;
   background: transparent;
   border: 0;
   cursor: pointer;
   font-size: 3em;
-}
-
-.slider-modal-close {
-  position: absolute;
-  top: 2vmax;
-  right: 2.5vmax;
 }
 
 .carousel {
@@ -951,6 +992,7 @@ body {
   color: white;
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
