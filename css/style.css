@@ -337,11 +337,18 @@
   font-size: calc(8px + 1.2vw);
   cursor: pointer;
   transition: 800ms;
-  padding: 1em;
 }
 
 .social-media-container a {
   color: white;
+}
+
+.social-media-container.green, .social-media-container.red {
+  padding: 0.7em 0.9em;
+}
+
+.social-media-container.blue {
+  padding: 0.7em 1.1em;
 }
 
 .contact-form__title {

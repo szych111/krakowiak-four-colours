@@ -2,6 +2,8 @@
     background-image: url(../img/dwieparywpodskoku-baw.jpg);
   }
 
+///--- social-media ---///
+
 .social-media {
   display: flex;
   margin: 0 auto 3vw;
@@ -20,10 +22,17 @@
   font-size: calc(8px + 1.2vw);
   cursor: pointer;
   transition: 800ms;
-  padding: 1em;
 
   a {
     color: white;
+  }
+
+  &.green, &.red {
+    padding: 0.7em 0.9em;
+  }
+
+  &.blue {
+    padding: 0.7em 1.1em;
   }
 }
 
@@ -31,7 +40,6 @@
 
 .contact-form__title {
   font-size: 2em;
-  
 }
 
 .contact-form {

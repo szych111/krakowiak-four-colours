@@ -503,34 +503,33 @@
                                 64347 Griesheim<br>
                             </address>
                             <p>Zainteresowane osoby prosimy o uprzedni kontakt telefoniczny lub mailowy.</p>
-                            <div class="social-media">
-                                <div class="social-media-container blue">
-                                    <a href="https://www.facebook.com/people/Krakowiak-EV/100009296999540" target="_blank"><i
-                                        class="fa fa-facebook" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="social-media-container red">
-                                    <a href="https://www.instagram.com/krakowiak_ev/?hl=en" target="_blank"><i class="fa fa-instagram"
-                                        aria-hidden="true"></i></a>
-                                </div>
-                                <div class="social-media-container green">
-                                    <a href="mailto:info@krakowiakev.de" target="_blank">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                         <div class="contact-second">
                             <h3 class="contact-form__title krakowiak-hand-written ye">Wyślij nam wiadomość</h3>
-                            <a href="./greet.html" target="_blank" rel="noopener noreferrer">
-                                wyslij
-                            </a>
-                            <form class="contact-form" action="greet.php" method="POST">
-                                <input type="text" name='first_name' placeholder="Imię">
+                            <form class="contact-form" method="POST">
+                                <input type="text" name='first_name' placeholder="Imię" required>
                                 <input type="text" name='last_name' placeholder="Nazwisko">
                                 <input type="email" name="visitor_email" placeholder="E-mail">
                                 <textarea name="message" cols="20" rows="8" placeholder="Wiadomość"></textarea>
-                                <button type="submit" class="btn contact-form-btn">Wyślij</button>
+                                <button type="submit" class="btn contact-form-btn">
+                                    <a href="greet.html" style="text-decoration: none; color: white;">Wyślij</a>
+                                    </button>
                             </form>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <div class="social-media-container blue">
+                            <a href="https://www.facebook.com/people/Krakowiak-EV/100009296999540" target="_blank"><i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="social-media-container red">
+                            <a href="https://www.instagram.com/krakowiak_ev/?hl=en" target="_blank"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                        </div>
+                        <div class="social-media-container green">
+                            <a href="mailto:info@krakowiakev.de" target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
