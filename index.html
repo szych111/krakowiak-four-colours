@@ -18,8 +18,10 @@
 <body>
     <main class="main-container">
         <div id="audio-modal" class="audio-modal">
-            <img src="audio-on-150.svg" id="audio-modal-btn-on" class="audio-modal-btn audio-on">
-            <img src="audio-off-150.svg" id="audio-modal-btn-off" class="audio-modal-btn audio-off">
+            <div class="audio-modal__btns">
+                <img src="audio-on-150.svg" id="audio-modal-btn-on" class="audio-modal-btn audio-on">
+                <img src="audio-off-150.svg" id="audio-modal-btn-off" class="audio-modal-btn audio-off">
+            </div>
         </div>
         <audio id="audio-bcg" preload='auto' loop>
             <source src="audio/Gronicek skrzypce.mp3" type="audio/mpeg" />
@@ -70,16 +72,7 @@
             </div>
 
         </section>
-        <!-- <nav class="horizontal-menu">
-            <ul class="horizontal-menu-ul">
-                <li class="horizontal-menu-item re"><a href="#home">Home</a></li>
-                <li class="horizontal-menu-item gre"><a href="#about">O nas</a></li>
-                <li class="horizontal-menu-item blu"><a href="#team">Ludzie</a></li>
-                <li class="horizontal-menu-item ye"><a href="#history">Historia</a></li>
-                <li class="horizontal-menu-item re"><a href="#photogallery">Galeria</a></li>
-                <li class="horizontal-menu-item gre"><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav> -->
+
         <div class="quotation-container">
             <blockquote>Sens życia i wiara nie biorą się z pustki,
                 lecz z pielęgnowania tradycji i ocalenia
@@ -306,12 +299,14 @@
                             <p>Bije zegar godziny, my wtedy mawiamy: jak ten czas szybko mija, a to my mijamy.</p>
                         </div>
                         <div class="history--card">
-                                <h3 class="history--card__date">1982</h3>
+                                <div class="hist-date-container">
+                                    <div class="hist-date-prev is-hidden">&#10094;&#10094;</div>
+                                    <h3 class="history--card__date">1982</h3>
+                                    <div class="hist-date-next">&#10095;&#10095;</div>
+                                </div>
                                 <p class="history--card__text">Zespół Pieśni i Tańca Krakowiak zostaje założony przez
                                     przewodniczącego Związku Polaków w Niemczech &quot;Lech&quot; w Griesheim Pana
                                     Władysława Patrzałka.</p>
-                                <div class="hist-date-prev is-hidden">&#10094;</div>
-                                <div class="hist-date-next">&#10095;</div>
                         </div>
                     </div>
                         <div class="history-beads" data-tool-tip="container" >

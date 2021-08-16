@@ -37,17 +37,23 @@
   flex-direction: column;
   flex-basis: 60%;
   max-width: 550px;
-  min-height: 220px;
+  min-height: 240px;
   margin: 0 auto;
-  padding: 1em;
   box-shadow: 5px 5px 10px 5px rgb(109, 104, 104);
   background-color: rgba($base-blue, 0.6);
+}
+
+.history--card__text {
+  padding: 0 1.5em 1em;
+}
+
+.hist-date-container {
   position: relative;
 }
 
 .hist-date-prev, 
 .hist-date-next {
-  font-size: 5em;
+  font-size: 4vmax;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -55,11 +61,11 @@
 }
 
 .hist-date-prev {
-  left: -1em;
+  left: -100%;
 }
 
 .hist-date-next {
-  right: -1em;
+  right: -100%;
 }
 
 .history--card__date {
@@ -170,4 +176,10 @@ p.history-details {
     }
   }
   
+}
+
+@media (min-width: 900px) {
+  .history--card {
+    height: 460px;
+  }
 }
