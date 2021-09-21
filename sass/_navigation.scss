@@ -57,10 +57,10 @@
 }
 
 .nav-menu-holder {
-    top:0;
-    bottom: 0;
+    // top:0;
+    // bottom: 0;
     transition: 1.5s;
-    margin-left: -300px;
+    transform: translate(-250px);
     vertical-align: baseline;
     position: fixed;
     z-index: 2;
@@ -71,7 +71,6 @@
       font-size: calc(10px + 1vw);
       font-weight: 800;
       line-height: 2.52;
-      //background-color: $base-yellow;
       top: 10%;
 
       li {
@@ -92,7 +91,7 @@
   }
   
   .nav-menu-open {
-    margin-left: -4em;
+    transform: translate(-50px);
   }
   
   .nav-menu-button {

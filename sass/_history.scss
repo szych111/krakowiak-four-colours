@@ -5,7 +5,7 @@
 
 .history-section {
   padding: 1.5vh;
-  margin-bottom: 7vh;
+  margin-bottom: 7vmax;
   //background-color: yellowgreen;
 }
 
@@ -39,8 +39,8 @@
   max-width: 550px;
   min-height: 240px;
   margin: 0 auto;
-  box-shadow: 5px 5px 10px 5px rgb(109, 104, 104);
-  background-color: rgba($base-blue, 0.6);
+  //box-shadow: 5px 5px 10px 5px rgb(109, 104, 104);
+  background-color: rgba($base-blue, 1);
 }
 
 .history--card__text {
@@ -115,21 +115,20 @@ p.history-details {
   align-items: center;
   font-size: calc(var(--bead-size) * 0.3);
   cursor: pointer;
-  transition: 1000ms;
+  transition: transform 500ms ease-out;
   color: inherit;
   background-color: $base-red;
   
   }
 
 .hist-bead:hover {
-  //transform: scale(1.1);
-  margin-top: -0.5em;
+  opacity: 0.9;
+  transform: scale(1.1);
 }
 
 .current-bead {
-  background-color: rgba($base-blue, 0.6);
   cursor: default;
-  margin-top: -0.5em;
+  transform: translateY(-1em);
 }
 
 @media (min-width: 600px) {

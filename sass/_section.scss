@@ -4,7 +4,8 @@ section {
 
 .section-bg {
   max-width: 100vw;
-  height: 756px;
+  //height: 756px;
+  height: 100vh;
   background-position: center;
   background-size: cover;
   margin: 0px auto 8vmax;
@@ -41,11 +42,6 @@ section {
   text-align: right;
 }
 
-.section-main__content--gallery {
-  // a:first-child {margin-top: 2vh;}
-  margin-top: auto;
-  margin-bottom: auto;
-}
 
 .section-main__content {
   padding: 0.5vh 1vh;

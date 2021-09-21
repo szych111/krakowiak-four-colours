@@ -29,12 +29,6 @@
   }
 }
 
-@media (min-width: 800px) {
-  .photogal-menu-k {
-    max-width: 12%;
-  }
-}
-
 .photogal-title {
     display: flex;
     flex-direction: column;
@@ -53,19 +47,9 @@
     }
 }
 
-@media (min-width: 900px) {
-  .photogal-container {
-    flex-direction: row;
-  }
-  .photogal-photos {
-    order: 2;
-  }
-}
-
 .photogal-about {
     background-color: rgba($color: #b37b32, $alpha: .8);
-
-    padding: 1em;
+    padding: 1em 1.5em;
     margin: 15vw;
     flex: 2;
 }
@@ -87,9 +71,15 @@
 /* photogallery main page */
 
 #photogallery {
-  background-image: url(../img/koguty.png);
-  background-size: 90%;
+  background-image: url(../img/koguty-drzewko.png);
+  background-size: 70%;
   background-repeat: no-repeat;
+  background-position: center;
+
+  .section-gallery__main {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
  a {
     text-decoration: none;
@@ -111,3 +101,22 @@
     padding: 0;
     margin-bottom: -1.4vw;
   }
+
+@media (min-width: 800px) {
+  .photogal-menu-k {
+    max-width: 12%;
+  }
+}
+
+@media (min-width: 900px) {
+  .photogal-container {
+    flex-direction: row;
+  }
+  .photogal-photos {
+    order: 2;
+  }
+
+  .section-gallery__main {
+    columns: 2;
+  }
+}
