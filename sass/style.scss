@@ -16,6 +16,7 @@ body {
   font-family: 'Museo Slab';
   font-size: clamp(10px, calc(10px + .5vw), 20px);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
